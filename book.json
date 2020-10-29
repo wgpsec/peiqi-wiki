@@ -1,0 +1,21 @@
+{
+	"title": "PeiQi WiKi文库",
+    "author": "PeiQi",
+    "description": "WiKi文库",
+    "language": "zh-hans",
+    
+	"plugins": [
+		"back-to-top-button",
+		"theme-comscore",
+		"splitter",
+		"alerts",
+		"code",
+		"github",
+		"favicon"
+    ],
+	"pluginsConfig": {
+        "github": {
+            "url":"https://github.com/PeiQi0/wiki"
+        }
+    }
+}
