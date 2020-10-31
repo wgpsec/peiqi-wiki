@@ -6,9 +6,11 @@
     
 	"plugins": [
 		"back-to-top-button",
+		"expandable-chapters",
 		"theme-comscore",
 		"splitter",
 		"alerts",
+		"chapter-fold",
 		"code",
 		"github",
 		"favicon"
