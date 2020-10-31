@@ -13,7 +13,8 @@
 		"chapter-fold",
 		"code",
 		"github",
-		"favicon"
+		"favicon",
+		"accordion"
     ],
 	"pluginsConfig": {
         "github": {
