@@ -12,5 +12,5 @@
 * [CMS漏洞](PeiQi_Wiki/cms_wiki/README.md)
 
    * [极致CMS](PeiQi_Wiki/cms_wiki/jizhi_cms/README.md)
-     * [极致CMS 任意文件上传(后台权限)](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_全版本任意文件修改.md)
+     * [极致CMS 任意文件上传(后台权限)](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_全版本任意文件上传.md)
 
