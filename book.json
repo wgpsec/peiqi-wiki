@@ -14,11 +14,24 @@
 		"code",
 		"github",
 		"favicon",
-		"accordion"
+		"accordion",
+		"-lunr", 
+        "-search", 
+        "search-pro",
+		"emphasize",
+		"-sharing",
+		"sharing-plus",
+		"tbfed-pagefooter"
     ],
 	"pluginsConfig": {
         "github": {
             "url":"https://github.com/PeiQi0/wiki"
+        },
+		"tbfed-pagefooter": {
+            "copyright":"PeiQi wiki",
+            "modify_label": "文件更新时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
+		
     }
 }
