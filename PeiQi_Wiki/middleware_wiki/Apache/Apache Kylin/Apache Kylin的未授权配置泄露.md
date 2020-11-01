@@ -1,5 +1,9 @@
 # Apache Kylin的未授权配置泄露
 
+### FOFA
+
+app="APACHE-kylin"
+
 ### **受影响的版本：**
 
 Apache Kylin 有一个restful api会在没有认可认证的情况下暴露配置信息。

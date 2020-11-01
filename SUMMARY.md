@@ -15,4 +15,5 @@
    * [极致CMS](PeiQi_Wiki/cms_wiki/jizhi_cms/README.md)
      * [极致CMS 任意文件上传(后台权限)](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_全版本任意文件上传.md)
      * [极致CMS 1.71 + 1.7 + 1.67 版本sql注入](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_1.71_1.7_1.67版本sql注入.md)
+     * [极致CMS <1.81 版本 存储型XSS](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS 1.81以下版本 存储型XSS.md)
 
