@@ -4,7 +4,11 @@
 
 ![](http://peiqi.tech/wuyun/jizhicms/cms-6.jpg)
 
-安装之后设置密码并使用{% em type="green" %}如果已经设有密码，重新安装插件即可解决密码未知问题{% endem %}
+安装之后设置密码并使用
+
+> [!NOTE]
+>
+> 如果已经设有密码，重新安装插件即可解决密码未知问题
 
 ![](http://peiqi.tech/wuyun/jizhicms/cms-7.jpg)
 

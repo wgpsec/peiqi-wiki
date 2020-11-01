@@ -21,7 +21,10 @@
 		"emphasize",
 		"-sharing",
 		"sharing-plus",
-		"tbfed-pagefooter"
+		"tbfed-pagefooter",
+		"lightbox",
+		"flexible-alerts",
+		"pageview-count"
     ],
 	"pluginsConfig": {
         "github": {
