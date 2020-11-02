@@ -5,11 +5,12 @@
    * [Apache](PeiQi_Wiki/middleware_wiki/Apache/README.md)
 
       * [Apache Flink ](PeiQi_Wiki/middleware_wiki/Apache/Apache Flink/README.md)
-        * [Apache Flink  <= 1.9.1(最新版本) 远程代码执行反弹shell ](PeiQi_Wiki/middleware_wiki/Apache/Apache Flink/Apache=1.9.1远程代码执行.md)
+        * [Apache Flink  <= 1.9.1(最新版本) 远程代码执行 ](PeiQi_Wiki/middleware_wiki/Apache/Apache Flink/Apache=1.9.1远程代码执行.md)
       * [Apache Kylin](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/README.md)
            * [Apache Kylin的未授权配置泄露](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/Apache Kylin的未授权配置泄露.md)
       * [Apache Solr](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/README.md)
         * [Apache Solr 远程执行漏洞 CVE-2019-0193](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr 远程执行漏洞 CVE-2019-0193.md)
+        * [Apache Solr Velocity模板远程执行 CVE-2019-17558](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr Velocity模板远程执行 CVE-2019-17558.md)
 
    
 
