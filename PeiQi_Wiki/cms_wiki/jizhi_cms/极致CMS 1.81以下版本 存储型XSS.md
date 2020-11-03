@@ -4,15 +4,15 @@
 
 登录管理员添加模块
 
-![](http://peiqi.tech/wiki/cms/jizhicms/jizhi-1.png)
+![](image/jizhi-1.png)
 
 注册用户
 
-![](http://peiqi.tech/wiki/cms/jizhicms/jizhi-2.png)
+![](image/jizhi-2.png)
 
 点击发布文章
 
-![](http://peiqi.tech/wiki/cms/jizhicms/jizhi-3.png)
+![](image/jizhi-3.png)
 
 在文章标题处插入xss payload
 
@@ -20,7 +20,7 @@
 
 当管理员访问时XSS成功
 
-![](http://peiqi.tech/wiki/cms/jizhicms/jizhi-4.png)
+![](image/jizhi-4.png)
 
 
 
