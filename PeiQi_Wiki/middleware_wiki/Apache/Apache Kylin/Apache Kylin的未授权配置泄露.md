@@ -20,11 +20,11 @@ Kylin 4.0.0-alpha
 
 根据漏洞情报
 
-![](http://peiqi.tech/wiki/middle/apache%20kylin.png)
+![](image/apache kylin-1.png)
 
 漏洞利用POC为{% em type="red" %}http://xxx.xxx.xxx.xxx/kylin/api/admin/config{% endem %}
 
-![](http://peiqi.tech/wiki/middle/apache%20kylin-2.png)
+![](image/apache kylin-2.png)
 
 ### 参考
 
