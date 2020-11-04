@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+#-*- coding:utf-8 -*-
+# author : PeiQi
+# from   : http://wiki.peiqi.tech
+
 import requests
 import re
 
