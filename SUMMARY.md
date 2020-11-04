@@ -11,7 +11,8 @@
       * [Apache Solr](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/README.md)
         * [Apache Solr 远程执行漏洞 CVE-2019-0193](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr 远程执行漏洞 CVE-2019-0193.md)
         * [Apache Solr Velocity模板远程执行 CVE-2019-17558](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr Velocity模板远程执行 CVE-2019-17558.md)
-       * [Apache Solr 远程执行漏洞 CVE-2017-12629](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr 远程命令执行漏洞 CVE-2017-12629.md)
+       * [Apache Solr RCE 远程执行漏洞 CVE-2017-12629](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr RCE 远程命令执行漏洞 CVE-2017-12629.md)
+       * [Apache Solr XXE 漏洞 CVE-2017-12629](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.md)
    
    
 
