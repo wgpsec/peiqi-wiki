@@ -14,6 +14,7 @@
        * [Apache Solr RCE 远程执行漏洞 CVE-2017-12629](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr RCE 远程命令执行漏洞 CVE-2017-12629.md)
        * [Apache Solr XXE 漏洞 CVE-2017-12629](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.md)
        * [Apache Solr JMX服务 RCE  CVE-2019-12409](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.md)
+       * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
    
    
 
