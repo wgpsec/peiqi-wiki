@@ -7,3 +7,5 @@
 #### Apache Solr 远程命令执行漏洞 CVE-2017-12629
 
 #### Apache Solr XXE 漏洞 CVE-2017-12629
+
+#### Apache Solr JMX服务 RCE  CVE-2019-0193
