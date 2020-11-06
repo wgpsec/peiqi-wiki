@@ -8,7 +8,9 @@ Apache Flink <= 1.9.1(最新版本) 远程代码执行
 
 %accordion%Apache Kylin%accordion%
 
-Apache-kylin 未授权配置泄露
+Apache kylin 未授权配置泄露 CVE-2020-13937
+
+Apache Kylin 命令注入漏洞 CVE-2020-1956
 
 %/accordion%
 
