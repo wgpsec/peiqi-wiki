@@ -9,6 +9,7 @@
       * [Apache Kylin](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/README.md)
            * [Apache Kylin的未授权配置泄露](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/Apache Kylin的未授权配置泄露.md)
            * [Apache Kylin 命令注入漏洞 CVE-2020-1956](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-1956.md)
+           * [Apache Kylin 命令注入漏洞 CVE-CVE-2020-13925](PeiQi_Wiki/middleware_wiki/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-13925.md)
       * [Apache Solr](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/README.md)
         * [Apache Solr 远程执行漏洞 CVE-2019-0193](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr 远程执行漏洞 CVE-2019-0193.md)
         * [Apache Solr Velocity模板远程执行 CVE-2019-17558](PeiQi_Wiki/middleware_wiki/Apache/Apache Solr/Apache Solr Velocity模板远程执行 CVE-2019-17558.md)
