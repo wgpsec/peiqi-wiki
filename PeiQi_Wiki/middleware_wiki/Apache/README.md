@@ -1,5 +1,17 @@
 # Apache 漏洞整理👻
 
+%accordion%Apache Tomcat%accordion%
+
+Aapache Tomcat AJP 文件包含漏洞 CVE-2020-1938
+
+%/accordion%
+
+%accordion%Apache Shiro%accordion%
+
+Apache Shiro <=1.2.4反序列化漏洞 CVE-2016-4437
+
+%/accordion%
+
 %accordion%Apache Cocoon%accordion%
 
 Apache Cocoon XML注入 CVE-2020-11991
@@ -35,3 +47,4 @@ Apache Solr XXE 漏洞 CVE-2017-12629
 Apache Solr JMX服务 RCE  CVE-2019-12409
 
 Apache Solr RCE 未授权上传漏洞 CVE-2020-13957
+
