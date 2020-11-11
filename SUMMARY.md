@@ -2,7 +2,7 @@
 
 * [Web服务器漏洞](PeiQi_Wiki/web_serve_wiki/README.md)
 
-   * [Nginx](PeiQi_Wiki/web_serve_wiki/Apache/README.md)
+   * [Nginx](PeiQi_Wiki/web_serve_wiki/Nginx/README.md)
 
       * [Nginx越界读取缓存漏洞 CVE-2017-7529](PeiQi_Wiki/web_serve_wiki/Nginx/Nginx越界读取缓存漏洞 CVE-2017-7529.md)
 
