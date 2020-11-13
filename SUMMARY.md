@@ -37,17 +37,17 @@
 		  * [Apache Solr JMX服务 RCE  CVE-2019-12409](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.md)
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
 
-* [中间件框架漏洞]()
+* [中间件框架漏洞](PeiQi_Wiki/中间件框架漏洞/README.md)
 	
 * [Web应用漏洞](PeiQi_Wiki/Web应用漏洞/README.md)
 	* [宝塔运维管理面板](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/README.md)
 	   * [宝塔 phpmyadmin未授权访问漏洞.md](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.md)
 
-* [语言框架漏洞]()
+* [语言框架漏洞](PeiQi_Wiki/语言框架漏洞/README.md)
 
-* [OA产品漏洞]()
+* [OA产品漏洞](PeiQi_Wiki/OA产品漏洞/README.md)
 
-* [安全产品漏洞]() 	
+* [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 	
 
 
 * [CMS漏洞](PeiQi_Wiki/CMS漏洞/README.md)
@@ -57,9 +57,9 @@
 	   * [极致CMS <1.81 版本 存储型XSS](PeiQi_Wiki/CMS漏洞/极致CMS/极致CMS 1.81以下版本 存储型XSS.md)
 	   
 
-* [系统漏洞]()
+* [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
 
 
-* [路由器漏洞]()
+* [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
 
 
