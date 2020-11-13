@@ -3,14 +3,14 @@
 * [Web服务器漏洞](PeiQi_Wiki/web_serve_wiki/README.md)
     * [Weblogic](PeiQi_Wiki/web_serve_wiki/Weblogic/README.md)
 	   * [Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271](PeiQi_Wiki/web_serve_wiki/Weblogic/Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271.md)
-     
+    
 	* [Nginx](PeiQi_Wiki/web_serve_wiki/Nginx/README.md)
 	   * [Nginx越界读取缓存漏洞 CVE-2017-7529](PeiQi_Wiki/web_serve_wiki/Nginx/Nginx越界读取缓存漏洞 CVE-2017-7529.md)
 	   
 	* [Apache](PeiQi_Wiki/web_serve_wiki/Apache/README.md)
 	   * [Apache Mod_jk](PeiQi_Wiki/web_serve_wiki/Apache/Apache Mod_jk/README.md)
 		  * [Apache Mod_jk 访问控制权限绕过 CVE-2018-11759](PeiQi_Wiki/web_serve_wiki/Apache/Apache Mod_jk/Apache Mod_jk 访问控制权限绕过 CVE-2018-11759.md)
-			 
+			
 	   * [Apache Tomcat](PeiQi_Wiki/web_serve_wiki/Apache/Apache Tomcat/README.md)
 		  * [Apache Tomcat AJP 文件包含漏洞 CVE-2020-1938](PeiQi_Wiki/web_serve_wiki/Apache/Apache Tomcat/Apache Tomcat AJP 文件包含漏洞 CVE-2020-1938.md)
 		  * [Apache Tomcat 远程代码执行漏洞 CVE-2017-12615](PeiQi_Wiki/web_serve_wiki/Apache/Apache Tomcat/Apache Tomcat 远程代码执行漏洞 CVE-2017-12615.md)
@@ -38,14 +38,16 @@
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/web_serve_wiki/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
 
 * [中间件框架漏洞]()
-	   
-* [Web应用漏洞]()			   
+	
+* [Web应用漏洞](PeiQi_Wiki/web_apply_wiki/README.md)
+	* [宝塔运维管理面板](PeiQi_Wiki/web_apply_wiki/宝塔运维管理面板/README.md)
+	   * [宝塔 phpmyadmin未授权访问漏洞.md](PeiQi_Wiki/web_apply_wiki/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.md)
 
 * [语言框架漏洞]()
 
 * [OA产品漏洞]()
 
-* [安全产品漏洞]() 
+* [安全产品漏洞]() 	
 
 
 * [CMS漏洞](PeiQi_Wiki/cms_wiki/README.md)
@@ -56,9 +58,6 @@
 	   
 
 * [系统漏洞]()
-
-
-* [二进制漏洞]()
 
 
 * [路由器漏洞]()
