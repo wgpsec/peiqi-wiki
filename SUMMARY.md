@@ -47,7 +47,9 @@
 
 * [OA产品漏洞](PeiQi_Wiki/OA产品漏洞/README.md)
 
-* [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 	
+* [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 
+    * [深信服](PeiQi_Wiki/安全产品漏洞/深信服/README.md)
+	   * [深信服EDR远程命令执行 CNVD-2020-46552](PeiQi_Wiki/安全产品漏洞/深信服/深信服EDR远程命令执行 CNVD-2020-46552.md)
 
 
 * [CMS漏洞](PeiQi_Wiki/CMS漏洞/README.md)
