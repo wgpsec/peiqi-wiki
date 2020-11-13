@@ -10,7 +10,7 @@
 >
 > TP-Link SR20
 
-## 漏洞原理POC
+## 漏洞利用POC
 
 ```python
 #!/usr/bin/python3
