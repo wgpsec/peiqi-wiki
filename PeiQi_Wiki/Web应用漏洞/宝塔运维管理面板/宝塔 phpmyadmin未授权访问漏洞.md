@@ -16,4 +16,4 @@
 
 访问 **http://xxx.xxx.xxx.xxx:888/pma** 即可
 
-![](../image/bt-1.png)
+![](./image/bt-1.png)

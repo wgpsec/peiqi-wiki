@@ -1,4 +1,4 @@
-# Apache 漏洞整理👻
+# Apache
 
 %accordion%Apache Mod_jk%accordion%
 
