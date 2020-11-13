@@ -36,9 +36,16 @@
 		  * [Apache Solr XXE 漏洞 CVE-2017-12629](PeiQi_Wiki/web_serve_wiki/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.md)
 		  * [Apache Solr JMX服务 RCE  CVE-2019-12409](PeiQi_Wiki/web_serve_wiki/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.md)
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/web_serve_wiki/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
-	   
-			   
 
+* [中间件框架漏洞]()
+	   
+* [Web应用漏洞]()			   
+
+* [语言框架漏洞]()
+
+* [OA产品漏洞]()
+
+* [安全产品漏洞]() 
 
 
 * [CMS漏洞](PeiQi_Wiki/cms_wiki/README.md)
@@ -46,3 +53,14 @@
 	   * [极致CMS 任意文件上传(后台权限)](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_全版本任意文件上传.md)
 	   * [极致CMS 1.71 + 1.7 + 1.67 版本sql注入](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS_1.71_1.7_1.67版本sql注入.md)
 	   * [极致CMS <1.81 版本 存储型XSS](PeiQi_Wiki/cms_wiki/jizhi_cms/极致CMS 1.81以下版本 存储型XSS.md)
+	   
+
+* [系统漏洞]()
+
+
+* [二进制漏洞]()
+
+
+* [路由器漏洞]()
+
+
