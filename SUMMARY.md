@@ -65,4 +65,6 @@
 * [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
     * [TP-Link](PeiQi_Wiki/路由器漏洞/TP-Link/README.md)
 	   * [TP-Link SR20 远程命令执行](PeiQi_Wiki/路由器漏洞/TP-Link/TP-Link SR20 远程命令执行.md)
+	* [Cisco](PeiQi_Wiki/路由器漏洞/Cisco/README.md)
+	   * [CISCO ASA设备任意文件读取漏洞 CVE-2020-3452](PeiQi_Wiki/路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.md)
 
