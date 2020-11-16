@@ -48,6 +48,7 @@
 * [OA产品漏洞](PeiQi_Wiki/OA产品漏洞/README.md)
     * [通达OA](PeiQi_Wiki/OA产品漏洞/通达OA/README.md)
 	   * [通达OA部分漏洞信息整合](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA部分漏洞信息整合.md)
+	   * [通达OA任意用户登录](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA任意用户登录.md)
 
 * [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 
     * [深信服](PeiQi_Wiki/安全产品漏洞/深信服/README.md)
