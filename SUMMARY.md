@@ -69,6 +69,8 @@
 	   * [极致CMS <1.81 版本 存储型XSS](PeiQi_Wiki/CMS漏洞/极致CMS/极致CMS 1.81以下版本 存储型XSS.md)
 	* [华宜互联CMS](PeiQi_Wiki/CMS漏洞/华宜互联CMS/README.md)
 	   * [华宜互联CMS默认存在超级管理员漏洞](PeiQi_Wiki/CMS漏洞/华宜互联CMS/华宜互联CMS默认存在超级管理员漏洞.md)
+	* [Weiphp](PeiQi_Wiki/CMS漏洞/Weiphp/README.md)
+	   * [Weiphp5.0 前台文件任意读取](PeiQi_Wiki/CMS漏洞/Weiphp/Weiphp5.0 前台文件任意读取.md)
 	   
 
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
