@@ -71,7 +71,7 @@
 	   * [华宜互联CMS默认存在超级管理员漏洞](PeiQi_Wiki/CMS漏洞/华宜互联CMS/华宜互联CMS默认存在超级管理员漏洞.md)
 	* [Weiphp](PeiQi_Wiki/CMS漏洞/Weiphp/README.md)
 	   * [Weiphp5.0 前台文件任意读取](PeiQi_Wiki/CMS漏洞/Weiphp/Weiphp5.0 前台文件任意读取.md)
-	   
+	   * [Weiphp5.0 任意用户Cookie伪造](PeiQi_Wiki/CMS漏洞/Weiphp/Weiphp5.0 任意用户Cookie伪造.md)
 
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
 
