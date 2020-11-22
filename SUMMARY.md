@@ -73,6 +73,9 @@
 	   * [Weiphp5.0 前台文件任意读取](PeiQi_Wiki/CMS漏洞/Weiphp/Weiphp5.0 前台文件任意读取.md)
 	   * [Weiphp5.0 任意用户Cookie伪造](PeiQi_Wiki/CMS漏洞/Weiphp/Weiphp5.0 任意用户Cookie伪造.md)
 	* [禅道](PeiQi_Wiki/CMS漏洞/禅道CMS/README.md)
+	   * [禅道 11.6版本 SQL注入漏洞](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 SQL注入漏洞.md)
+	   * [禅道 11.6版本 任意文件读取漏洞](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 任意文件读取漏洞.md)
+	   * [禅道 11.6版本 任意文件写入漏洞](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 任意文件写入漏洞.md)
 	   * [禅道 小于12.4.2 文件上传漏洞 CNVD-C-2020-121325](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 小于12.4.2 文件上传漏洞 CNVD-C-2020-121325.md)
 	   * [禅道 小于12.4.2 CSRF漏洞](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 小于12.4.2 CSRF漏洞.md)
 

