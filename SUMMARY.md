@@ -54,6 +54,7 @@
     * [泛微OA](PeiQi_Wiki/OA产品漏洞/泛微OA/README.md)
 	   * [泛微云桥 e-Bridge 任意文件读取](PeiQi_Wiki/OA产品漏洞/泛微OA/泛微云桥 e-Bridge 任意文件读取.md)
 	   * [泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204](PeiQi_Wiki/OA产品漏洞/泛微OA/泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204.md)
+	   * [泛微OA WorkflowCenterTreeData接口SQL注入(仅限oracle数据库)](PeiQi_Wiki/OA产品漏洞/泛微OA/泛微OA WorkflowCenterTreeData接口SQL注入.md)
     * [通达OA](PeiQi_Wiki/OA产品漏洞/通达OA/README.md)
 	   * [通达OA部分漏洞信息整合](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA部分漏洞信息整合.md)
 	   * [通达OA任意用户登录](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA任意用户登录.md)
