@@ -19,7 +19,7 @@
 		  * [Apache Tomcat 远程代码执行漏洞 CVE-2017-12615](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat 远程代码执行漏洞 CVE-2017-12615.md)
 	   
 	   * [Apache Shio](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Shiro/README.md)
-		  * [Apache Shiro =1.2.4反序列化漏洞 CVE-2016-4437](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Shiro/Apache Shiro =1.2.4反序列化漏洞 CVE-2016-4437.md)
+		  * [Apache Shiro =1.2.4反序列化漏洞 CVE-2016-4437](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Shiro/Apache Shiro 小于1.2.4反序列化漏洞 CVE-2016-4437.md)
 	   
 	   * [Apache Coocon](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Cocoon/README.md)
 		  * [Apache Cocoon XML注入 CVE-2020-11991](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Cocoon/Apache Cocoon XML注入 CVE-2020-11991.md)
