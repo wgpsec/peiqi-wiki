@@ -1,4 +1,4 @@
-# 泛微OA WorkflowCenterTreeData接口SQL注入(仅限oracle数据库)
+# 泛微OA WorkflowCenterTreeData接口SQL注入(仅限oracle数据库) CNVD-2019-34241
 
 ## 漏洞描述
 

@@ -4,5 +4,15 @@
 
 #### 泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204
 
+#### 泛微OA e-cology 数据库配置信息泄漏漏洞
+
+#### 泛微OA WorkflowCenterTreeData接口SQL注入(仅限oracle数据库) CNVD-2019-34241
+
+#### 泛微OA sysinterface/codeEdit.jsp 页面任意文件上传 WooYun-2015-0155705
+
+
+
+
+
 
 
