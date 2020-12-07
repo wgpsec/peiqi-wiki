@@ -60,6 +60,7 @@
     * [通达OA](PeiQi_Wiki/OA产品漏洞/通达OA/README.md)
 	   * [通达OA部分漏洞信息整合](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA部分漏洞信息整合.md)
 	   * [通达OA任意用户登录](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA任意用户登录.md)
+	   * [通达OA v11.2后台任意文件上传漏洞](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.2后台任意文件上传漏洞.md)
 	   * [通达OA v11.7后台SQL注入](PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.md)
 	* [用友OA](PeiQi_Wiki/OA产品漏洞/用友OA/README.md)
 	   * [用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923](PeiQi_Wiki/OA产品漏洞/用友OA/用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923.md)
