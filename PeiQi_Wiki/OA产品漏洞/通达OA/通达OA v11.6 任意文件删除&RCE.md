@@ -396,3 +396,4 @@ if __name__ == '__main__':
             POC_4(target_url, cmd)
 ```
 
+![](image/tongdaoa-24.png)
