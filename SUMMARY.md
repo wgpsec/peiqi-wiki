@@ -40,13 +40,17 @@
 		  * [Apache Solr XXE 漏洞 CVE-2017-12629](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.md)
 		  * [Apache Solr JMX服务 RCE  CVE-2019-12409](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.md)
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
+	   * [Apache HTTPd](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md)
+	      * [Apache HTTPd 换行解析漏洞 CVE-2017-15715](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md)
 
 * [中间件框架漏洞](PeiQi_Wiki/中间件框架漏洞/README.md)
 
 * [服务器应用漏洞](PeiQi_Wiki/服务器应用漏洞/README.md)
     * [Redis](PeiQi_Wiki/服务器应用漏洞/Redis/README.md)
 	   * [Redis <= 5.0.5 主从复制 RCE ](PeiQi_Wiki/服务器应用漏洞/Redis/Redis 小于5.0.5 主从复制 RCE .md)
-	
+	* [OpenSSL](PeiQi_Wiki/服务器应用漏洞/OpenSSL/README.md)
+	   * [OpenSSL 心脏滴血漏洞 CVE-2014-0160](PeiQi_Wiki/服务器应用漏洞/OpenSSL/OpenSSL 心脏滴血漏洞 CVE-2014-0160.md)
+		
 * [Web应用漏洞](PeiQi_Wiki/Web应用漏洞/README.md)
 	* [宝塔运维管理面板](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/README.md)
 	   * [宝塔 phpmyadmin未授权访问漏洞.md](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.md)
@@ -103,7 +107,6 @@
     * [Discuz!X](PeiQi_Wiki/CMS漏洞/Discuz!X/README.md)
 	   * [Discuz!X <3.4 R20191201 后台SQL注入漏洞](PeiQi_Wiki/CMS漏洞/Discuz!X/Discuz!X 小于3.4 R20191201 后台SQL注入漏洞.md)
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
-
 
 * [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
     * [TP-Link](PeiQi_Wiki/路由器漏洞/TP-Link/README.md)
