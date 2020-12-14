@@ -11,6 +11,7 @@
 	* [Apache](PeiQi_Wiki/Web服务器漏洞/Apache/README.md)
 	   * [Apache Struts2](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/README.md)
 	      * [Struts2-Scan 工具](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Struts2-Scan 漏洞验证.md)
+		  * [Exphub Strtus2](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Exphub Strtus2.md)
 	
 	   * [Apache Mod_jk](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Mod_jk/README.md)
 		  * [Apache Mod_jk 访问控制权限绕过 CVE-2018-11759](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Mod_jk/Apache Mod_jk 访问控制权限绕过 CVE-2018-11759.md)
