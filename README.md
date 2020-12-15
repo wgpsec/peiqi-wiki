@@ -18,7 +18,9 @@
 
 > [!NOTE]
 >
-> POC文件都存放于漏洞分类后的目录中
+> POC文件都存放于漏洞分类后的POC目录中
+>
+> 扫描工具文件存放于漏洞分类后的Scan目录中
 
 ![](PeiQi_Wiki/background/image-3.png)
 
