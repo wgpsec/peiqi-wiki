@@ -1,8 +1,11 @@
 * [关于文库](README.md)
 
 * [Web服务器漏洞](PeiQi_Wiki/Web服务器漏洞/README.md)
+	* [Jboss](PeiQi_Wiki/Web服务器漏洞/Weblogic/README.md)
+
     * [Weblogic](PeiQi_Wiki/Web服务器漏洞/Weblogic/README.md)
-	   * [WeblogicScanner 漏洞扫描](PeiQi_Wiki/Web服务器漏洞/Weblogic/WeblogicScanner 漏洞扫描.md)
+	   * [扫描工具](PeiQi_Wiki/Web服务器漏洞/Weblogic/Scan/README.md)
+		  * [WeblogicScanner 漏洞扫描](PeiQi_Wiki/Web服务器漏洞/Weblogic/WeblogicScanner 漏洞扫描.md)
 	   * [Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271](PeiQi_Wiki/Web服务器漏洞/Weblogic/Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271.md)
 	   
 	* [Nginx](PeiQi_Wiki/Web服务器漏洞/Nginx/README.md)
@@ -10,8 +13,9 @@
 	   
 	* [Apache](PeiQi_Wiki/Web服务器漏洞/Apache/README.md)
 	   * [Apache Struts2](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/README.md)
-	      * [Struts2-Scan 工具](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Struts2-Scan 漏洞验证.md)
-		  * [Exphub Strtus2](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Exphub Strtus2.md)
+		  * [扫描工具](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Scan/README.md)
+			  * [Struts2-Scan 工具](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Struts2-Scan 漏洞验证.md)
+			  * [Exphub Strtus2](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Struts2/Exphub Strtus2.md)
 	
 	   * [Apache Mod_jk](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Mod_jk/README.md)
 		  * [Apache Mod_jk 访问控制权限绕过 CVE-2018-11759](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Mod_jk/Apache Mod_jk 访问控制权限绕过 CVE-2018-11759.md)
