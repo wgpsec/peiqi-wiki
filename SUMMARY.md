@@ -115,6 +115,9 @@
 	   * [禅道 小于12.4.2 CSRF漏洞 CNVD-2020-68552](PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 小于12.4.2 CSRF漏洞 CNVD-2020-68552.md)
     * [Discuz!X](PeiQi_Wiki/CMS漏洞/Discuz!X/README.md)
 	   * [Discuz!X <3.4 R20191201 后台SQL注入漏洞](PeiQi_Wiki/CMS漏洞/Discuz!X/Discuz!X 小于3.4 R20191201 后台SQL注入漏洞.md)
+	* [Typesetter](PeiQi_Wiki/CMS漏洞/Typesetter/README.md)
+	   * [Typesetter CMS 5-5.1 任意文件上传](PeiQi_Wiki/CMS漏洞/Typesetter/Typesetter CMS 5-5.1 任意文件上传.md)
+	
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
 
 * [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
