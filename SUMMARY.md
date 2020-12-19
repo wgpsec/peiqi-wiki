@@ -119,6 +119,10 @@
 	   * [Typesetter CMS 5-5.1 任意文件上传](PeiQi_Wiki/CMS漏洞/Typesetter/Typesetter CMS 5-5.1 任意文件上传.md)
 	
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
+	* [Windows](PeiQi_Wiki/操作系统漏洞/Windows/README.md)
+	   * [扫描工具](PeiQi_Wiki/操作系统漏洞/Windows/Scan/README.md)
+	      * [扫描工具 CVE-2020-0796](PeiQi_Wiki/操作系统漏洞/Windows/Scan/扫描工具 CVE-2020-0796.md)
+	   * [Windows SMB远程代码执行漏洞 CVE-2020-0796](PeiQi_Wiki/操作系统漏洞/Windows/Windows SMB远程代码执行漏洞 CVE-2020-0796.md)
 
 * [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
     * [TP-Link](PeiQi_Wiki/路由器漏洞/TP-Link/README.md)
