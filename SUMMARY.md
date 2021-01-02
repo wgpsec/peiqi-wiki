@@ -123,6 +123,7 @@
 	   * [扫描工具](PeiQi_Wiki/操作系统漏洞/Windows/Scan/README.md)
 	      * [扫描工具 CVE-2020-0796](PeiQi_Wiki/操作系统漏洞/Windows/Scan/扫描工具 CVE-2020-0796.md)
 	   * [Windows SMB远程代码执行漏洞 CVE-2020-0796](PeiQi_Wiki/操作系统漏洞/Windows/Windows SMB远程代码执行漏洞 CVE-2020-0796.md)
+	   * [Windows CryptoAPI欺骗漏洞 CVE-2020-0601](PeiQi_Wiki/操作系统漏洞/Windows/Windows CryptoAPI欺骗漏洞 CVE-2020-0601.md)
 
 * [路由器漏洞](PeiQi_Wiki/路由器漏洞/README.md)
     * [TP-Link](PeiQi_Wiki/路由器漏洞/TP-Link/README.md)
