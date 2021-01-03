@@ -12,6 +12,8 @@
 
 目前Wiki文库是开源的，每一个人都可以下载随时翻阅🐬
 
+[在线查阅](http://wiki.peiqi.tech)
+
 [Github链接](https://github.com/PeiQi0/wiki)
 
 [码云链接](https://gitee.com/yelisenyu/wiki.git)
