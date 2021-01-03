@@ -65,6 +65,8 @@
 	   * [宝塔 phpmyadmin未授权访问漏洞.md](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.md)
 	* [Citrix XenMobile](PeiQi_Wiki/Web应用漏洞/Citrix XenMobile/README.md)
 	   * [Citrix XenMobile 任意文件读取 CVE-2020-8209](PeiQi_Wiki/Web应用漏洞/Citrix XenMobile/Citrix XenMobile 任意文件读取 CVE-2020-8209.md)
+	* [Seo-Panel](PeiQi_Wiki/Web应用漏洞/Seo-Panel/README.md)
+	   * [Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002](PeiQi_Wiki/Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.md)
 
 * [语言框架漏洞](PeiQi_Wiki/语言框架漏洞/README.md)
 
