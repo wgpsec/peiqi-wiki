@@ -35,7 +35,8 @@
 		  * [Apache Cocoon XML注入 CVE-2020-11991](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Cocoon/Apache Cocoon XML注入 CVE-2020-11991.md)
 	   
 	   * [Apache Flink ](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Flink/README.md)
-		  * [Apache Flink  <= 1.9.1(最新版本) 远程代码执行 ](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Flink/Apache=1.9.1远程代码执行.md)
+		  * [Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Flink/Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518.md)
+		  * [Apache Flink 目录遍历漏洞 CVE-2020-17519](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Flink/Apache Flink 目录遍历漏洞 CVE-2020-17519.md)
 	   
 	   * [Apache Kylin](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Kylin/README.md)
 		  * [Apache Kylin的未授权配置泄露 CVE-2020-13937](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Kylin/Apache Kylin的未授权配置泄露.md)
