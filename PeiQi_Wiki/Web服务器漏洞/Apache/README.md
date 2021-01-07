@@ -36,7 +36,9 @@ Apache Cocoon XML注入 CVE-2020-11991
 
 %accordion%Apache Flink%accordion%
 
-Apache Flink <= 1.9.1(最新版本) 远程代码执行
+Apache Flink 目录遍历漏洞 CVE-2020-17519
+
+Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518
 
 %/accordion%
 
