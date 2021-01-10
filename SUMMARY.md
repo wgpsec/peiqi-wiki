@@ -91,6 +91,7 @@
 	* [致远OA](PeiQi_Wiki/OA产品漏洞/致远OA/README.md)
 	   * [致远 OA A8 htmlofficeservlet RCE漏洞](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA A8 htmlofficeservlet RCE漏洞.md)
 	   * [致远OA Session泄漏漏洞](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA Session泄漏漏洞.md)
+	   * [致远OA ajax.do登录绕过 任意文件上传](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA ajax.do登录绕过 任意文件上传.md)
 
 * [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 
     * [深信服](PeiQi_Wiki/安全产品漏洞/深信服/README.md)
