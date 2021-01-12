@@ -70,6 +70,8 @@
 	   * [Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002](PeiQi_Wiki/Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.md)
 	* [F5 BIG-IP](PeiQi_Wiki/Web应用漏洞/F5 BIG-IP/README.md)
 	   * [F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902](PeiQi_Wiki/Web应用漏洞/F5 BIG-IP/F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902.md)
+	* [Lanproxy](PeiQi_Wiki/Web应用漏洞/Lanproxy/README.md)
+	   * [Lanproxy 目录遍历漏洞 CVE-2021-3019](PeiQi_Wiki/Web应用漏洞/Lanproxy/Lanproxy 目录遍历漏洞 CVE-2021-3019.md)
 
 * [语言框架漏洞](PeiQi_Wiki/语言框架漏洞/README.md)
 
