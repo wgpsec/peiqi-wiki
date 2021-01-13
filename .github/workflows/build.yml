@@ -29,19 +29,12 @@ jobs:
         gitbook build
         cp SUMMARY.md _book
                 
-    - name: push _book to branch gh-pages 
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
-        REF: github.com/${{github.repository}}
-        MYEMAIL: ci@wgpsec.org               
-        MYNAME: ${{github.repository_owner}}          
-      run: |
-        cd _book
-        git config --global user.email "${MYEMAIL}"
-        git config --global user.name "${MYNAME}"
-        git init
-        git remote add origin https://${REF}
-        git add . 
-        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-        git branch -M main
-        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        publish_dir: ./_book
+        external_repository: wgpsec/wiki  
+        cname: wiki.wgpsec.org
+        user_name: 'WgpSec Continuous Integration' 
+        user_email: 'ci@wgpsec.org' 
