@@ -43,5 +43,5 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
       with:
-        source-repo: git@github.com:wgpsec/wiki.git
-        destination-repo: git@e.coding.net:keac/poc/poc.git   
+        source-repo: git@github.com:wgpsec/wiki/gh-pages.git
+        destination-repo: git@e.coding.net:keac/poc/master.git   
