@@ -5,7 +5,7 @@ on:
     - master
 
 jobs:
-  main-to-gh-pages:
+  build:
     runs-on: ubuntu-latest
         
     steps:                          
@@ -35,6 +35,13 @@ jobs:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         publish_dir: ./_book
         external_repository: wgpsec/wiki  
-        cname: wiki.wgpsec.org
+        cname: poc.wgpsec.org
         user_name: 'WgpSec Continuous Integration' 
         user_email: 'ci@wgpsec.org' 
+     - name: Mirror to Coding.net
+      uses: wearerequired/git-mirror-action@v1.0.1
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+      with:
+        source-repo: git@github.com:wgpsec/wiki.git
+        destination-repo: git@e.coding.net:keac/poc/poc.git   
