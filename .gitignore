@@ -81,3 +81,7 @@ vuepress-theme-antdocs/README.md
 node_modules
 /node_modules/*
 bfg-1.13.1.jar
+_book
+_book/*
+
+package-lock.json
