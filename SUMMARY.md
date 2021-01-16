@@ -145,9 +145,12 @@
 	   * [CISCO ASA设备任意文件读取漏洞 CVE-2020-3452](PeiQi_Wiki/路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.md)
 	* [Zyxel](PeiQi_Wiki/路由器漏洞/Zyxel/README.md)
 	   * [Zyxel 硬编码后门账户漏洞 CVE-2020-29583](PeiQi_Wiki/路由器漏洞/Zyxel/Zyxel 硬编码后门账户漏洞 CVE-2020-29583.md)
+<<<<<<< HEAD
 	   
 * [网络设备漏洞](PeiQi_Wiki/网络设备漏洞/README.md)
     * [DVR](PeiQi_Wiki/网络设备漏洞/DVR/README.md)
 	   * [DVR 登录绕过漏洞 CVE-2018-9995](PeiQi_Wiki/网络设备漏洞/DVR/DVR 登录绕过漏洞 CVE-2018-9995.md)
 	
 
+=======
+>>>>>>> 1dfeeb27f09087c9c3df8000b3f0876bb78543d1

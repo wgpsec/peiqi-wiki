@@ -1,4 +1,4 @@
-name: auto-generate-gitbook
+name: WgpSec-POC-CI
 on:
   push:
     branches:
@@ -21,13 +21,10 @@ jobs:
       run: |
         npm install -g gitbook-cli          
         gitbook install
-        npm install -g gitbook-summary
                 
     - name: generate _book folder
       run: |
-        book sm
         gitbook build
-        cp SUMMARY.md _book
                 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
