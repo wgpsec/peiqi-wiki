@@ -76,9 +76,10 @@
 
 > [!NOTE]
 >
-> 下面就是文库的公众号啦，更新的文章都会在第一时间推送在公众号
+> 下面就是文库和团队的公众号啦，更新的文章都会在第一时间推送在公众号
 >
 > 别忘了Github下载完给个小星星⭐
 
 ![](PeiQi_Wiki/background/background.png)
 
+![](PeiQi_Wiki/background/background-1.png)

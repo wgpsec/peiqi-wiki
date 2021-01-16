@@ -55,8 +55,8 @@
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
 	   * [Apache HTTPd](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md)
 	      * [Apache HTTPd 换行解析漏洞 CVE-2017-15715](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md)
-
-* [中间件框架漏洞](PeiQi_Wiki/中间件框架漏洞/README.md)
+	   * [Apahce ActiveMQ](PeiQi_Wiki/Web服务器漏洞/Apache/Apahce ActiveMQ/README.md)
+	      * [Apahce ActiveMQ Console控制台弱口令](PeiQi_Wiki/Web服务器漏洞/Apache/Apahce ActiveMQ/Apahce ActiveMQ Console控制台弱口令.md)
 
 * [服务器应用漏洞](PeiQi_Wiki/服务器应用漏洞/README.md)
     * [Redis](PeiQi_Wiki/服务器应用漏洞/Redis/README.md)
@@ -145,4 +145,9 @@
 	   * [CISCO ASA设备任意文件读取漏洞 CVE-2020-3452](PeiQi_Wiki/路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.md)
 	* [Zyxel](PeiQi_Wiki/路由器漏洞/Zyxel/README.md)
 	   * [Zyxel 硬编码后门账户漏洞 CVE-2020-29583](PeiQi_Wiki/路由器漏洞/Zyxel/Zyxel 硬编码后门账户漏洞 CVE-2020-29583.md)
+	   
+* [网络设备漏洞](PeiQi_Wiki/网络设备漏洞/README.md)
+    * [DVR](PeiQi_Wiki/网络设备漏洞/DVR/README.md)
+	   * [DVR 登录绕过漏洞 CVE-2018-9995](PeiQi_Wiki/网络设备漏洞/DVR/DVR 登录绕过漏洞 CVE-2018-9995.md)
+	
 
