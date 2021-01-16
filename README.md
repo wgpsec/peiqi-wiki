@@ -87,7 +87,7 @@
 支持两种方式投稿
 
 1. Fork 仓库后编写提交 Pull requests （仅限Github）
-2. 将编辑好的文件投稿至 `peiqi#wgpsec.org` 或联系 `@peiqi` 师傅，标题为`POC文库投稿`。
+2. 将编辑好的文件投稿至 `peiqi@wgpsec.org` 或联系 `@peiqi` 师傅，标题为`POC文库投稿`。
 
 投稿通过有机会获得 [Plat狼组安全平台](https://plat.wgpsec.org) 邀请码
 
