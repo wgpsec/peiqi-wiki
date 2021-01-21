@@ -1,5 +1,7 @@
 * [关于文库](README.md)
 
+* [Goby & POC](Goby & POC.md)
+
 * [更新时间线记录](TIME.md)
 
 
@@ -55,8 +57,11 @@
 		  * [Apache Solr RCE 未授权上传漏洞 CVE-2020-13957](PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md)
 	   * [Apache HTTPd](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md)
 	      * [Apache HTTPd 换行解析漏洞 CVE-2017-15715](PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md)
-	   * [Apahce ActiveMQ](PeiQi_Wiki/Web服务器漏洞/Apache/Apahce ActiveMQ/README.md)
-	      * [Apahce ActiveMQ Console控制台弱口令](PeiQi_Wiki/Web服务器漏洞/Apache/Apahce ActiveMQ/Apahce ActiveMQ Console控制台弱口令.md)
+	   * [Apache ActiveMQ](PeiQi_Wiki/Web服务器漏洞/Apache/Apache ActiveMQ/README.md)
+	      * [Apache ActiveMQ Console控制台默认弱口令](PeiQi_Wiki/Web服务器漏洞/Apache/Apache ActiveMQ/Apache ActiveMQ Console控制台默认弱口令.md)
+		  * [Apache ActiveMQ 反序列化漏洞 CVE-2015-5254](PeiQi_Wiki/Web服务器漏洞/Apache/Apache ActiveMQ/Apache ActiveMQ 反序列化漏洞 CVE-2015-5254.md)
+	   * [Apache ZooKeeper](PeiQi_Wiki/Web服务器漏洞/Apache/Apache ZooKeeper/README.md)
+	      * [Apache ZooKeeper 未授权访问漏洞 CVE-2014-085](PeiQi_Wiki/Web服务器漏洞/Apache/Apache ZooKeeper/Apache ZooKeeper 未授权访问漏洞 CVE-2014-085.md)
 
 * [服务器应用漏洞](PeiQi_Wiki/服务器应用漏洞/README.md)
     * [Redis](PeiQi_Wiki/服务器应用漏洞/Redis/README.md)
@@ -69,14 +74,28 @@
 	   * [宝塔 phpmyadmin未授权访问漏洞.md](PeiQi_Wiki/Web应用漏洞/宝塔运维管理面板/宝塔 phpmyadmin未授权访问漏洞.md)
 	* [Citrix XenMobile](PeiQi_Wiki/Web应用漏洞/Citrix XenMobile/README.md)
 	   * [Citrix XenMobile 任意文件读取 CVE-2020-8209](PeiQi_Wiki/Web应用漏洞/Citrix XenMobile/Citrix XenMobile 任意文件读取 CVE-2020-8209.md)
-	* [Seo-Panel](PeiQi_Wiki/Web应用漏洞/Seo-Panel/README.md)
-	   * [Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002](PeiQi_Wiki/Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.md)
 	* [F5 BIG-IP](PeiQi_Wiki/Web应用漏洞/F5 BIG-IP/README.md)
 	   * [F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902](PeiQi_Wiki/Web应用漏洞/F5 BIG-IP/F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902.md)
 	* [Lanproxy](PeiQi_Wiki/Web应用漏洞/Lanproxy/README.md)
 	   * [Lanproxy 目录遍历漏洞 CVE-2021-3019](PeiQi_Wiki/Web应用漏洞/Lanproxy/Lanproxy 目录遍历漏洞 CVE-2021-3019.md)
-
-* [语言框架漏洞](PeiQi_Wiki/语言框架漏洞/README.md)
+	* [JumpServer堡垒机](PeiQi_Wiki/Web应用漏洞/JumpServer堡垒机/README.md)
+	   * [JumpServer 未授权接口 远程命令执行漏洞](PeiQi_Wiki/Web应用漏洞/JumpServer堡垒机/JumpServer 未授权接口 远程命令执行漏洞.md)
+	* [Seo-Panel](PeiQi_Wiki/Web应用漏洞/Seo-Panel/README.md)
+	   * [Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002](PeiQi_Wiki/Web应用漏洞/Seo-Panel/Seo-Panel 4.8.0 反射型XSS漏洞  CVE-2021-3002.md)
+	* [深信服](PeiQi_Wiki/Web应用漏洞/深信服/README.md)
+	   * [深信服EDR远程命令执行 CNVD-2020-46552](PeiQi_Wiki/Web应用漏洞/深信服/深信服EDR远程命令执行 CNVD-2020-46552.md)
+	* [天融信](PeiQi_Wiki/Web应用漏洞/天融信/README.md)
+	   * [天融信负载均衡TopApp-LB任意登陆](PeiQi_Wiki/Web应用漏洞/天融信/天融信负载均衡TopApp-LB任意登陆.md)
+	   * [天融信负载均衡TopApp-LB命令执行漏洞](PeiQi_Wiki/Web应用漏洞/天融信/天融信负载均衡TopApp-LB命令执行漏洞.md)
+	   * [天融信负载均衡TopApp-LB Sql注入漏洞](PeiQi_Wiki/Web应用漏洞/天融信/天融信负载均衡TopApp-LB Sql注入漏洞.md)
+	* [锐捷](PeiQi_Wiki/Web应用漏洞/锐捷/README.md)
+	   * [锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露](PeiQi_Wiki/Web应用漏洞/锐捷/锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露.md)
+	
+* [开发框架漏洞](PeiQi_Wiki/开发框架漏洞/README.md)
+    * [Laravel](PeiQi_Wiki/开发框架漏洞/Laravel/README.md)
+	   * [Laravel 小于 8.4.2 Debug模式 _ignition 远程代码执行漏洞 CVE-2021-3129](PeiQi_Wiki/开发框架漏洞/Laravel/Laravel 小于 8.4.2 Debug模式 _ignition 远程代码执行漏洞 CVE-2021-3129.md)
+	   
+* [开发语言漏洞](PeiQi_Wiki/开发语言漏洞/README.md)
 
 * [OA产品漏洞](PeiQi_Wiki/OA产品漏洞/README.md)
     * [泛微OA](PeiQi_Wiki/OA产品漏洞/泛微OA/README.md)
@@ -97,16 +116,6 @@
 	   * [致远 OA A8 htmlofficeservlet RCE漏洞](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA A8 htmlofficeservlet RCE漏洞.md)
 	   * [致远OA Session泄漏漏洞](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA Session泄漏漏洞.md)
 	   * [致远OA ajax.do登录绕过 任意文件上传](PeiQi_Wiki/OA产品漏洞/致远OA/致远OA ajax.do登录绕过 任意文件上传.md)
-
-* [安全产品漏洞](PeiQi_Wiki/安全产品漏洞/README.md) 
-    * [深信服](PeiQi_Wiki/安全产品漏洞/深信服/README.md)
-	   * [深信服EDR远程命令执行 CNVD-2020-46552](PeiQi_Wiki/安全产品漏洞/深信服/深信服EDR远程命令执行 CNVD-2020-46552.md)
-	* [天融信](PeiQi_Wiki/安全产品漏洞/天融信/README.md)
-	   * [天融信负载均衡TopApp-LB任意登陆](PeiQi_Wiki/安全产品漏洞/天融信/天融信负载均衡TopApp-LB任意登陆.md)
-	   * [天融信负载均衡TopApp-LB命令执行漏洞](PeiQi_Wiki/安全产品漏洞/天融信/天融信负载均衡TopApp-LB命令执行漏洞.md)
-	   * [天融信负载均衡TopApp-LB Sql注入漏洞](PeiQi_Wiki/安全产品漏洞/天融信/天融信负载均衡TopApp-LB Sql注入漏洞.md)
-	* [锐捷](PeiQi_Wiki/安全产品漏洞/锐捷/README.md)
-	   * [锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露](PeiQi_Wiki/安全产品漏洞/锐捷/锐捷RG-UAC统一上网行为管理审计系统存在账号密码信息泄露.md)
 
 * [CMS漏洞](PeiQi_Wiki/CMS漏洞/README.md)
 	* [极致CMS](PeiQi_Wiki/CMS漏洞/极致CMS/README.md)
@@ -130,6 +139,10 @@
 	   * [Typesetter CMS 5-5.1 任意文件上传](PeiQi_Wiki/CMS漏洞/Typesetter/Typesetter CMS 5-5.1 任意文件上传.md)
 	* [YzmCMS](PeiQi_Wiki/CMS漏洞/YzmCMS/README.md)
 	   * [YzmCMS Version  小于V5.8正式版 后台采集模块 SSRF漏洞](PeiQi_Wiki/CMS漏洞/YzmCMS/YzmCMS Version  小于V5.8正式版 后台采集模块 SSRF漏洞.md)
+	* [OKLite](PeiQi_Wiki/CMS漏洞/OKLite/README.md)
+	   * [OKLite 1.2.25 后台模块导入 任意文件上传 CVE-2019-16131](PeiQi_Wiki/CMS漏洞/OKLite/OKLite 1.2.25 后台模块导入 任意文件上传 CVE-2019-16131.md)
+	   * [OKLite 1.2.25 后台插件安装 任意文件上传](PeiQi_Wiki/CMS漏洞/OKLite/OKLite 1.2.25 后台插件安装 任意文件上传.md)
+	   * [OKLite 1.2.25 后台风格模块 任意文件删除 CVE-2019-16132](PeiQi_Wiki/CMS漏洞/OKLite/OKLite 1.2.25 后台风格模块 任意文件删除 CVE-2019-16132.md)
 	
 * [操作系统漏洞](PeiQi_Wiki/操作系统漏洞/README.md)
 	* [Windows](PeiQi_Wiki/操作系统漏洞/Windows/README.md)
@@ -145,12 +158,9 @@
 	   * [CISCO ASA设备任意文件读取漏洞 CVE-2020-3452](PeiQi_Wiki/路由器漏洞/Cisco/CISCO ASA设备任意文件读取漏洞 CVE-2020-3452.md)
 	* [Zyxel](PeiQi_Wiki/路由器漏洞/Zyxel/README.md)
 	   * [Zyxel 硬编码后门账户漏洞 CVE-2020-29583](PeiQi_Wiki/路由器漏洞/Zyxel/Zyxel 硬编码后门账户漏洞 CVE-2020-29583.md)
-<<<<<<< HEAD
 	   
 * [网络设备漏洞](PeiQi_Wiki/网络设备漏洞/README.md)
     * [DVR](PeiQi_Wiki/网络设备漏洞/DVR/README.md)
 	   * [DVR 登录绕过漏洞 CVE-2018-9995](PeiQi_Wiki/网络设备漏洞/DVR/DVR 登录绕过漏洞 CVE-2018-9995.md)
 	
 
-=======
->>>>>>> 1dfeeb27f09087c9c3df8000b3f0876bb78543d1
