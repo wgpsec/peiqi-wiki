@@ -15,6 +15,7 @@
 	   * [扫描工具](PeiQi_Wiki/Web服务器漏洞/Weblogic/Scan/README.md)
 		  * [扫描工具 WeblogicScanner](PeiQi_Wiki/Web服务器漏洞/Weblogic/Scan/扫描工具 WeblogicScanner.md)
 	   * [Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271](PeiQi_Wiki/Web服务器漏洞/Weblogic/Weblogic XMLDecoder 远程代码执行漏洞 CVE-2017-10271.md)
+	   * [Weblogic LDAP 远程代码执行漏洞 CVE-2021-2109](PeiQi_Wiki/Web服务器漏洞/Weblogic/Weblogic LDAP 远程代码执行漏洞 CVE-2021-2109.md)
 	  
 	* [Nginx](PeiQi_Wiki/Web服务器漏洞/Nginx/README.md)
 	   * [Nginx越界读取缓存漏洞 CVE-2017-7529](PeiQi_Wiki/Web服务器漏洞/Nginx/Nginx越界读取缓存漏洞 CVE-2017-7529.md)

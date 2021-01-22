@@ -21,3 +21,13 @@ Apache ActiveMQ 默认开启了 8186 控制台
 使用默认口令 admin:admin
 
 ![](image/mq-2.png)
+
+## Goby & POC
+
+> [!NOTE]
+>
+> Apache ActiveMQ_Console Weak Password
+
+![](image/mq-6.png)
+
+![](image/mq-7.png)
