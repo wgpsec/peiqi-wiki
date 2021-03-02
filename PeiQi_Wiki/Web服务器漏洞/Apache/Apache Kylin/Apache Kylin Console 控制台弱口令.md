@@ -1,0 +1,21 @@
+## Apache Kylin Console 控制台弱口令
+
+## 漏洞描述
+
+Apache Kylin Console 控制台存在默认弱口令 **admin：KYLIN**，可被登录控制台进一步利用其他漏洞
+
+## 漏洞影响
+
+> [!NOTE]
+>
+> Apache Kylin
+
+## 漏洞复现
+
+打开后目标站点使用默认账号密码**admin/KYLIN**登录，出现初始界面即为成功
+
+![](image/kylin-1.png)
+
+## Goby & POC
+
+![](image/kylin-26.png)
