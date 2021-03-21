@@ -12,7 +12,9 @@ import re
 
 def main():
     print('+------------------------------------------')
-    print('+  \033[34mPOC_Des: http://wiki.peiqi.tech         \033[0m')
+    print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
+    print('+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m')
+    print('+  \033[34m公众号 : PeiQi文库                                                \033[0m')
     print('+  \033[34mVersion: 极致CMS 1.67 - 171             \033[0m')
     print('+  \033[36m使用格式: python3 CNVD-2020-49710.py     \033[0m')
     print('+------------------------------------------')
