@@ -110,6 +110,8 @@ import sys
 def title():
     print('+------------------------------------------')
     print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
+    print('+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m')
+    print('+  \033[34m公众号 : PeiQi文库                                                     \033[0m')
     print('+  \033[34mVersion: 用友GRP-U8行政事业内控管理软件                                \033[0m')
     print('+  \033[36m使用格式: python3 CNNVD-201610-923.py                               \033[0m')
     print('+  \033[36mUrl    >>> http://xxx.xxx.xxx.xxx                                 \033[0m')

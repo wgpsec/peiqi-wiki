@@ -291,7 +291,7 @@ else {
 
 ## 漏洞利用POC
 
-```php
+```python
 #!/usr/bin/python3
 #-*- coding:utf-8 -*-
 # author : PeiQi
@@ -307,6 +307,8 @@ import sys
 def title():
     print('+------------------------------------------')
     print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
+    print('+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m')
+    print('+  \033[34m公众号 : PeiQi文库                                                     \033[0m')
     print('+  \033[34mVersion: 通达OA v11.6 任意文件删除&RCE                                \033[0m')
     print('+  \033[36m使用格式:  python3 poc.py                                           \033[0m')
     print('+  \033[36mUrl    >>> http://xxx.xxx.xxx.xxx                                 \033[0m')

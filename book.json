@@ -1,11 +1,9 @@
 {
-	"title": "WgpSec POC文库",
-    "author": "WgpSec",
-    "description": "由WgpSec狼组安全团队维护的公开POC库，主要由@peiqi师傅负责",
-	"language": "zh-hans",
-	"theme-default": {
-		"showLevel": true
-	},
+	"title": "PeiQi WiKi文库",
+    "author": "PeiQi",
+    "description": "WiKi文库",
+    "language": "zh-hans",
+    
 	"plugins": [
 		"back-to-top-button",
 		"expandable-chapters",
@@ -26,20 +24,17 @@
 		"tbfed-pagefooter",
 		"lightbox",
 		"flexible-alerts",
-		"pageview-count",
-		"baidu-tongji"
+		"pageview-count"
     ],
 	"pluginsConfig": {
         "github": {
-            "url":"https://github.com/wgpsec/wiki"
+            "url":"https://github.com/PeiQi0/PeiQi-WIKI"
         },
 		"tbfed-pagefooter": {
-            "copyright":"WgpSec POC文库",
+            "copyright":"PeiQi WiKi文库",
             "modify_label": "文件更新时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-		},
-		"baidu-tongji": {
-            "token": "61e462bec0d8564bc1ffefa14359f095"
         }
+		
     }
 }

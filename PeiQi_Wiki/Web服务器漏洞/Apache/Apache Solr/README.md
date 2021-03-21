@@ -11,3 +11,6 @@
 #### Apache Solr JMX服务 RCE  CVE-2019-12409
 
 #### Apache Solr RCE 未授权上传漏洞 CVE-2020-13957
+
+#### Apache Solr 任意文件读取漏洞
+
