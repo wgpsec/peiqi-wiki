@@ -85,4 +85,10 @@ if __name__ == '__main__':
 
 ## Goby & POC
 
+> [!NOTE]
+>
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> Seeyon_OA_A6_DownExcelBeanServlet_User_information_leakage
+
 ![](image/zhiyuan-20.png)

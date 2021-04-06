@@ -211,3 +211,11 @@ if __name__ == '__main__':
 ```
 
 ![](image/zhiyuan-31.png)
+
+## Goby & POC
+
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> Seeyon_OA_A6_test.jsp_SQL_injection
+
+![](image/zhiyuan-42.png)

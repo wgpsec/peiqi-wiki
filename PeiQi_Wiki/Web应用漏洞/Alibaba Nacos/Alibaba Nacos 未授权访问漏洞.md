@@ -154,10 +154,8 @@ if __name__ == '__main__':
 
 ## Goby & POC
 
-> Alibaba Nacos 未授权访问漏洞
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
 >
-> 扫描判断的只是是否可能存在，可以点击验证添加账户，根据响应判断是否成功
->
-> 注意 Dir 目录选择
+> Alibaba_Nacos_Add_user_not_authorized.json
 
 ![](image/nacos-14.png)

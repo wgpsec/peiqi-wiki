@@ -18,4 +18,10 @@ Apache Kylin Console 控制台存在默认弱口令 **admin：KYLIN**，可被�
 
 ## Goby & POC
 
+> [!NOTE]
+>
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> Apache_Kylin_Console_Default_password.json
+
 ![](image/kylin-26.png)

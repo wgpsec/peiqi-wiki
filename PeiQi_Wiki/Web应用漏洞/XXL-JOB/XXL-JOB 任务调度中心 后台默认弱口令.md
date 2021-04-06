@@ -26,4 +26,10 @@ XXL-JOB 任务调度中心 后台存在默认弱口令，攻击者可以在后�
 
 ## Goby & POC
 
+> [!NOTE]
+>
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> XXL_JOB_Default_password
+
 ![](image/xxl-3.png)

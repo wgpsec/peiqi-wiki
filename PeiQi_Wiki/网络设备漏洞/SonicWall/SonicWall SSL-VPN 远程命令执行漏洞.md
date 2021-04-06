@@ -230,7 +230,9 @@ if __name__ == '__main__':
 
 > [!NOTE]
 >
-> SonicWall SSL-VPN 远程命令执行漏洞
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> SonicWall_SSL_VPN_RCE.json
 
 ![](image/son-4.png)
 

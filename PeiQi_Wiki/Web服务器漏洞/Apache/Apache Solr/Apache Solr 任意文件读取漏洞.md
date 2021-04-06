@@ -178,6 +178,16 @@ if __name__ == '__main__':
 
 ![](image/solr-32.png)
 
+## Goby & POC
+
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> Apache_Solr_Arbitrary_File_Read.json
+
+![](image/solr-33.png)
+
+
+
 ## 参考文章
 
 https://mp.weixin.qq.com/s/HMtAz6_unM1PrjfAzfwCUQ

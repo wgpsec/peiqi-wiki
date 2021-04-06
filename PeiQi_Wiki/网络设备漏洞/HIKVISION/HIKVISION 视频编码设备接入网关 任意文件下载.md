@@ -95,4 +95,10 @@ if __name__ == '__main__':
 
 ## Goby & POC
 
+> [!NOTE]
+>
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> HIKVISION_Video_coding_equipment_Download_any_file
+
 ![](image/hiv-4.png)
