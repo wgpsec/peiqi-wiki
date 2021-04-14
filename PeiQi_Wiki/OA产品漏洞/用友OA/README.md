@@ -2,3 +2,7 @@
 
 #### 用友GRP-U8行政事业财务管理软件 SQL注入 CNNVD-201610-923
 
+#### 用友 NC 反序列化RCE漏洞
+
+#### 用友 NC XbrlPersistenceServlet反序列化
+

