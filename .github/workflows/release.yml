@@ -1,0 +1,80 @@
+name: WgpSec-POC-CI-Release
+on:
+  push:
+    tags:
+      - '*'
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps:                          
+    - name: checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: master
+            
+    - name: install nodejs
+      uses: actions/setup-node@v1
+      
+    - name: configue gitbook
+      run: |
+        npm install -g gitbook-cli          
+        gitbook install
+                
+    - name: generate _book folder
+      run: |
+       gitbook build
+     
+    - name: package poc
+      run: |
+        zip -r goby_poc.zip "Goby & POC"/
+        
+    - name: package wiki
+      run: |
+        ls -a
+        zip -r wiki.zip ./_book/
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        publish_dir: ./_book
+        external_repository: wgpsec/wiki  
+        cname: poc.wgpsec.org
+        user_name: 'WgpSec Continuous Integration' 
+        user_email: 'ci@wgpsec.org' 
+        
+       
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: ${{steps.github_release.outputs.changelog}}
+        draft: false
+        prerelease: false
+      
+    - name: Upload Goby POC
+      id: upload-release-pocwiki
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: goby_poc.zip
+        asset_name: peiqi_goby_poc.zip
+        asset_content_type: application/gzip
+    
+    - name: Upload WIKI
+      id: upload-release-wiki
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: wiki.zip
+        asset_name: peiqi_poc_wiki.zip
+        asset_content_type: application/gzip
