@@ -6,3 +6,9 @@
 
 #### 用友 NC XbrlPersistenceServlet反序列化
 
+#### 用友 U8 OA test.jsp SQL注入漏洞
+
+#### 用友ERP-NC 目录遍历漏洞
+
+
+

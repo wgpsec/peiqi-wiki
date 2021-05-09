@@ -18,6 +18,12 @@ Weiphp5.0 存在前台文件任意读取漏洞，可以读取数据库配置等�
 
 ![](image/weiphp-1.png)
 
+## FOFA
+
+> [!NOTE]
+>
+> app="WeiPHP"
+
 ## 漏洞复现
 
 漏洞函数文件:**application\material\controller\Material.php**

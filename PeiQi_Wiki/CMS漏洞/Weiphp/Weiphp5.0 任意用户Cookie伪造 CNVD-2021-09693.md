@@ -18,6 +18,12 @@ Weiphp5.0 存在管理员用户Cookie伪造，通过泄露的密钥数据，可�
 
 ![](./image/weiphp-1.png)
 
+## FOFA
+
+> [!NOTE]
+>
+> app="WeiPHP"
+
 ## 漏洞复现
 
 首先需要得到数据库配置文件中的**data_auth_key**密钥
