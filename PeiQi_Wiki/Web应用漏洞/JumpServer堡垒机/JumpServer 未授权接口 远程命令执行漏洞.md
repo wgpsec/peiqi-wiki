@@ -49,23 +49,23 @@ cd /opt/jumpserver-installer-v2.6.1
 
  **资产管理 -->  系统用户**
 
-![](image/jump-1.png)
+![](http://wikioss.peiqi.tech/vuln/jump-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 **资产管理 --> 管理用户**
 
-![](image/jump-2.png)
+![](http://wikioss.peiqi.tech/vuln/jump-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 **用户管理 --> 用户列表**
 
-![](image/jump-3.png)
+![](http://wikioss.peiqi.tech/vuln/jump-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 **资产管理 --> 资产列表**
 
-![](image/jump-4.png)
+![](http://wikioss.peiqi.tech/vuln/jump-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 查看一下项目代码提交变动
 
-![](image/jump-5.png)
+![](http://wikioss.peiqi.tech/vuln/jump-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```python
 import time
@@ -148,30 +148,30 @@ class CeleryLogWebsocket(JsonWebsocketConsumer):
 
 新版对用户进行了一个判断，可以使用 谷歌插件 WebSocket King 连接上这个websocket 进行日志读取
 
-![](image/jump-6.png)
+![](http://wikioss.peiqi.tech/vuln/jump-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 比如send这里获取的 Task id ,这里是可以获得一些敏感的信息的
 
-![](image/jump-7.png)
+![](http://wikioss.peiqi.tech/vuln/jump-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 
 查看一下连接Web终端的后端api代码
 
-![](image/jump-8.png)
+![](http://wikioss.peiqi.tech/vuln/jump-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看到这里调用时必须需要 **user asset system_user** 这三个值，再获取一个20秒的 **token**
 
 访问web终端后查看日志的调用
 
-![](image/jump-9.png)
+![](http://wikioss.peiqi.tech/vuln/jump-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```
 docker exec -it (jumpserve/core的docker) /bin/bash
 cat gunicorn.log | grep /api/v1/perms/asset-permissions/user/validate/?
 ```
 
-![](image/jump-10.png)
+![](http://wikioss.peiqi.tech/vuln/jump-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```
 assset_id=ee7e7446-6df7-4f60-b551-40a241958451
@@ -181,31 +181,31 @@ user_id=efede3f4-8659-4daa-8e95-9a841dbe82a8
 
 可以看到在不同的时间访问这个接口的asset_id等都是一样的，所以只用在 **刚刚的未授权日志读取**里找到想要的这几个值就可以获得 token
 
-![](image/jump-18.png)
+![](http://wikioss.peiqi.tech/vuln/jump-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发送请求获取20s的token
 
-![](image/jump-11.png)
+![](http://wikioss.peiqi.tech/vuln/jump-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 看一下 koko.js 这个前端文件
 
-![](image/jump-12.png)
+![](http://wikioss.peiqi.tech/vuln/jump-12.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 后端代码 https://github.com/jumpserver/koko/blob/e054394ffd13ac7c71a4ac980340749d9548f5e1/pkg/httpd/webserver.go
 
-![](image/jump-13.png)
+![](http://wikioss.peiqi.tech/vuln/jump-13.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里我们就可以通过 获得的token来模拟请求
 
-![](image/jump-14.png)
+![](http://wikioss.peiqi.tech/vuln/jump-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 成功连接模拟了这个 token 的请求,可以在Network看一下流量是怎么发送的
 
-![](image/jump-15.png)
+![](http://wikioss.peiqi.tech/vuln/jump-15.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 模拟连接发送和接发数据
 
-![](image/jump-16.png)
+![](http://wikioss.peiqi.tech/vuln/jump-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里可以看到我们只要模拟了这个发送，返回的数据和web终端是一样的，那我们就可以通过这样的方法来进行命令执行了
 
@@ -351,6 +351,6 @@ if __name__ == '__main__':
     POC_2(target_url, user, asset, system_user)
 ```
 
-![](image/jump-19.png)
+![](http://wikioss.peiqi.tech/vuln/jump-19.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/jump-20.png)
+![](http://wikioss.peiqi.tech/vuln/jump-20.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

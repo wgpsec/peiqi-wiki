@@ -1,3 +1,3 @@
 # 开发语言漏洞🐭
 
-![](../background/image-9.jpg)
+![image-9](https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/img/image-9.jpg)

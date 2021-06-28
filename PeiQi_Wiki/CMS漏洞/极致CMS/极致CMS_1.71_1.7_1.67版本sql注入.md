@@ -171,19 +171,19 @@ function exploit(){
 
 简单寻找下其实这样的地方挺多的，拿一个位置举例子
 
-![](image/jizhi-5.jpg)
+![](http://wikioss.peiqi.tech/vuln/jizhi-5.jpg)
 
 这里是一个支付插件的位置，蓝色方块1增加代码模拟开通支付宝功能通过验证
 
 可以看到这个函数只使用[htmlspecialchars]来过滤了xss，sql语句没有过滤，用刚刚的方法来注入
 
-![](image/jizhi-6.jpg)
+![](http://wikioss.peiqi.tech/vuln/jizhi-6.jpg)
 
 可以看到的确出现了sql语句和数据库错误
 
 直接报错注入获取敏感信息`mypay/alipay_return_pay?out_trade_no=1%27 and updatexml(1,concat(0x7e,(select version()),0x7e),1)--+"`
 
-![](image/jizhi-7.jpg)
+![](http://wikioss.peiqi.tech/vuln/jizhi-7.jpg)
 
 ```python
 import requests
@@ -396,6 +396,6 @@ if __name__ == '__main__':
     main()
 ```
 
-![](image/jizhi-8.jpg)
+![](http://wikioss.peiqi.tech/vuln/jizhi-8.jpg)
 
 购物车爆破没有利用点，关于审计部分参考[极致CMS审计](http://www.peiqi.tech/posts/61070)

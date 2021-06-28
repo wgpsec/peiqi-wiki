@@ -4,15 +4,15 @@
 
 登录管理员添加模块
 
-![](image/jizhi-1.png)
+![]( http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jizhi-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 注册用户
 
-![](image/jizhi-2.png)
+![]( http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jizhi-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 点击发布文章
 
-![](image/jizhi-3.png)
+![]( http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jizhi-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 在文章标题处插入xss payload
 
@@ -20,7 +20,7 @@
 
 当管理员访问时XSS成功
 
-![](image/jizhi-4.png)
+![]( http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jizhi-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 

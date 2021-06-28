@@ -20,7 +20,7 @@
 
 登录页面如下
 
-![](image\lc-1.png)
+![](http://wikioss.peiqi.tech/vuln/lc-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发送请求包
 
@@ -37,13 +37,13 @@ Content-Length: 42
 op=doPlease&node=cu01&command=cat /etc/passwd
 ```
 
-![](image/lc-17.png)
+![](http://wikioss.peiqi.tech/vuln/lc-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >
 > 注意参数 node 中的 cu01 需要为shell集群中的存在主机
 
-![](image/lc-18.png)
+![](http://wikioss.peiqi.tech/vuln/lc-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里可以配合任意用户登录漏洞查看主机名
 
@@ -121,7 +121,7 @@ if __name__ == '__main__':
 
 ```
 
-![](image/lc-17.png)
+![](http://wikioss.peiqi.tech/vuln/lc-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -129,4 +129,4 @@ if __name__ == '__main__':
 >
 > ClusterEngine V4.0 Shell cluster RCE
 
-![](image/lc-20.png)
+![](http://wikioss.peiqi.tech/vuln/lc-20.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

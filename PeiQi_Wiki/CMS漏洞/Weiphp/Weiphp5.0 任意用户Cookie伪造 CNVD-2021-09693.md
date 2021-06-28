@@ -16,7 +16,7 @@ Weiphp5.0 存在管理员用户Cookie伪造，通过泄露的密钥数据，可�
 
 参考官方手册创建网站即可
 
-![](./image/weiphp-1.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## FOFA
 
@@ -28,7 +28,7 @@ Weiphp5.0 存在管理员用户Cookie伪造，通过泄露的密钥数据，可�
 
 首先需要得到数据库配置文件中的**data_auth_key**密钥
 
-![](image/weiphp-15.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-15.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 得到这个配置文件可参照上一篇**Weiphp5.0 前台文件任意读取**
 
@@ -38,7 +38,7 @@ Weiphp5.0 存在管理员用户Cookie伪造，通过泄露的密钥数据，可�
 
 全局查找下使用了这个密钥的地方
 
-![](image/weiphp-16.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 找到了跟据这个密钥的加密方法和解密方法
 
@@ -203,13 +203,13 @@ echo 'user_id = ' . think_encrypt($_GET['user_id']);
 ?>
 ```
 
-![](image/weiphp-17.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 添加**cookie: user_id=xxxxxxxx**即可成功登录
 
-![](image/weiphp-18.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/weiphp-19.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-19.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >

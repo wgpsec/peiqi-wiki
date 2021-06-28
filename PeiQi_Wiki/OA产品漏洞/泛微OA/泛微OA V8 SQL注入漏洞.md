@@ -24,17 +24,17 @@
 
 方法处理
 
-![](image/fanwei-17.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 在getData方法中，判断请求里cmd参数是否为空，如果不为空，调用proc方法
 
-![](image/fanwei-18.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 Proc方法4个参数，(“空字符串”,”cmd参数值”,request对象，serverContext对象)
 
 在proc方法中，对cmd参数值进行判断，当cmd值等于getSelectAllId时，再从请求中获取sql和type两个参数值，并将参数传递进getSelectAllIds（sql,type）方法中
 
-![](image/fanwei-19.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-19.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 根据以上代码流程，只要构造请求参数
 
@@ -50,11 +50,11 @@ http://xxx.xxx.xxx.xxx/js/hrm/getdata.jsp?cmd=getSelectAllId&sql=select%20passwo
 
 查询HrmResourceManager表中的password字段，页面中返回了数据库第一条记录的值（sysadmin用户的password）
 
-![](image/fanwei-20.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-20.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 解密后即可登录系统
 
-![](image/fanwei-21.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-21.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ##  Goby & POC
 
@@ -64,5 +64,5 @@ http://xxx.xxx.xxx.xxx/js/hrm/getdata.jsp?cmd=getSelectAllId&sql=select%20passwo
 >
 > Weaver OA 8 SQL injection
 
-![](image/fanwei-22.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-22.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 

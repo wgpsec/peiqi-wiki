@@ -18,21 +18,21 @@ https://github.com/yzmcms/yzmcms
 
 按照文档安装即可
 
-![](image/yzmcms-1.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞复现
 
 登录后台 --> 模块管理 --> 采集管理
 
-![](image/yzmcms-2.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 添加采集规则
 
-![](image/yzmcms-4.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 在你的服务器上编辑HTML代码
 
-![](image/yzmcms-5.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >
@@ -40,15 +40,15 @@ https://github.com/yzmcms/yzmcms
 
 点击采集读取根目录下的 Flag
 
-![](image/yzmcms-3.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 出现漏洞的代码位置 ```yzmcms/yzmphp/core/class/cache_factory.class.php```
 
-![](image/yzmcms-6.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里调用 ***url_check*** 函数
 
-![](image/yzmcms-7.png)
+![](http://wikioss.peiqi.tech/vuln/yzmcms-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看到这里只检测了前4位是否为 http，使用 httpxxx 即可绕过
 

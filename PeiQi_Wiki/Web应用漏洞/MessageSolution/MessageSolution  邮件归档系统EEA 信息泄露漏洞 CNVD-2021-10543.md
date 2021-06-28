@@ -20,7 +20,7 @@ MessageSolution企业邮件归档管理系统 EEA是北京易讯思达科技开�
 
 登录页面如下
 
-![](image/mess-1.png)
+![](http://wikioss.peiqi.tech/vuln/mess-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
  访问如下Url
 
@@ -28,11 +28,11 @@ MessageSolution企业邮件归档管理系统 EEA是北京易讯思达科技开�
 http://xxx.xxx.xxx.xxx/authenticationserverservlet/
 ```
 
-![](image/mess-2.png)
+![](http://wikioss.peiqi.tech/vuln/mess-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 使用获得到的密码可以登录系统
 
-![](image/mess-3.png)
+![](http://wikioss.peiqi.tech/vuln/mess-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞利用POC
 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     POC_1(target_url)
 ```
 
-![](image/mess-4.png)
+![](http://wikioss.peiqi.tech/vuln/mess-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
 >
 > Goby & POC 已经更新到 Github中
 
-![](image/mess-5.png)
+![](http://wikioss.peiqi.tech/vuln/mess-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 参考文章
 

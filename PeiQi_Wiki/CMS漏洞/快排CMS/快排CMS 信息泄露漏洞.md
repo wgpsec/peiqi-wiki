@@ -24,13 +24,13 @@ https://gitee.com/qingzhanwang/kpcms
 runtime/log/202104/06.log
 ```
 
-![](image/kp-6.png)
+![](http://wikioss.peiqi.tech/vuln/kp-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 其中可以看到泄露了管理员的Cookie信息和其他敏感信息
 
 并且文件命名为 **年+月/日期.log**
 
-![](image/kp-7.png)
+![](http://wikioss.peiqi.tech/vuln/kp-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 

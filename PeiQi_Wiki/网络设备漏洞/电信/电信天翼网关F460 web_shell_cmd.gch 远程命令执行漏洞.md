@@ -20,9 +20,9 @@
 
 出现漏洞的文件为 web_shell_cmd.gch
 
-![](image/dx-7.png)
+![](http://wikioss.peiqi.tech/vuln/dx-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 直接输入命令就可以执行 **cat /etc/passwd**
 
-![](image/dx-8.png)
+![](http://wikioss.peiqi.tech/vuln/dx-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 

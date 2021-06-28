@@ -14,23 +14,23 @@
 
 百度"intitle: 欢迎使用SSL VPN"，随便找一个地方下载VPN客户端下载安装：
 
-![](image/sxf-3.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 安装完之后访问VPN的页面，发现VPN会自动下载组件更新：
 
-![](image/sxf-4.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这些请求均为GET请求并附带着一些参数，我们把它一一列下来：
 
-![](image/sxf-5.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 本地来看一下这个`54530`端口对应的进程是什么：
 
-![](image/sxf-6.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发现这个端口是ECAgent.exe开启的，寻找到对应进程文件所在位置：
 
-![](image/sxf-7.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 确认这是XXX SSLVPN的程序，那么就可以将两者联系到一起，访问VPN登录首页会触发对`127.0.0.1`的访问从而引起VPN进行组件更新。
 
@@ -64,7 +64,7 @@ python -m SimpleHTTPServer
 
 服务端成功收到请求，但是却出现了错误的提示：
 
-![](image/sxf-8.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 首先我们已经验证了自己的猜想，更新地址是自己可控的，客户端确实会向我们指定的服务端发送请求，但由于出现了错误我们不知道客户端访问了哪个文件，也不知道访问文件之后做了什么动作。
 
@@ -85,7 +85,7 @@ httpd.serve_forever()
 
 搭建起一个 HTTPS 环境后再次复现如上请求，服务端收到日志：
 
-![](image/sxf-9.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看见客户端会访问两个文件：
 
@@ -130,7 +130,7 @@ https://127.0.0.1:54530/ECAgent/?op=UpdateControls&arg1=BEFORELOGIN&callback=EA_
 
 会发现客户端请求之后，将文件下载到本地并启动该程序，成功弹出计算器：
 
-![](image/sxf-10.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 Exploit很简单，当用户打开某个页面时访问那三个本地请求即可，这里使用JavaScript的fetch去实现即可：
 
@@ -149,7 +149,7 @@ Exploit很简单，当用户打开某个页面时访问那三个本地请求即�
 
 其次就是需要一个HTTPS服务端的Python脚本，并且在脚本根目录下的`/com/win/`目录下有一个`XXXUD.exe`文件。
 
-![](image/sxf-11.png)
+![](http://wikioss.peiqi.tech/vuln/sxf-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 参考文章
 

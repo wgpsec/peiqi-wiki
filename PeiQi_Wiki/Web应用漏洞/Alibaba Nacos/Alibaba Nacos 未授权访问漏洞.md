@@ -28,7 +28,7 @@ tar -zxvf nacos-server-2.0.0-ALPHA.1.tar.gz
 
 然后访问 http://xxx.xxx.xxx.xxx:8848/nacos 即可，默认账号密码 **nacos/nacos**
 
-![](image/nacos-1.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞复现
 
@@ -36,13 +36,13 @@ tar -zxvf nacos-server-2.0.0-ALPHA.1.tar.gz
 
 https://github.com/alibaba/nacos/issues/1105
 
-![](image/nacos-2.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/nacos-3.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里我们在登录后任意一个位置看一下请求，并在未授权的情况下看是否可以访问
 
-![](image/nacos-4.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里的请求url简化为
 
@@ -50,7 +50,7 @@ https://github.com/alibaba/nacos/issues/1105
 
 退出用户后在前台访问这个 url
 
-![](image/nacos-5.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以发现以及泄露了 **ip节点** 等数据
 
@@ -58,15 +58,15 @@ https://github.com/alibaba/nacos/issues/1105
 
  http://xxx.xxx.xxx.xxx:8848/nacos/v1/auth/users?pageNo=1&pageSize=9
 
-![](image/nacos-7.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/nacos-6.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里可以发现对用户的请求是完全没有过滤的，可以通过未授权的情况获取用户的敏感信息
 
 我们尝试创建用户并抓包
 
-![](image/nacos-8.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 返回下列创建成功
 
@@ -81,9 +81,9 @@ POST /nacos/v1/auth/users?
 username=peiqi&password=peiqi
 ```
 
-![](image/nacos-9.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/nacos-10.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 看到有文章说要加上**User-Agent请求头**
 
@@ -150,7 +150,7 @@ if __name__ == '__main__':
 
 ```
 
-![](image/nacos-11.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -158,4 +158,4 @@ if __name__ == '__main__':
 >
 > Alibaba_Nacos_Add_user_not_authorized.json
 
-![](image/nacos-14.png)
+![](http://wikioss.peiqi.tech/vuln/nacos-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

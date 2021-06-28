@@ -22,19 +22,19 @@
 
 登录后点击 **菜单 -> 系统管理 -> 附件管理**
 
-![](image/tongdaoa-13.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-13.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 点击添加附录存储管理添加如下(存储目录为 webroot 目录，默认为 **D:/MYOA/webroot/**)
 
-![](image/tongdaoa-14.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 点击 **组织 -> 系统管理员 -> 上传附件**
 
-![](image/tongdaoa-15.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-15.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 抓包使用 windows 的绕过方法 **shell.php -> shell.php.**
 
-![](image/tongdaoa-16.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >
@@ -44,8 +44,8 @@
 >
 > 最后的shell名字为 1717872192.shell.php
 
-![](image/tongdaoa-17.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 访问木马文件
 
-![](image/tongdaoa-18.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-18.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

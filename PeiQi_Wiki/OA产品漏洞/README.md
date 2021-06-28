@@ -1,3 +1,3 @@
 # OA产品漏洞🐶
 
-![](../background/image-8.jpg)
+![image-8](https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/img/image-8.jpg)

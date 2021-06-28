@@ -224,7 +224,7 @@ include_once AROOT.'init.php';    //mvc初始化入口，放在底部
 /download.php?a=read_txt&file=../../../../etc/passwd
 ```
 
-![](image/ruijie-33.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-33.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -313,4 +313,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/ruijie-34.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-34.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

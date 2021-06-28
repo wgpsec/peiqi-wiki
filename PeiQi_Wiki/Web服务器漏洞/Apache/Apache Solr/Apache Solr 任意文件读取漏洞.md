@@ -20,7 +20,7 @@ Apache Solr 存在任意文件读取漏洞，攻击者可以在未授权的情�
 
 访问 Solr Admin 管理员页面
 
-![](image/solr-27.png)
+![](http://wikioss.peiqi.tech/vuln/solr-27.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 获取core的信息
 
@@ -28,11 +28,11 @@ Apache Solr 存在任意文件读取漏洞，攻击者可以在未授权的情�
 http://xxx.xxx.xxx.xxx/solr/admin/cores?indexInfo=false&wt=json
 ```
 
-![](image/solr-28.png)
+![](http://wikioss.peiqi.tech/vuln/solr-28.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发送请求
 
-![](image/solr-29.png)
+![](http://wikioss.peiqi.tech/vuln/solr-29.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 请求包如下
 
@@ -57,7 +57,7 @@ Connection: close
 
 再进行文件读取
 
-![](image/solr-30.png)
+![](http://wikioss.peiqi.tech/vuln/solr-30.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 请求包如下
 
@@ -79,7 +79,7 @@ Connection: close
 stream.url=file:///etc/passwd
 ```
 
-![](image/solr-31.png)
+![](http://wikioss.peiqi.tech/vuln/solr-31.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 Curl请求为
 
@@ -176,7 +176,7 @@ if __name__ == '__main__':
 
 ```
 
-![](image/solr-32.png)
+![](http://wikioss.peiqi.tech/vuln/solr-32.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -184,7 +184,7 @@ if __name__ == '__main__':
 >
 > Apache_Solr_Arbitrary_File_Read.json
 
-![](image/solr-33.png)
+![](http://wikioss.peiqi.tech/vuln/solr-33.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 
 

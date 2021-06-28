@@ -20,7 +20,7 @@
 
 登录页面如下
 
-![](image\lc-1.png)
+![](http://wikioss.peiqi.tech/vuln/lc-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```
 USER： admin|pwd
@@ -33,4 +33,4 @@ PASS:  任意
 >
 > 部分功能是无法使用的
 
-![](image/ic-7.png)
+![](http://wikioss.peiqi.tech/vuln/ic-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

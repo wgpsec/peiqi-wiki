@@ -16,11 +16,11 @@ Apache ActiveMQ 默认开启了 8186 控制台
 
 访问目标: http://xxx.xxx.xxx.xxx:8161/admin
 
-![](image/mq-1.png)
+![](http://wikioss.peiqi.tech/vuln/mq-1.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 使用默认口令 admin:admin
 
-![](image/mq-2.png)
+![](http://wikioss.peiqi.tech/vuln/mq-2.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -28,6 +28,6 @@ Apache ActiveMQ 默认开启了 8186 控制台
 >
 > Apache ActiveMQ_Console Weak Password
 
-![](image/mq-6.png)
+![](http://wikioss.peiqi.tech/vuln/mq-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/mq-7.png)
+![](http://wikioss.peiqi.tech/vuln/mq-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

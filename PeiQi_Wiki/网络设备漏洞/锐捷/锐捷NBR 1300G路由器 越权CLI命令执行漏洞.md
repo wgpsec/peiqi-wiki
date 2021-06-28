@@ -20,11 +20,11 @@
 
 登录页面如下
 
-![](image/ruijie-35.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-35.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 查看流量发现 CLI命令流量
 
-![](image/ruijie-36.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-36.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 请求包为
 
@@ -52,7 +52,7 @@ command=show version&strurl=exec%04&mode=%02PRIV_EXEC&signname=Red-Giant.
 
 登录后发送请求包，执行CLI命令 **(show webmaster user)** 查看用户配置账号密码
 
-![](image/ruijie-37.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-37.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 成功获取所有用户的账号密码
 
@@ -114,4 +114,4 @@ if __name__ == '__main__':
 
 ```
 
-![](image/ruijie-38.png)
+![](http://wikioss.peiqi.tech/vuln/ruijie-38.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

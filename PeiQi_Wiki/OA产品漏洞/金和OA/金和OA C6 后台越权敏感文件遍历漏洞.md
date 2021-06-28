@@ -20,7 +20,7 @@
 
 登录后点击信息交流，发起协同页面
 
-![](image/jh-5.png)
+![](http://wikioss.peiqi.tech/vuln/jh-5.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 上传附件并上传发送给目标
 
@@ -28,15 +28,15 @@
 >
 > 这里登录权限为管理员，我们自己发给自己就好，前文只是展现漏洞挖掘思路过程
 
-![](image/jh-6.png)
+![](http://wikioss.peiqi.tech/vuln/jh-6.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 成功收到上传的附件
 
-![](image/jh-7.png)
+![](http://wikioss.peiqi.tech/vuln/jh-7.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 点击查看时抓包，发现一个带有文件ID的请求包
 
-![](image/jh-8.png)
+![](http://wikioss.peiqi.tech/vuln/jh-8.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 返回了几个参数
 
@@ -53,7 +53,7 @@ var MD = '';
 
 其中我们注意到 strFilePath 为文件的存储地址，我们更改 id参数为另一个值，且测试后发现 name文件名参数无关紧要
 
-![](image/jh-9.png)
+![](http://wikioss.peiqi.tech/vuln/jh-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 更改ID后发送请求包发现获得另一个文件的信息
 
@@ -63,13 +63,13 @@ var MD = '';
 http://xxx.xxx.xxx.xxx/C6/control/OpenFile.aspx?id=1200&name=&type=pdf
 ```
 
-![](image/jh-10.png)
+![](http://wikioss.peiqi.tech/vuln/jh-10.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 这里更换一个普通用户测试是否可行，尝试遍历 id
 
-![](image/jh-12.png)
+![](http://wikioss.peiqi.tech/vuln/jh-12.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
-![](image/jh-11.png)
+![](http://wikioss.peiqi.tech/vuln/jh-11.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 存在 **strFilePath参数** 则是存在文件，为空则是文件已经不存在
 
@@ -77,7 +77,7 @@ http://xxx.xxx.xxx.xxx/C6/control/OpenFile.aspx?id=1200&name=&type=pdf
 
 **FileID 与 FileIDCode**
 
-![](image/jh-13.png)
+![](http://wikioss.peiqi.tech/vuln/jh-13.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)
 
 于是只需要通过刚刚的ID遍历，获取两个关键参数就能下载其他人发送的敏感文件，且只需要普通用户权限
 
@@ -145,4 +145,4 @@ if __name__ == '__main__':
     POC_1(target_url, file_id, cookie)
 ```
 
-![](image/jh-14.png)
+![](http://wikioss.peiqi.tech/vuln/jh-14.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10)

@@ -14,7 +14,7 @@
 
 按如下步骤复现
 
-![](image/Typesetter-1.gif)
+![Typesetter-1](http://wikioss.peiqi.tech/vuln/Typesetter-1.gif)
 
 ## 参考文章
 
